@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: 回眸 Docs
+nav:
+  - Home: 'index.md'
+  - 用户: 
+    - Main: './user/user.md'
+  - 回眸: 
+    - 首页: './smileback/index.md'    
+  
