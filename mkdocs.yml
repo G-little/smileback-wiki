@@ -5,4 +5,6 @@ nav:
     - Main: './user/user.md'
   - 回眸: 
     - 首页: './smileback/index.md'    
+    - 留言: './smileback/note.md'    
+    - 喜欢: './smileback/like.md'    
   

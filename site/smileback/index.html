@@ -472,7 +472,9 @@
 </table>
 <h5 id="_25">错误说明</h5>
 <h5 id="_26">返回实例</h5>
-<p><strong>在线类型</strong></p>
+<p><strong>喜欢状态说明</strong></p>
+<p>0:无  1:喜欢 2:好友</p>
+<p><strong>在线类型(1)</strong></p>
 <pre><code class="json">
 {
     &quot;c&quot;: 0,
@@ -506,7 +508,40 @@
 
 </code></pre>
 
-<p><strong>签到类型</strong></p>
+<p><strong>留言类型(2)</strong></p>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;counter&quot;: {
+            &quot;onlineCount&quot;: 0,
+            &quot;noteCount&quot;: null,
+            &quot;signinCount&quot;: 0
+        },
+        &quot;notes&quot;: {
+            &quot;pageSize&quot;: 500,
+            &quot;currentPage&quot;: 1,
+            &quot;list&quot;: [
+                {
+                    &quot;avatar&quot;: null,  //头像
+                    &quot;uid&quot;: null, //用户
+                    &quot;id&quot;: 1, //id
+                    &quot;roomId&quot;: &quot;B0FFLIND01&quot;, //房间号
+                    &quot;note&quot;: &quot;test&quot;, //内容
+                    &quot;addTime&quot;: 1594196130758, //添加时间
+                    &quot;commentsCount&quot;: 0 //计数
+                }
+            ],
+            &quot;end&quot;: true,
+            &quot;empty&quot;: false
+        }
+    }
+}
+
+</code></pre>
+
+<p><strong>签到类型(3)</strong></p>
 <pre><code class="json">
 {
     &quot;c&quot;: 0,
