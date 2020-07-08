@@ -1,6 +1,6 @@
-site_name: 回眸 Docs
+site_name: 回眸
 nav:
-  - Home: 'index.md'
+  - 首页: 'index.md'
   - 用户: 
     - Main: './user/user.md'
   - 回眸: 

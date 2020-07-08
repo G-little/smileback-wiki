@@ -1,17 +1,8 @@
-# Welcome to MkDocs
+# 欢迎来到回眸文档
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## 测试环境说明
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* 测试域名 	[http://smileback.xiaogang.org.cn](http://smileback.xiaogang.org.cn)
+* 获取上传token接口: {{host}}/upload/token
