@@ -7,4 +7,5 @@ nav:
     - 首页: './smileback/index.md'    
     - 留言: './smileback/note.md'    
     - 喜欢: './smileback/like.md'    
+    - 我的: './smileback/my.md'    
   
