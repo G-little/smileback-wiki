@@ -42,6 +42,9 @@
 | longtitude      | 是| double  |  经度 |  最多小数点后6位  |
 | latitude      | 是| double  |  纬度 |   |
 | keywords      | 否| string  |  关键词 |  |
+| limit      | 否| int  |  单页条数 |  |
+| page      | 否| int  |  当前页 |  |
+
 
 #####  错误说明
 
