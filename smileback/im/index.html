@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>喜欢 - 回眸</title>
+        <title>消息 - 回眸</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -58,7 +58,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">喜欢</a>
+    <a href="../like/" class="dropdown-item">喜欢</a>
 </li>
                                     
 <li>
@@ -66,7 +66,7 @@
 </li>
                                     
 <li>
-    <a href="../im/" class="dropdown-item">消息</a>
+    <a href="./" class="dropdown-item active">消息</a>
 </li>
                                     
 <li>
@@ -83,12 +83,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../note/" class="nav-link">
+                                <a rel="prev" href="../my/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../my/" class="nav-link">
+                                <a rel="next" href="../report/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -110,7 +110,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">喜欢接口文档</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">自定义消息格式文档</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
@@ -139,29 +139,18 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">喜欢接口文档</h1>
+<h1 id="_1">自定义消息格式文档</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">喜欢接口文档</a><ul>
+<li><a href="#_1">自定义消息格式文档</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 喜欢用户</a><ul>
+<li><a href="#11">1.1 活动消息</a><ul>
 <li><a href="#_7">接口说明</a></li>
-<li><a href="#_8">请求说明</a></li>
-<li><a href="#_9">输入参数</a></li>
-<li><a href="#_10">错误说明</a></li>
-<li><a href="#_11">返回实例</a></li>
-</ul>
-</li>
-<li><a href="#11">1.1 解除好友关系</a><ul>
-<li><a href="#_12">接口说明</a></li>
-<li><a href="#_13">请求说明</a></li>
-<li><a href="#_14">输入参数</a></li>
-<li><a href="#_15">错误说明</a></li>
-<li><a href="#_16">返回实例</a></li>
+<li><a href="#_8">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -184,7 +173,7 @@
 </thead>
 <tbody>
 <tr>
-<td>2020年07月03日</td>
+<td>2020年07月10日</td>
 <td>冷立纲</td>
 <td>A</td>
 <td>新增设计方案</td>
@@ -196,136 +185,75 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
+<p>自定义消息格式文档</p>
 <h2 id="_4">产品说明</h2>
+<p>满足产品自定义展示消息</p>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 喜欢用户</h4>
-<h5 id="_7">接口说明</h5>
-<p>添加留言信息</p>
-<h5 id="_8">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/room_user/like</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_9">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">longtitude</td>
-<td align="center">是</td>
-<td align="left">double</td>
-<td align="left">经度</td>
-<td align="left">最多小数点后6位</td>
-</tr>
-<tr>
-<td align="left">latitude</td>
-<td align="center">是</td>
-<td align="left">double</td>
-<td align="left">纬度</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">roomId</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">空间ID</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">toUid</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">对方用户ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_10">错误说明</h5>
-<h5 id="_11">返回实例</h5>
+<p>自定义协议格式说明</p>
 <pre><code class="json">
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;likeStatus&quot;: 1,  //喜欢状态 1 单向喜欢 2 好友
-        &quot;user&quot;: {  //用户信息
-            &quot;avatar&quot;: &quot;https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erjrlX6c0rOZPcmMiax9g9mLHPUdvpBDbjpIZp9icRxoDtAzsYqjfJu3QwgGgibpdC0icxg4Mur3cmWAw/132&quot;,
-            &quot;uid&quot;: 11445,
-            &quot;likeStatus&quot;: 1
+        {
+    &quot;SyncOtherMachine&quot;: 1, //消息同步至发送方
+    &quot;From_Account&quot;: &quot;10001&quot;,
+    &quot;To_Account&quot;: &quot;10002&quot;,
+    &quot;MsgRandom&quot;: 1287657,
+    &quot;MsgTimeStamp&quot;: 5454457,
+    &quot;MsgBody&quot;: [
+        {
+            &quot;MsgType&quot;: &quot;TIMCustomElem&quot;, //自定义消息类型
+            &quot;MsgContent&quot;: {    
+                     &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
+                     &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别        
+                     &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                     &quot;createTime&quot;: 1233434343l, //创建时间戳
+                     &quot;msg&quot;:{                    //消息体
+                      &quot;title&quot;:&quot;标题&quot;, //标题
+                      &quot;url&quot;:&quot;http://kistalk.com&quot;, // h5 广告页面
+                      &quot;content&quot;:&quot;这是消息内容&quot;,
+                      &quot;imageUrl&quot;:&quot;头图地址&quot;, //相对地址，自行追加
+                      &quot;coverWidth&quot;:300,  //高度
+                      &quot;coverHeight&quot;:400   //宽度
+                      }
+            }
         }
-    }
+    ]
 }
 
 </code></pre>
 
-<h4 id="11">1.1 解除好友关系</h4>
-<h5 id="_12">接口说明</h5>
-<p>添加留言信息</p>
-<h5 id="_13">请求说明</h5>
+<h3 id="11">1.1 活动消息</h3>
+<h4 id="_7">接口说明</h4>
 <table>
 <thead>
 <tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
+<th align="left">Type</th>
+<th align="center">1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">url</td>
-<td align="center">/room_user/unfriend</td>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_14">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">toUid</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">对方用户ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_15">错误说明</h5>
-<h5 id="_16">返回实例</h5>
+<h4 id="_8">协议说明</h4>
 <pre><code class="json">
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
+      {    
+                 &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //消息体
+                  &quot;title&quot;:&quot;标题&quot;, //标题
+                  &quot;url&quot;:&quot;http://kistalk.com&quot;, // h5 广告页面
+                  &quot;content&quot;:&quot;这是消息内容&quot;,
+                  &quot;imageUrl&quot;:&quot;头图地址&quot;, //相对地址，自行追加
+                  &quot;coverWidth&quot;:300,  //高度
+                  &quot;coverHeight&quot;:500   //宽度
+                  }
+        }
 
-    }
-}
 
 </code></pre></div>
             </div>
