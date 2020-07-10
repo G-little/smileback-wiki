@@ -411,7 +411,7 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 
 | http 请求方式          | post     |
 |:------------- |:---------------:|
-| url      | /mobile/update/step1 |
+| url      | /user/mobile/update/step1 |
 
 #####  输入参数
 
@@ -451,7 +451,7 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 
 | http 请求方式          | post     |
 |:------------- |:---------------:|
-| url      | /mobile/update/step2 |
+| url      | /user/mobile/update/step2 |
 
 #####  输入参数
 

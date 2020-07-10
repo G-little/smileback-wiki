@@ -188,7 +188,7 @@
 
 | http 请求方式          |get             |
 |:------------- |:---------------:|
-| url      |/note/comment/detail |
+| url      |/note/detail |
 
 #####  输入参数
 

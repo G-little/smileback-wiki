@@ -209,6 +209,22 @@
 <li><a href="#_46">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#17-step1">1.7 更新手机号接口step1</a><ul>
+<li><a href="#_47">接口说明</a></li>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">错误说明</a></li>
+<li><a href="#_51">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#18-step2">1.8 更新手机号接口step2</a><ul>
+<li><a href="#_52">接口说明</a></li>
+<li><a href="#_53">请求说明</a></li>
+<li><a href="#_54">输入参数</a></li>
+<li><a href="#_55">错误说明</a></li>
+<li><a href="#_56">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -814,6 +830,131 @@
         &quot;createTime&quot;: null,
         &quot;updateTime&quot;: null,
         &quot;pass&quot;: &quot;tTofWxX&quot; //解密密钥
+    }
+}
+
+</code></pre>
+
+<h4 id="17-step1">1.7 更新手机号接口step1</h4>
+<h5 id="_47">接口说明</h5>
+<p>验证已有手机号</p>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mobile/update/step1</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">smscode</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">验证码</td>
+<td align="left">/user/sendsms  interfaceType 5 发送</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">错误说明</h5>
+<h5 id="_51">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+       &quot;secret&quot;:&quot;FnWVgshcWl&quot;
+    }
+}
+
+</code></pre>
+
+<h4 id="18-step2">1.8 更新手机号接口step2</h4>
+<h5 id="_52">接口说明</h5>
+<p>验证已有手机号</p>
+<h5 id="_53">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mobile/update/step2</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">smscode</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">验证码</td>
+<td align="left">/user/sendsms  interfaceType 2 发送</td>
+</tr>
+<tr>
+<td align="left">secret</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">验证码</td>
+<td align="left">第一步验证手机返回</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_55">错误说明</h5>
+<h5 id="_56">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
