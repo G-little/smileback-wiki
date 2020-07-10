@@ -98,7 +98,8 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
             "mobile": "15201008961", //手机号
             "createTime": 1590149492786, //创建时间
             "updateTime": 1590149538735 //更新时间
-        }
+        },  //im token
+        "imToken": "eJyrVgrxCdZLrSjILEpVsjI0sjQzMDDQAQuWpRYpWSkZ6RkoQfjFKdmJBQWZKUBlJgYGxpamFpYWEJnMlNS8ksy0TLAGQ0MTE2OYlsx0oIi5Z7a3ZW5ZZWJBZFaZe65pSHClYaKjX2mpmUdOYkSVqU+QRURmUmWEc2SyLVRjSWYuyDmmlibGJpZGpka1AOQJMOU="
     }
 }
 ```

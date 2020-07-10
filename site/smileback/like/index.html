@@ -148,6 +148,14 @@
 <li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#11">1.1 解除好友关系</a><ul>
+<li><a href="#_12">接口说明</a></li>
+<li><a href="#_13">请求说明</a></li>
+<li><a href="#_14">输入参数</a></li>
+<li><a href="#_15">错误说明</a></li>
+<li><a href="#_16">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -256,6 +264,58 @@
             &quot;uid&quot;: 11445,
             &quot;likeStatus&quot;: 1
         }
+    }
+}
+
+</code></pre>
+
+<h4 id="11">1.1 解除好友关系</h4>
+<h5 id="_12">接口说明</h5>
+<p>添加留言信息</p>
+<h5 id="_13">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room_user/unfriend</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_14">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">toUid</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">对方用户ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_15">错误说明</h5>
+<h5 id="_16">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
