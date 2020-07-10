@@ -8,4 +8,6 @@ nav:
     - 留言: './smileback/note.md'    
     - 喜欢: './smileback/like.md'    
     - 我的: './smileback/my.md'    
+    - 消息: './smileback/im.md'    
+    - 举报: './smileback/report.md'    
   
