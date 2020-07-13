@@ -148,9 +148,19 @@
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#11">1.1 活动消息</a><ul>
+<li><a href="#1">1) 文本消息</a><ul>
 <li><a href="#_7">接口说明</a></li>
 <li><a href="#_8">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#2">2) 匹配结果通知</a><ul>
+<li><a href="#_9">接口说明</a></li>
+<li><a href="#_10">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#2_1">2)  好友匹配成功消息</a><ul>
+<li><a href="#_11">接口说明</a></li>
+<li><a href="#_12">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -221,7 +231,7 @@
 
 </code></pre>
 
-<h3 id="11">1.1 活动消息</h3>
+<h3 id="1">1) 文本消息</h3>
 <h4 id="_7">接口说明</h4>
 <table>
 <thead>
@@ -244,13 +254,87 @@
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
                  &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
                  &quot;createTime&quot;: 1233434343l, //创建时间戳
-                 &quot;msg&quot;:{                    //消息体
-                  &quot;title&quot;:&quot;标题&quot;, //标题
-                  &quot;url&quot;:&quot;http://kistalk.com&quot;, // h5 广告页面
-                  &quot;content&quot;:&quot;这是消息内容&quot;,
-                  &quot;imageUrl&quot;:&quot;头图地址&quot;, //相对地址，自行追加
-                  &quot;coverWidth&quot;:300,  //高度
-                  &quot;coverHeight&quot;:500   //宽度
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;text&quot;:'xxxx'
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="2">2) 匹配结果通知</h3>
+<h4 id="_9">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_10">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 2,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;uid&quot;: 12345,
+                     &quot;avatar&quot;: &quot;/xxx&quot;, //头像
+                     &quot;roomId&quot;: &quot;xxxxxx&quot; //房间号
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="2_1">2)  好友匹配成功消息</h3>
+<h4 id="_11">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">主动加好友的用户ID</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_12">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 3,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;likePositions&quot;:[
+                         {
+                             &quot;uid&quot;:123,//用户ID
+                             &quot;roomId&quot;:123,//房间ID
+                             &quot;roomName&quot;:&quot;xxx&quot;,//房间名
+                             &quot;imageUrl&quot;:&quot;xxx&quot;,//房间照片  
+                         }
+                     ]
                   }
         }
 
