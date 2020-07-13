@@ -163,6 +163,11 @@
 <li><a href="#_12">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#4">4)  评论消息</a><ul>
+<li><a href="#_13">接口说明</a></li>
+<li><a href="#_14">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -335,6 +340,48 @@
                              &quot;imageUrl&quot;:&quot;xxx&quot;,//房间照片  
                          }
                      ]
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="4">4)  评论消息</h3>
+<h4 id="_13">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9998</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_14">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 4,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;avatar&quot;: &quot;/xxx&quot;, //头像
+                     &quot;uid&quot;:123, //用户ID
+                     &quot;comment&quot;: &quot;描述&quot;, //用户ID
+                     &quot;roomId&quot;: &quot;xxx&quot;, //房间ID
+                     &quot;roomName&quot;: &quot;xxx&quot;, //房间名
+                     &quot;noteId&quot;: 123, //留言ID
+                     &quot;note&quot;: 123 //留言内容
+                     &quot;commentId&quot;: 123 //留言ID
                   }
         }
 
