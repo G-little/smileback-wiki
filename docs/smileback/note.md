@@ -43,6 +43,7 @@
 | latitude      | 是| double  |  纬度 |   |
 | roomId      | 是| string  |  空间ID |  |
 | note      | 是| string  |  最多70字 |  |
+| color      | 是| string  |  随机色值 |  16进制 #fffff  |
 
 #####  错误说明
 
@@ -223,6 +224,7 @@
             "id": 2,
             "roomId": "B0FFLIND01", //空间ID
             "note": "test",
+            "color": "#fffff",  //颜色
             "addTime": 1594198044901,
             "commentsCount": 10
         },

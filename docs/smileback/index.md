@@ -281,6 +281,7 @@ __留言类型(2)__
                     "id": 1, //id
                     "roomId": "B0FFLIND01", //房间号
                     "note": "test", //内容
+                    "color": "#fffff",  //颜色
                     "addTime": 1594196130758, //添加时间
                     "commentsCount": 0 //计数
                 }
