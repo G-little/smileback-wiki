@@ -188,6 +188,7 @@
 			     "msg":{                    //文本消息
 			         "avatar": "/xxx", //头像
 			         "uid":123, //用户ID
+			         "remark": ,//备注
 			         "comment": "描述", //用户ID
 			         "roomId": "xxx", //房间ID
 			         "roomName": "xxx", //房间名
