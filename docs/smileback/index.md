@@ -283,7 +283,17 @@ __留言类型(2)__
                     "note": "test", //内容
                     "color": "#fffff",  //颜色
                     "addTime": 1594196130758, //添加时间
-                    "commentsCount": 0 //计数
+                    "commentsCount": 0, //计数
+                    "tags": [ //标签
+                        {
+                            "content": "test",
+                            "color": "default",
+                            "fontSize": 12,
+                            "rotateAngel": 0.0,
+                            "top": "50%",
+                            "left": "50%"
+                        }
+                    ]
                 }
             ],
             "end": true,

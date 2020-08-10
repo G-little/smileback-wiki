@@ -288,20 +288,52 @@
 </tr>
 <tr>
 <td align="left">note</td>
-<td align="center">是</td>
+<td align="center">否</td>
 <td align="left">string</td>
 <td align="left">最多70字</td>
 <td align="left"></td>
 </tr>
 <tr>
+<td align="left">noteType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">留言类型</td>
+<td align="left">0 文本 1 图文</td>
+</tr>
+<tr>
 <td align="left">color</td>
-<td align="center">是</td>
+<td align="center">否</td>
 <td align="left">string</td>
 <td align="left">随机色值</td>
 <td align="left">16进制 #fffff</td>
 </tr>
+<tr>
+<td align="left">tags</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">tag 标签json数组</td>
+<td align="left">参照tag参数说明</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
 </tbody>
 </table>
+<p><strong>tags 参数说明</strong></p>
+<pre><code class="json">[{
+    &quot;content&quot;: &quot;test&quot;, //标签内容
+    &quot;color&quot;: &quot;default&quot;, //颜色
+    &quot;fontSize&quot;: 12, // 字号
+    &quot;rotateAngel&quot;: 0.0, //旋转角度
+    &quot;top&quot;: &quot;50%&quot;, //距离图片上边百分比
+    &quot;left&quot;: &quot;50%&quot; //距离图偏左侧百分比
+}]
+</code></pre>
+
 <h5 id="_10">错误说明</h5>
 <h5 id="_11">返回实例</h5>
 <pre><code class="json">
