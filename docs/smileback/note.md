@@ -45,6 +45,7 @@
 | note      | 否| string  |  最多70字 |  |
 | noteType      | 否| int  |  留言类型 | 0 文本 1 图文  |
 | color      | 否| string  |  随机色值 |  16进制 #fffff  |
+| imageUrl      | 否| string  |  图片地址 | |
 | tags      | 否| string  |  tag 标签json数组 |  参照tag参数说明 |
 
 
