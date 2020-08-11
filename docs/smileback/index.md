@@ -73,17 +73,17 @@
                 "userCount": 0 //用户数
                 "roomType":1, // 0 普通 1 城市空间 2 商圈
                 "ext": {  //附加信息
-                    "id": "01020200810001",
-                    "parentId": "010",
-                    "addTime": "2020-08-11 14:53:42",
-                    "num": 1,
-                    "startTime": 1597136400000,
-                    "endTime": 1597136400000,
-                    "bgUrl": "/xxxx",
-                    "fontType": 1,
-                    "name": "POP PARTY 001",
-                    "deleted": false,
-                    "remainMillisSeconds": 7577269
+                    "id": "01020200810001", //id
+                    "parentId": "010", //父节点
+                    "addTime": "2020-08-11 14:53:42", //添加时间
+                    "num": 1, //序号
+                    "startTime": 1597136400000, //开始时间
+                    "endTime": 1597136400000, //结束时间
+                    "bgUrl": "/xxxx", //北京
+                    "fontType": 1, //字体
+                    "name": "POP PARTY 001", //名字
+                    "deleted": false, //删除状态
+                    "remainMillisSeconds": 7577269 //剩余时间(毫秒）
                 }
             }
         ],
