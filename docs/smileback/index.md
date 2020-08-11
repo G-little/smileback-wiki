@@ -71,6 +71,20 @@
                 "name": "鲜粮卷饼王",  // 名称
                 "distance": "15", //距离 米
                 "userCount": 0 //用户数
+                "roomType":1, // 0 普通 1 城市空间 2 商圈
+                "ext": {  //附加信息
+                    "id": "01020200810001",
+                    "parentId": "010",
+                    "addTime": "2020-08-11 14:53:42",
+                    "num": 1,
+                    "startTime": 1597136400000,
+                    "endTime": 1597136400000,
+                    "bgUrl": "/xxxx",
+                    "fontType": 1,
+                    "name": "POP PARTY 001",
+                    "deleted": false,
+                    "remainMillisSeconds": 7577269
+                }
             }
         ],
         "end": false,
