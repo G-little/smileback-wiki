@@ -406,6 +406,8 @@ __签到类型(3)__
     "m": null,
     "d": {
         "name": "鲜粮卷饼王",  //名称
+        "imAdmin":true, //我是否是admin ？
+        "userRole":0, //用户角色  0:普通 1:boss 2:员工
         "user": {
             "avatar": "/x/y/z",  //头像
             "uid": 11443, //用户ID

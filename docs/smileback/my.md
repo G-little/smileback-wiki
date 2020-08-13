@@ -54,6 +54,9 @@
     "c": 0,
     "m": null,
     "d": {
+        "userRole":0, //用户角色  0:普通 1:boss 2:员工
+            "roomId": "xxxxxx",// boss 房间号
+        "inviteCode":"xxxxxx",//邀请二维码    
         "user": {
             "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erjrlX6c0rOZPcmMiax9g9mLHPUdvpBDbjpIZp9icRxoDtAzsYqjfJu3QwgGgibpdC0icxg4Mur3cmWAw/132",
             "uid": 11445,
@@ -247,6 +250,39 @@
     "m": null,
     "d": {
        
+    }
+}
+```
+
+
+
+#### 1.5 我的钱包
+
+##### 接口说明
+
+添加留言信息
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/my/wallet |
+
+#####  输入参数
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "money":200.00
     }
 }
 ```
