@@ -208,6 +208,14 @@
 <li><a href="#_41">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#17">1.7 提现</a><ul>
+<li><a href="#_42">接口说明</a></li>
+<li><a href="#_43">请求说明</a></li>
+<li><a href="#_44">输入参数</a></li>
+<li><a href="#_45">错误说明</a></li>
+<li><a href="#_46">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -660,6 +668,61 @@
         &quot;end&quot;: true
     }
 }
+</code></pre>
+
+<h4 id="17">1.7 提现</h4>
+<h5 id="_42">接口说明</h5>
+<p>添加留言信息</p>
+<h5 id="_43">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/my/withdraw</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_44">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">money</td>
+<td align="center">否</td>
+<td align="left">double</td>
+<td align="left"></td>
+<td align="left">提现金额</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_45">错误说明</h5>
+<h5 id="_46">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;money&quot;:200.00,
+        &quot;drawMoney&quot;:12, //可取现金额
+        &quot;bindAccount&quot;:&quot;xxxxx&quot;, //绑定账户
+        &quot;bindStatus&quot;:0, //绑定状态 0 未绑定  1已绑定
+    }
+}
+
 </code></pre></div>
             </div>
         </div>
