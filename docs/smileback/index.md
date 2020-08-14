@@ -566,7 +566,8 @@ __签到类型(3)__
                 "uid": 11635,
                 "content": "咯弄",
                 "addTime": 1596105412381,
-                "delete": false
+                "delete": false,
+                "userRole":0, //用户角色  0:普通 1:boss 2:员工
             }
         ],
         "end": true

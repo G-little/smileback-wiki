@@ -256,7 +256,8 @@
 			     "tips":"消息会话列表显示提示",
 			     "createTime": 1233434343l, //创建时间戳
 			     "msg":{                    //文本消息
-			         "content": " xxx" // 内容
+			         "content": " xxx", // 内容
+			         "userRole":0, //用户角色  0:普通 1:boss 2:员工
 			      }
         }
 
