@@ -283,7 +283,9 @@
     "m": null,
     "d": {
         "money":200.00,
-        "drawMoney":12 //可取现金额
+        "drawMoney":12, //可取现金额
+        "bindAccount":"xxxxx", //绑定账户
+        "bindStatus":0, //绑定状态 0 未绑定  1已绑定
     }
 }
 ```
