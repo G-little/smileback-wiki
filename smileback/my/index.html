@@ -184,6 +184,14 @@
 <li><a href="#_36">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#16">1.6 我的交易记录</a><ul>
+<li><a href="#_37">接口说明</a></li>
+<li><a href="#_38">请求说明</a></li>
+<li><a href="#_39">输入参数</a></li>
+<li><a href="#_40">错误说明</a></li>
+<li><a href="#_41">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -563,6 +571,77 @@
         &quot;drawMoney&quot;:12, //可取现金额
         &quot;bindAccount&quot;:&quot;xxxxx&quot;, //绑定账户
         &quot;bindStatus&quot;:0, //绑定状态 0 未绑定  1已绑定
+    }
+}
+</code></pre>
+
+<h4 id="16">1.6 我的交易记录</h4>
+<h5 id="_37">接口说明</h5>
+<p>添加留言信息</p>
+<h5 id="_38">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/my/transactions</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_39">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">单页条数</td>
+</tr>
+<tr>
+<td align="left">last</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left"></td>
+<td align="left">最后拉取时间戳</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_40">错误说明</h5>
+<h5 id="_41">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;limit&quot;: 20,
+        &quot;last&quot;: 1597366552441,
+        &quot;list&quot;: [
+            {
+                &quot;money&quot;:2, //交易金额
+                &quot;tranNum&quot;:&quot;xxxx&quot;, //交易流水
+                &quot;accountId&quot;:&quot;xxxx&quot;, //交易账户
+                &quot;type&quot;:1, //交易类型 1入账 2出账
+                &quot;comment&quot;:&quot;描述&quot;, //描述
+                &quot;createTime&quot;:1234567, //创建时间  毫秒
+
+            },
+        ],
+        &quot;end&quot;: true
     }
 }
 </code></pre></div>
