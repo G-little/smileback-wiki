@@ -216,6 +216,22 @@
 <li><a href="#_46">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#17-code">1.7 获取邀请CODE（测试用）</a><ul>
+<li><a href="#_47">接口说明</a></li>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">错误说明</a></li>
+<li><a href="#_51">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#18-code">1.8 根据Code 获取房间信息</a><ul>
+<li><a href="#_52">接口说明</a></li>
+<li><a href="#_53">请求说明</a></li>
+<li><a href="#_54">输入参数</a></li>
+<li><a href="#_55">错误说明</a></li>
+<li><a href="#_56">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -996,6 +1012,127 @@
             }
         ],
         &quot;end&quot;: true
+    }
+}
+
+</code></pre>
+
+<h4 id="17-code">1.7 获取邀请CODE（测试用）</h4>
+<h5 id="_47">接口说明</h5>
+<p>测试code 获取</p>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room/random_code</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">房间号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">inviteUser</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">邀请人ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">错误说明</h5>
+<h5 id="_51">返回实例</h5>
+<pre><code class="json">
+    {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;code&quot;: &quot;^AQENXjcUU&quot;
+    }
+
+
+</code></pre>
+
+<h4 id="18-code">1.8 根据Code 获取房间信息</h4>
+<h5 id="_52">接口说明</h5>
+<p>签到</p>
+<h5 id="_53">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room/code2room</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">code</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">邀请码</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_55">错误说明</h5>
+<h5 id="_56">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;: &quot;B0FFG72WB4&quot;,
+        &quot;name&quot;: &quot;秀域科技健康(望京街店)&quot;,
+        &quot;userList&quot;: [  //用户列表
+            {
+                &quot;avatar&quot;: &quot;FqTd6VEjTbp4UjkquMmaZF_d9Zzj.jpg&quot;,
+                &quot;uid&quot;: 11491,
+                &quot;remark&quot;: null,
+                &quot;userRole&quot;: 0,
+                &quot;likeStatus&quot;: 0
+            }
+        ]
     }
 }
 

@@ -54,9 +54,13 @@
     "c": 0,
     "m": null,
     "d": {
-        "userRole":0, //用户角色  0:普通 1:boss 2:员工
-            "roomId": "xxxxxx",// boss 房间号
-        "inviteCode":"xxxxxx",//邀请二维码    
+        "userRoleList": [
+            {
+                "id": "B0FFJIYRS9",
+                "inviteCode": "http://faceface2.com/invite/B0FFJIYRS9/11644",
+                "name": "鹿角巷THEALLEY(望京soho店)(暂停营业)"
+            }
+        ],
         "user": {
             "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erjrlX6c0rOZPcmMiax9g9mLHPUdvpBDbjpIZp9icRxoDtAzsYqjfJu3QwgGgibpdC0icxg4Mur3cmWAw/132",
             "uid": 11445,
