@@ -43,6 +43,8 @@
 | content      | 是| string    | 举报内容|   |
 | picUrls      | 否| string[]    | 图片|   |
 | toUid      | 否| int    | 被举报人|   |
+| extType      | 否| byte    | 扩展参数类型|  1 封面  |
+| extId      | 否| int    | 扩展参数ID|  extType  根据类型决定实际ID意义  |
 
 
 #####  错误说明
