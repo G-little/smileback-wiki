@@ -98,6 +98,70 @@
 ```
 
 
+
+#### 1.0.1 空间详情
+
+##### 接口说明
+
+获取空间详情数据
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/room/get |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 是| string  |  空间ID |    |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "id": "010",
+        "images": [
+            "http://resources.kinstalk.com/k1d59pugbdfp0mc0i6tf.png"
+        ],
+        "name": "北京市PARTY 001",
+        "longitude": null,
+        "latitude": null,
+        "distance": null,
+        "userCount": 8,
+        "allowEntry": false,
+        "roomType": 1,
+        "ext": {
+            "id": "POP01020200827001",
+            "parentId": "010",
+            "addTime": "2020-08-27 10:53:59",
+            "num": 1,
+            "startTime": 1598432400000,
+            "endTime": 1598518800000,
+            "bgUrl": "http://resources.kinstalk.com/jri94gif8o92zkc85189.jpg",
+            "fontType": 2,
+            "name": "PARTY 001",
+            "deleted": false,
+            "userCount": null,
+            "remainMillisSeconds": 21960298
+        }
+    }
+}
+
+```
+
+
 #### 1.1 签到
 
 ##### 接口说明
