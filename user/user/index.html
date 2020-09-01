@@ -229,6 +229,30 @@
 <li><a href="#_56">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#19">1.9 设备号免密登录</a><ul>
+<li><a href="#_57">接口说明</a></li>
+<li><a href="#_58">请求说明</a></li>
+<li><a href="#_59">输入参数</a></li>
+<li><a href="#_60">错误说明</a></li>
+<li><a href="#_61">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#20">2.0 根据手机号查询绑定信息</a><ul>
+<li><a href="#_62">接口说明</a></li>
+<li><a href="#_63">请求说明</a></li>
+<li><a href="#_64">输入参数</a></li>
+<li><a href="#_65">错误说明</a></li>
+<li><a href="#_66">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#20_1">2.0 根据手机号绑定信息</a><ul>
+<li><a href="#_67">接口说明</a></li>
+<li><a href="#_68">请求说明</a></li>
+<li><a href="#_69">输入参数</a></li>
+<li><a href="#_70">错误说明</a></li>
+<li><a href="#_71">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -962,6 +986,246 @@
     }
 }
 
+</code></pre>
+
+<h4 id="19">1.9 设备号免密登录</h4>
+<h5 id="_57">接口说明</h5>
+<p>继承支付宝手机号认证快捷登录功能</p>
+<h5 id="_58">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/user/device/login</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_59">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">deviceId</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">设备号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">deviceType</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">设备类型</td>
+<td align="left">5 广告屏</td>
+</tr>
+<tr>
+<td align="left">os</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">操作系统及版本</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_60">错误说明</h5>
+<p>先整理可能的错误类型，具体对应的错误码实施时再确定：</p>
+<ol>
+<li>非法验证码</li>
+</ol>
+<h5 id="_61">返回实例</h5>
+<pre><code class="json">{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;uid&quot;: 11443, //用户ID
+        &quot;accessToken&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g&quot;, //登录token
+        &quot;accessExpiresIn&quot;: 1599098823065, //失效时间
+        &quot;refreshToken&quot;: &quot;fMYerhGCyudmIhLUW&quot;, //刷新token
+        &quot;refreshExpiresIn&quot;: 1604369223065, //刷新token 失效时间
+        &quot;user&quot;: { //用户信息
+            &quot;uid&quot;: 11443,  //用户ID
+            &quot;avatar&quot;: &quot;/c/d/e&quot;, //用户头像
+            &quot;name&quot;: &quot;赵六&quot;, //用户昵称
+            &quot;gender&quot;: 1, // 性别  1 男
+            &quot;birthday&quot;: 153000000, //生日
+            &quot;status&quot;: 0, //状态
+            &quot;mobile&quot;: &quot;15201008961&quot;, //手机号
+            &quot;createTime&quot;: 1590149492786, //创建时间
+            &quot;updateTime&quot;: 1590149538735 //更新时间
+        },  //im token
+        &quot;imToken&quot;: &quot;eJyrVgrxCdZLrSjILEpVsjI0sjQzMDDQAQuWpRYpWSkZ6RkoQfjFKdmJBQWZKUBlJgYGxpamFpYWEJnMlNS8ksy0TLAGQ0MTE2OYlsx0oIi5Z7a3ZW5ZZWJBZFaZe65pSHClYaKjX2mpmUdOYkSVqU+QRURmUmWEc2SyLVRjSWYuyDmmlibGJpZGpka1AOQJMOU=&quot;
+        &quot;bind&quot;:{  //绑定信息，未绑定则为空
+            &quot;bindUid&quot;:123, //绑定用户ID
+            &quot;avatar&quot;:&quot;/a&quot;, //头像
+            &quot;roomId&quot;:&quot;1233&quot;,// 房间号
+            &quot;name&quot;:&quot;房间名&quot;,// 房间号
+            &quot;images&quot;:[&quot;/xxx&quot;] //房间图像
+        }
+    }
+}
+</code></pre>
+
+<h4 id="20">2.0 根据手机号查询绑定信息</h4>
+<h5 id="_62">接口说明</h5>
+<p>根据手机号查询绑定信息</p>
+<h5 id="_63">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/user/device/mobile_query</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_64">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_65">错误说明</h5>
+<h5 id="_66">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;user&quot;: {
+            &quot;uid&quot;: 12211,
+            &quot;avatar&quot;: &quot;FqobfidNNFd8D9kTNMD3AIHhEZY4.jpg&quot;,
+            &quot;name&quot;: null,
+            &quot;gender&quot;: null,
+            &quot;birthday&quot;: null,
+            &quot;status&quot;: 0,
+            &quot;mobile&quot;: &quot;12112131091&quot;,
+            &quot;createTime&quot;: 1597816931995,
+            &quot;updateTime&quot;: 1597816949338,
+            &quot;avatarStatus&quot;: 1,
+            &quot;userRole&quot;: null,
+            &quot;admin&quot;: false
+        },
+        &quot;room&quot;: {
+            &quot;id&quot;: &quot;B0GR3CK5FZ&quot;,
+            &quot;parent&quot;: [],
+            &quot;name&quot;: &quot;万鑫小馆&quot;,
+            &quot;type&quot;: &quot;餐饮服务;快餐厅;快餐厅&quot;,
+            &quot;distance&quot;: null,
+            &quot;typeCode&quot;: &quot;050300&quot;,
+            &quot;bizType&quot;: null,
+            &quot;longitude&quot;: 116.481957,
+            &quot;latitude&quot;: 39.996011,
+            &quot;pcode&quot;: &quot;110000&quot;,
+            &quot;pname&quot;: null,
+            &quot;citycode&quot;: &quot;010&quot;,
+            &quot;cityname&quot;: null,
+            &quot;adcode&quot;: &quot;110105&quot;,
+            &quot;businessArea&quot;: &quot;望京&quot;,
+            &quot;images&quot;: [
+                &quot;http://resources.kinstalk.com/gfetifkkhop3zbdfhmo9.jpg&quot;
+            ],
+            &quot;addTime&quot;: 1597816966532,
+            &quot;updateTime&quot;: null,
+            &quot;userCount&quot;: 5,
+            &quot;adname&quot;: null,
+            &quot;delete&quot;: false,
+            &quot;roomType&quot;: 0,
+            &quot;groupCreated&quot;: true
+        }
+    }
+}
+
+</code></pre>
+
+<h4 id="20_1">2.0 根据手机号绑定信息</h4>
+<h5 id="_67">接口说明</h5>
+<p>根据手机号查询绑定信息</p>
+<h5 id="_68">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/user/device/mobile_bind</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_69">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mobile</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">手机号</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_70">错误说明</h5>
+<h5 id="_71">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;bindUid&quot;: 12211, 
+        &quot;avatar&quot;: &quot;FqobfidNNFd8D9kTNMD3AIHhEZY4.jpg&quot;,
+        &quot;roomId&quot;: &quot;B0GR3CK5FZ&quot;,
+        &quot;name&quot;: &quot;万鑫小馆&quot;,
+        &quot;images&quot;: [
+            &quot;http://resources.kinstalk.com/gfetifkkhop3zbdfhmo9.jpg&quot;
+        ]
+    }
+}
 </code></pre></div>
             </div>
         </div>
