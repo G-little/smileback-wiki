@@ -391,6 +391,7 @@ __签到类型(3)__
     "c": 0,
     "m": null,
     "d": {
+        "qrCode":"http://xxxxxxx",
         "counter": {
             "onlineCount": 0,
             "noteCount": null,

@@ -481,6 +481,192 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
 ```
 
 
+#### 1.9 设备号免密登录
+
+##### 接口说明
+
+继承支付宝手机号认证快捷登录功能
+
+##### 请求说明
+
+| http 请求方式          |post             |
+|:------------- |:---------------:|
+| url      |/user/device/login |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| deviceId      | 是| string  |  设备号 |   |
+| deviceType      | 否| string  |  设备类型 |    5 广告屏 |
+| os      | 否| string  |  操作系统及版本 |  |
+
+#####  错误说明
+
+先整理可能的错误类型，具体对应的错误码实施时再确定：
+
+1. 非法验证码
+
+
+
+#####  返回实例
+```json
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "uid": 11443, //用户ID
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOlsiMTE0NDMiLCJBMTUyMDEwMDg5NjEiXSwiZXhwIjoxNTk5MDk4ODIzfQ.ng6CyFi4MTu-HtDRzffWpetApPrzM5z-JKv3a0t8v0g", //登录token
+        "accessExpiresIn": 1599098823065, //失效时间
+        "refreshToken": "fMYerhGCyudmIhLUW", //刷新token
+        "refreshExpiresIn": 1604369223065, //刷新token 失效时间
+        "user": { //用户信息
+            "uid": 11443,  //用户ID
+            "avatar": "/c/d/e", //用户头像
+            "name": "赵六", //用户昵称
+            "gender": 1, // 性别  1 男
+            "birthday": 153000000, //生日
+            "status": 0, //状态
+            "mobile": "15201008961", //手机号
+            "createTime": 1590149492786, //创建时间
+            "updateTime": 1590149538735 //更新时间
+        },  //im token
+        "imToken": "eJyrVgrxCdZLrSjILEpVsjI0sjQzMDDQAQuWpRYpWSkZ6RkoQfjFKdmJBQWZKUBlJgYGxpamFpYWEJnMlNS8ksy0TLAGQ0MTE2OYlsx0oIi5Z7a3ZW5ZZWJBZFaZe65pSHClYaKjX2mpmUdOYkSVqU+QRURmUmWEc2SyLVRjSWYuyDmmlibGJpZGpka1AOQJMOU="
+        "bind":{  //绑定信息，未绑定则为空
+            "bindUid":123, //绑定用户ID
+            "avatar":"/a", //头像
+            "roomId":"1233",// 房间号
+            "name":"房间名",// 房间号
+            "images":["/xxx"] //房间图像
+        }
+    }
+}
+```
+
+
+
+#### 2.0 根据手机号查询绑定信息
+
+##### 接口说明
+
+根据手机号查询绑定信息
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/user/device/mobile_query |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| mobile      | 是| string  |  手机号 |   |
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "user": {
+            "uid": 12211,
+            "avatar": "FqobfidNNFd8D9kTNMD3AIHhEZY4.jpg",
+            "name": null,
+            "gender": null,
+            "birthday": null,
+            "status": 0,
+            "mobile": "12112131091",
+            "createTime": 1597816931995,
+            "updateTime": 1597816949338,
+            "avatarStatus": 1,
+            "userRole": null,
+            "admin": false
+        },
+        "room": {
+            "id": "B0GR3CK5FZ",
+            "parent": [],
+            "name": "万鑫小馆",
+            "type": "餐饮服务;快餐厅;快餐厅",
+            "distance": null,
+            "typeCode": "050300",
+            "bizType": null,
+            "longitude": 116.481957,
+            "latitude": 39.996011,
+            "pcode": "110000",
+            "pname": null,
+            "citycode": "010",
+            "cityname": null,
+            "adcode": "110105",
+            "businessArea": "望京",
+            "images": [
+                "http://resources.kinstalk.com/gfetifkkhop3zbdfhmo9.jpg"
+            ],
+            "addTime": 1597816966532,
+            "updateTime": null,
+            "userCount": 5,
+            "adname": null,
+            "delete": false,
+            "roomType": 0,
+            "groupCreated": true
+        }
+    }
+}
+
+```
+
+
+
+#### 2.0 根据手机号绑定信息 
+
+##### 接口说明
+
+根据手机号查询绑定信息
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/user/device/mobile_bind |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| mobile      | 是| string  |  手机号 |   |
+
+#####  错误说明
+
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "bindUid": 12211, 
+        "avatar": "FqobfidNNFd8D9kTNMD3AIHhEZY4.jpg",
+        "roomId": "B0GR3CK5FZ",
+        "name": "万鑫小馆",
+        "images": [
+            "http://resources.kinstalk.com/gfetifkkhop3zbdfhmo9.jpg"
+        ]
+    }
+}
+```
+
+
 
 
 
