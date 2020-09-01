@@ -177,9 +177,14 @@
 <li><a href="#_16">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#7">7)  弹幕消息</a><ul>
+<li><a href="#6">6)  弹幕消息</a><ul>
 <li><a href="#_17">接口说明</a></li>
 <li><a href="#_18">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#7">7)  留言通知</a><ul>
+<li><a href="#_19">接口说明</a></li>
+<li><a href="#_20">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -462,7 +467,7 @@
 
 </code></pre>
 
-<h3 id="7">7)  弹幕消息</h3>
+<h3 id="6">6)  弹幕消息</h3>
 <h4 id="_17">接口说明</h4>
 <table>
 <thead>
@@ -492,6 +497,57 @@
                  &quot;msg&quot;:{                    //文本消息
                      &quot;content&quot;: &quot; xxx&quot;, // 内容
                      &quot;userRole&quot;:0, //用户角色  0:普通 1:boss 2:员工
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="7">7)  留言通知</h3>
+<h4 id="_19">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_20">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 7,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;action&quot;: &quot; ADD&quot;, // 行为  ADD  UPDATE DELETE
+                     &quot;id&quot;:1, //留言Id
+                     &quot;roomId&quot;:&quot;xxxxx&quot;, //房间ID
+                     &quot;commentCount&quot;:&quot;123&quot;, //评论计数
+                     &quot;note&quot;:{
+                        &quot;avatar&quot;: &quot;/x/y/z&quot;,   //留言数据
+                        &quot;uid&quot;: 11443,
+                        &quot;id&quot;: 2,
+                        &quot;roomId&quot;: &quot;B0FFLIND01&quot;, //空间ID
+                        &quot;note&quot;: &quot;test&quot;,
+                        &quot;color&quot;: &quot;#fffff&quot;,  //颜色
+                        &quot;addTime&quot;: 1594198044901,
+                        &quot;commentsCount&quot;: 10,
+                        &quot;noteType&quot;: 1, // 0 文本 1 图片
+                        &quot;imageUrl&quot;: &quot;/xxxx&quot;   
+                    }
+
                   }
         }
 
