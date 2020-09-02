@@ -187,6 +187,11 @@
 <li><a href="#_20">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#8">8)  房间用户变更通知</a><ul>
+<li><a href="#_21">接口说明</a></li>
+<li><a href="#_22">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -548,6 +553,46 @@
                         &quot;imageUrl&quot;: &quot;/xxxx&quot;   
                     }
 
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="8">8)  房间用户变更通知</h3>
+<h4 id="_21">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_22">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 8,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;action&quot;: &quot;QUIT&quot;, // 行为  QUIT JOIN
+                     &quot;roomId&quot;:1, //留言Id
+                     &quot;uid&quot;:&quot;123&quot;, //房间ID
+                     &quot;avatar&quot;:&quot;/xxxx&quot;, //评论计数
+                     &quot;userRole&quot;:1,
+                     &quot;userCount&quot;:1
                   }
         }
 
