@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>举报 - 回眸</title>
+        <title>群组 - 回眸</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -70,7 +70,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">举报</a>
+    <a href="../report/" class="dropdown-item">举报</a>
 </li>
                                     
 <li>
@@ -78,7 +78,7 @@
 </li>
                                     
 <li>
-    <a href="../group/" class="dropdown-item">群组</a>
+    <a href="./" class="dropdown-item active">群组</a>
 </li>
                                 </ul>
                             </li>
@@ -91,12 +91,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../im/" class="nav-link">
+                                <a rel="prev" href="../cover/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../cover/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -118,7 +118,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">举报接口文档</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">首页接口文档</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
               <ul class="nav flex-column">
@@ -147,16 +147,16 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">举报接口文档</h1>
+<h1 id="_1">首页接口文档</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">举报接口文档</a><ul>
+<li><a href="#_1">首页接口文档</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
 <li><a href="#_5">关键流程说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 举报</a><ul>
+<li><a href="#10">1.0 拉取群组列表</a><ul>
 <li><a href="#_7">接口说明</a></li>
 <li><a href="#_8">请求说明</a></li>
 <li><a href="#_9">输入参数</a></li>
@@ -164,7 +164,7 @@
 <li><a href="#_11">返回实例</a></li>
 </ul>
 </li>
-<li><a href="#11">1.1 意见反馈</a><ul>
+<li><a href="#11">1.1 提交群组信息</a><ul>
 <li><a href="#_12">接口说明</a></li>
 <li><a href="#_13">请求说明</a></li>
 <li><a href="#_14">输入参数</a></li>
@@ -204,24 +204,25 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
+<p>获取就近空间数据</p>
 <h2 id="_4">产品说明</h2>
 <h2 id="_5">关键流程说明</h2>
 <h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 举报</h4>
+<h4 id="10">1.0 拉取群组列表</h4>
 <h5 id="_7">接口说明</h5>
-<p>添加留言信息</p>
+<p>获取就近空间数据</p>
 <h5 id="_8">请求说明</h5>
 <table>
 <thead>
 <tr>
 <th align="left">http 请求方式</th>
-<th align="center">post</th>
+<th align="center">get</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/report/add</td>
+<td align="center">/group/list</td>
 </tr>
 </tbody>
 </table>
@@ -238,46 +239,25 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">reportType</td>
+<td align="left">roomId</td>
 <td align="center">是</td>
 <td align="left">string</td>
-<td align="left">举报类型</td>
-<td align="left"></td>
+<td align="left">经度</td>
+<td align="left">房间ID</td>
 </tr>
 <tr>
-<td align="left">content</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">举报内容</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">picUrls</td>
-<td align="center">否</td>
-<td align="left">string[]</td>
-<td align="left">图片</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">toUid</td>
+<td align="left">limit</td>
 <td align="center">否</td>
 <td align="left">int</td>
-<td align="left">被举报人</td>
+<td align="left">单页条数</td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">extType</td>
-<td align="center">否</td>
-<td align="left">byte</td>
-<td align="left">扩展参数类型</td>
-<td align="left">1 封面</td>
-</tr>
-<tr>
-<td align="left">extId</td>
+<td align="left">page</td>
 <td align="center">否</td>
 <td align="left">int</td>
-<td align="left">扩展参数ID</td>
-<td align="left">extType  根据类型决定实际ID意义</td>
+<td align="left">当前页</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -288,15 +268,35 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,//总数
+        &quot;currentPage&quot;: 1 ,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 2, //空间ID
+                &quot;uid&quot;: 11632, //用户ID
+                &quot;addTime&quot;: 1600094228691,//添加时间
+                &quot;name&quot;: &quot;xxx&quot;, //名称 
+                &quot;auditStatus&quot;: 1,//审核状态 1 审核通过  -1 驳回  0 待审核
+                &quot;coverUrl&quot;: &quot;/a&quot;, //封面地址
+                &quot;auditTime&quot;: null, //审核时间
+                &quot;userCount&quot;: 0 //用户数
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;name&quot;: &quot;解放北&quot;,//名称
+        &quot;roomId&quot;: &quot;113.262183,23.142072&quot;, //空间
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
     }
 }
 
 </code></pre>
 
-<h4 id="11">1.1 意见反馈</h4>
+<h4 id="11">1.1 提交群组信息</h4>
 <h5 id="_12">接口说明</h5>
-<p>意见反馈</p>
+<p>获取就近空间数据</p>
 <h5 id="_13">请求说明</h5>
 <table>
 <thead>
@@ -308,7 +308,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/feedback/submit</td>
+<td align="center">/group/add</td>
 </tr>
 </tbody>
 </table>
@@ -325,31 +325,24 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">feedType</td>
+<td align="left">parentId</td>
 <td align="center">是</td>
 <td align="left">string</td>
-<td align="left">举报类型</td>
-<td align="left"></td>
+<td align="left">父房间ID</td>
+<td align="left">房间ID</td>
 </tr>
 <tr>
-<td align="left">content</td>
+<td align="left">name</td>
 <td align="center">是</td>
 <td align="left">string</td>
-<td align="left">举报内容</td>
+<td align="left">群组名称</td>
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">picUrls</td>
-<td align="center">否</td>
-<td align="left">string[]</td>
-<td align="left">图片</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">toUid</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">被举报人</td>
+<td align="left">coverUrl</td>
+<td align="center">是</td>
+<td align="left">stirng</td>
+<td align="left">封面地址</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -361,7 +354,27 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,//总数
+        &quot;currentPage&quot;: 1 ,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 2, //空间ID
+                &quot;uid&quot;: 11632, //用户ID
+                &quot;addTime&quot;: 1600094228691,//添加时间
+                &quot;name&quot;: &quot;xxx&quot;, //名称 
+                &quot;auditStatus&quot;: 1,//审核状态 1 审核通过  -1 驳回  0 待审核
+                &quot;coverUrl&quot;: &quot;/a&quot;, //封面地址
+                &quot;auditTime&quot;: null, //审核时间
+                &quot;userCount&quot;: 0 //用户数
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;name&quot;: &quot;解放北&quot;,//名称
+        &quot;roomId&quot;: &quot;113.262183,23.142072&quot;, //空间
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
     }
 }
 
