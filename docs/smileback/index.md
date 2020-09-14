@@ -72,6 +72,8 @@
                 "distance": "15", //距离 米
                 "userCount": 0 //用户数
                 "roomType":1, // 0 普通 1 城市空间 2 商圈
+                "hasGroup":false, //是否有小组
+                "groupCount":0, //小组计数
                 "ext": {  //附加信息
                     "id": "01020200810001", //id
                     "parentId": "010", //父节点
