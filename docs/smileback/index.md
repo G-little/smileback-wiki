@@ -322,6 +322,7 @@ __在线类型(1)__
                     "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erjrlX6c0rOZPcmMiax9g9mLHPUdvpBDbjpIZp9icRxoDtAzsYqjfJu3QwgGgibpdC0icxg4Mur3cmWAw/132",
                     "uid": 11445,
                     "likeStatus": null
+                    "hint":false, //是否有暗号
                 },
                 {
                     "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83errQTDLFchBwAtga1R9kSRvIicUqjtIcczJNSEdSKrt7quEpITyxNo2Yrxaf8CyfFdtVTNI7OtxRag/132",
@@ -408,7 +409,8 @@ __签到类型(3)__
                     "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erjrlX6c0rOZPcmMiax9g9mLHPUdvpBDbjpIZp9icRxoDtAzsYqjfJu3QwgGgibpdC0icxg4Mur3cmWAw/132",
                     "uid": 11445,
                     "likeStatus": null,
-                    "times": 2  //打卡次数
+                    "times": 2,  //打卡次数
+                    "hint":false, //是否有暗号
                 },
                 {
                     "avatar": "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqDw87BjTffT03d4T5z9ynn6bia79vWUdDzXbvvCrhbL5oBAYIOTe6iaH790uto7CTkH71oDEpzuMjQ/132",
@@ -482,6 +484,7 @@ __签到类型(3)__
             "uid": 11443, //用户ID
             "likeStatus": 0  //喜欢状态
         },
+        "hint":false, //是否有暗号
         "notes": { //留言数据
             "pageSize": 500,
             "currentPage": 1,

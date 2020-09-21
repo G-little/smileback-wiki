@@ -41,6 +41,9 @@
 |:-------------|:---------------:|:-------------|:-------------|:-------------|
 | page      | 否| int  | 页码|   |
 | limit      | 否| int  | 单页条数|   |
+| longtitude      | 否| double  | 经度|   |
+| latitude      | 否| double  | 维度|   |
+| roomType      | 否| int  | 房间类型  4 小组|   |
 
 #####  错误说明
 
@@ -78,6 +81,7 @@
                         "http://store.is.autonavi.com/showpic/07de48c96a09c2f34b601036e848e6f9"
                     ],
                     "name": "鲜粮卷饼王",
+                    "groupName": "小组名",
                     "longitude": 116.473344,
                     "latitude": 39.992997,
                     "times": 1
