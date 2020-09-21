@@ -292,6 +292,7 @@
 			         "roomId":"xxxxx", //房间ID
 			         "commentCount":"123", //评论计数
 			         "note":{
+			                "interactType": 1 ,//1:点赞，默认:评论 
                         "avatar": "/x/y/z",   //留言数据
                         "uid": 11443,
                         "id": 2,
