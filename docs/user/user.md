@@ -696,10 +696,14 @@ _将accessToken作为请求头 Authorization: 'token'  发送请求即可获取�
     "c": 0,
     "m": null,
     "d": {
-        "cfg1": true, 
-        "cfg2": true
+        "uid": 11632,
+        "cfg1": true,
+        "cfg2": true,
+        "createTime": null,
+        "updateTime": null
     }
 }
+
 ```
 
 
