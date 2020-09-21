@@ -365,6 +365,7 @@ __留言类型(2)__
                     "addTime": 1594196130758, //添加时间
                     "commentsCount": 0, //计数
                     "auditStatus":0, //0 待审核 1 审核通过 -1 驳回
+                    "thumbCount": 222, //点赞数
                     "tags": [ //标签
                         {
                             "content": "test",
