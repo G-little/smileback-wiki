@@ -176,6 +176,14 @@
 <li><a href="#_15">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#12">1.2 审核详情</a><ul>
+<li><a href="#_16">接口说明</a></li>
+<li><a href="#_17">请求说明</a></li>
+<li><a href="#_18">输入参数</a></li>
+<li><a href="#_19">错误说明</a></li>
+<li><a href="#_20">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -305,7 +313,7 @@
 <tbody>
 <tr>
 <td align="left">url</td>
-<td align="center">/boss/room/list</td>
+<td align="center">/boss/cert/list</td>
 </tr>
 </tbody>
 </table>
@@ -356,6 +364,62 @@
         ],
         &quot;end&quot;: true,
         &quot;empty&quot;: false
+    }
+}
+
+</code></pre>
+
+<h4 id="12">1.2 审核详情</h4>
+<h5 id="_16">接口说明</h5>
+<p>我的店铺详情信息</p>
+<h5 id="_17">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/boss/cert/detail</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_18">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">id</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_19">错误说明</h5>
+<h5 id="_20">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;:1, //id
+        &quot;businessLicense&quot;:&quot;/a&quot;,//营业执照
+        &quot;idcardFrontUrl&quot;:&quot;/a&quot;,//身份证正面
+        &quot;idcardBgUrl&quot;:&quot;/a&quot;,//身份证反面
+        &quot;idcardHandUrl&quot;:&quot;/a&quot;,//手持身份证
     }
 }
 
