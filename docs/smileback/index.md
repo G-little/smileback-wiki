@@ -314,6 +314,8 @@ __在线类型(1)__
             "noteCount": null, //留言数
             "signinCount": 0 // 签到数
         },
+        "bossStatus":-1 , //-1 无  0 待领取 1 已有Boss
+        "bossUid":123,// boss ID
         "users": {
             "pageSize": 10,
             "currentPage": 1,
@@ -352,6 +354,8 @@ __留言类型(2)__
             "noteCount": null,
             "signinCount": 0
         },
+        "bossStatus":-1 , //-1 无  0 待领取 1 已有Boss
+        "bossUid":123,// boss ID
         "notes": {
             "pageSize": 500,
             "currentPage": 1,
@@ -401,6 +405,8 @@ __签到类型(3)__
             "noteCount": null,
             "signinCount": 0
         },
+        "bossStatus":-1 , //-1 无  0 待领取 1 已有Boss
+        "bossUid":123,// boss ID
         "users": {
             "pageSize": 10,
             "currentPage": 1,
