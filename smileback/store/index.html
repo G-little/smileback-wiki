@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>小商店 - 回眸</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">回眸</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../user/user/" class="dropdown-item">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">回眸 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">首页</a>
+</li>
+                                    
+<li>
+    <a href="../note/" class="dropdown-item">留言</a>
+</li>
+                                    
+<li>
+    <a href="../like/" class="dropdown-item">喜欢</a>
+</li>
+                                    
+<li>
+    <a href="../my/" class="dropdown-item">我的</a>
+</li>
+                                    
+<li>
+    <a href="../im/" class="dropdown-item">消息</a>
+</li>
+                                    
+<li>
+    <a href="../report/" class="dropdown-item">举报</a>
+</li>
+                                    
+<li>
+    <a href="../cover/" class="dropdown-item">封面</a>
+</li>
+                                    
+<li>
+    <a href="../group/" class="dropdown-item">群组</a>
+</li>
+                                    
+<li>
+    <a href="../boss/" class="dropdown-item">Boss</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">小商店</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../boss/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">小店相关接口文档</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键流程说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_7" class="nav-link">通用接口</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">小店相关接口文档</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">小店相关接口文档</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_6">接口说明</a></li>
+<li><a href="#_7">通用接口</a><ul>
+<li><a href="#_8">店主端</a><ul>
+<li><a href="#_9">特殊说明</a></li>
+<li><a href="#10">1.0 小店列表（无需权限校验）</a><ul>
+<li><a href="#_10">接口说明</a></li>
+<li><a href="#_11">请求说明</a></li>
+<li><a href="#_12">输入参数</a></li>
+<li><a href="#_13">错误说明</a></li>
+<li><a href="#_14">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#11">1.1 商品</a></li>
+<li><a href="#111">1.1.1 商品管理列表接口</a><ul>
+<li><a href="#_15">接口说明</a></li>
+<li><a href="#_16">请求说明</a></li>
+<li><a href="#header">Header 头</a></li>
+<li><a href="#_17">输入参数</a></li>
+<li><a href="#_18">错误说明</a></li>
+<li><a href="#_19">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#112">1.1.2 添加商品</a><ul>
+<li><a href="#_20">接口说明</a></li>
+<li><a href="#_21">请求说明</a></li>
+<li><a href="#header_1">Header 头</a></li>
+<li><a href="#post-json">输入参数(post json)</a></li>
+<li><a href="#_22">错误说明</a></li>
+<li><a href="#_23">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#113">1.1.3 修改商品信息</a><ul>
+<li><a href="#_24">接口说明</a></li>
+<li><a href="#_25">请求说明</a></li>
+<li><a href="#header_2">Header 头</a></li>
+<li><a href="#post-json_1">输入参数(post json)</a></li>
+<li><a href="#_26">错误说明</a></li>
+<li><a href="#_27">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#114">1.1.4 获取类别信息</a><ul>
+<li><a href="#_28">接口说明</a></li>
+<li><a href="#_29">请求说明</a></li>
+<li><a href="#_30">输入参数</a></li>
+<li><a href="#_31">错误说明</a></li>
+<li><a href="#_32">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#115">1.1.5 根据类别获取规格信息</a><ul>
+<li><a href="#_33">接口说明</a></li>
+<li><a href="#_34">请求说明</a></li>
+<li><a href="#_35">输入参数</a></li>
+<li><a href="#_36">错误说明</a></li>
+<li><a href="#_37">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#116">1.1.6 商品详情</a><ul>
+<li><a href="#_38">接口说明</a></li>
+<li><a href="#_39">请求说明</a></li>
+<li><a href="#header_3">Header 头</a></li>
+<li><a href="#_40">输入参数</a></li>
+<li><a href="#_41">错误说明</a></li>
+<li><a href="#_42">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#117">1.1.7 删除商品</a><ul>
+<li><a href="#_43">接口说明</a></li>
+<li><a href="#_44">请求说明</a></li>
+<li><a href="#header_4">Header 头</a></li>
+<li><a href="#_45">输入参数</a></li>
+<li><a href="#_46">错误说明</a></li>
+<li><a href="#_47">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#118">1.1.8 商品下架</a><ul>
+<li><a href="#_48">接口说明</a></li>
+<li><a href="#_49">请求说明</a></li>
+<li><a href="#header_5">Header 头</a></li>
+<li><a href="#_50">输入参数</a></li>
+<li><a href="#_51">错误说明</a></li>
+<li><a href="#_52">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_53">用户端</a><ul>
+<li><a href="#11_1">1.1 商品</a></li>
+<li><a href="#111_1">1.1.1 小店商品列表接口</a><ul>
+<li><a href="#_54">接口说明</a></li>
+<li><a href="#_55">请求说明</a></li>
+<li><a href="#_56">输入参数</a></li>
+<li><a href="#_57">错误说明</a></li>
+<li><a href="#_58">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#112_1">1.1.2 商品详情</a><ul>
+<li><a href="#_59">接口说明</a></li>
+<li><a href="#_60">请求说明</a></li>
+<li><a href="#_61">输入参数</a></li>
+<li><a href="#_62">错误说明</a></li>
+<li><a href="#_63">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_2">修订记录</h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>作者</th>
+<th>修订类型</th>
+<th>修订内容</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020年07月03日</td>
+<td>冷立纲</td>
+<td>A</td>
+<td>新增设计方案</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>【修订类型：A-新增  M-修改 D-删除】</p>
+</blockquote>
+<h2 id="_3">背景</h2>
+<h2 id="_4">产品说明</h2>
+<h2 id="_5">关键流程说明</h2>
+<h2 id="_6">接口说明</h2>
+<h2 id="_7">通用接口</h2>
+<h3 id="_8">店主端</h3>
+<hr />
+<h4 id="_9">特殊说明</h4>
+<ol>
+<li>店主端接口均有店主权限校验，需统一设置storeId header 来校验店主对商店的操作权限</li>
+<li>boss 产品管理接口统一前缀  /mall/admin</li>
+</ol>
+<h4 id="10">1.0 小店列表（无需权限校验）</h4>
+<h5 id="_10">接口说明</h5>
+<p>用户/店员 小店列表 ，需根据不同的角色(店员/店主)展示不同的按钮</p>
+<h5 id="_11">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/store/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_12">输入参数</h5>
+<p>无</p>
+<h5 id="_13">错误说明</h5>
+<h5 id="_14">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: [
+        {
+            &quot;id&quot;: 1, //商店ID
+            &quot;inviteCode&quot;: &quot;http://smileback.xiaogang.org.cn/invite/116.470293,39.996171_84/11632&quot;,  //邀请码
+            &quot;userRole&quot;: 1, // 用户角色
+            &quot;name&quot;: &quot;大头娃&quot;, // 商店名称
+            &quot;images&quot;: [ //商店图片
+                &quot;FkbNac6aQOaEVZU6Fam45uand5fv.png&quot;
+            ],
+            &quot;roomId&quot;: null //商店ID
+        }
+    ]
+}
+</code></pre>
+
+<h4 id="11">1.1 商品</h4>
+<h4 id="111">1.1.1 商品管理列表接口</h4>
+<h5 id="_15">接口说明</h5>
+<p>店主端商品管理主页</p>
+<h5 id="_16">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/admin/goods/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="header">Header 头</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">storeId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商店ID</td>
+<td align="left">用于店主权限校验</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_17">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">showType</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">显示类型</td>
+<td align="left">1在售  0 待上架  -1 已下架</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">当前页</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_18">错误说明</h5>
+<h5 id="_19">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 10000000,
+                &quot;storeId&quot;: 1,
+                &quot;goodsSn&quot;: &quot;&quot;,
+                &quot;detail&quot;: null, 图片
+                &quot;name&quot;: &quot;测试&quot;,
+                &quot;retailPrice&quot;: 3.00,  //价格 
+                &quot;isOnSale&quot;: true, //在售状态
+                &quot;number&quot;: null, //库存
+                &quot;auditStatus&quot;: 0, //审核状态
+                &quot;saleCount&quot;: null //销售量
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;summary&quot;: {  //计数信息，只有第一页返回
+            &quot;onsaleTotal&quot;: 0,
+            &quot;tosaleTotal&quot;: 1,
+            &quot;downsaleTotal&quot;: 0
+        },
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
+</code></pre>
+
+<h4 id="112">1.1.2 添加商品</h4>
+<h5 id="_20">接口说明</h5>
+<p>添加商品</p>
+<h5 id="_21">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/admin/goods/add</td>
+</tr>
+</tbody>
+</table>
+<h5 id="header_1">Header 头</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">storeId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商店ID</td>
+<td align="left">用于店主权限校验</td>
+</tr>
+</tbody>
+</table>
+<h5 id="post-json">输入参数(post json)</h5>
+<pre><code class="json">{
+    &quot;goods&quot;:{
+        &quot;name&quot;:&quot;测试&quot;,
+        &quot;categoryId&quot;:3,
+        &quot;retailPrice&quot;:100.00
+    },
+    &quot;specifications&quot;:[{
+        &quot;specificationId&quot;:1,
+        &quot;specificationName&quot;:&quot;规格&quot;,
+        &quot;value&quot;:&quot;标准&quot;
+    }],
+    &quot;products&quot;:[{
+        &quot;price&quot;:3.0,
+        &quot;number&quot;:50,
+        &quot;specifications&quot;:[{
+            &quot;id&quot;:1,
+            &quot;value&quot;:&quot;33&quot;
+        }]
+    }]
+
+}
+
+</code></pre>
+
+<p><em><strong>goods参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">name</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">商品名称</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">categoryId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品类别</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">freightPrice</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">邮费</td>
+<td align="left">0 包邮 否则填具体运费</td>
+</tr>
+<tr>
+<td align="left">detail</td>
+<td align="center">是</td>
+<td align="left">image 数组</td>
+<td align="left">图片</td>
+<td align="left">至少一张，格式参见 image 说明</td>
+</tr>
+<tr>
+<td align="left">videos</td>
+<td align="center">否</td>
+<td align="left">Video 数组</td>
+<td align="left">视频</td>
+<td align="left">格式参见 Video 说明</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>image参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">图片地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">图片尺寸</td>
+<td align="left">例如 1024*768</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>Video参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">视频地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">cover</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">封面地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">视频尺寸</td>
+<td align="left">例如 1024*768</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>specifications参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">specificationId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">规格ID</td>
+<td align="left">透过类别规格获取</td>
+</tr>
+<tr>
+<td align="left">specificationName</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">规格名称</td>
+<td align="left">透过类别规格获取</td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">规格值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>products参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">specifications</td>
+<td align="center">是</td>
+<td align="left">Specification 数组</td>
+<td align="left"></td>
+<td align="left">参见Specification  格式说明</td>
+</tr>
+<tr>
+<td align="left">price</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">价格</td>
+<td align="left">价格</td>
+</tr>
+<tr>
+<td align="left">number</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">库存数量</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">url</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">商品url</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>Specification参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">规格ID</td>
+<td align="left">根据规格类别取得</td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">规格值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_22">错误说明</h5>
+<h5 id="_23">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="113">1.1.3 修改商品信息</h4>
+<h5 id="_24">接口说明</h5>
+<p>添加商品</p>
+<h5 id="_25">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/admin/goods/add</td>
+</tr>
+</tbody>
+</table>
+<h5 id="header_2">Header 头</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">storeId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商店ID</td>
+<td align="left">用于店主权限校验</td>
+</tr>
+</tbody>
+</table>
+<h5 id="post-json_1">输入参数(post json)</h5>
+<pre><code class="json">{
+    &quot;goods&quot;:{
+        &quot;name&quot;:&quot;测试&quot;,
+        &quot;categoryId&quot;:3,
+        &quot;retailPrice&quot;:100.00
+    },
+    &quot;specifications&quot;:[{
+        &quot;specificationId&quot;:1,
+        &quot;specificationName&quot;:&quot;规格&quot;,
+        &quot;value&quot;:&quot;标准&quot;
+    }],
+    &quot;products&quot;:[{
+        &quot;price&quot;:3.0,
+        &quot;number&quot;:50,
+        &quot;specifications&quot;:[{
+            &quot;id&quot;:1,
+            &quot;value&quot;:&quot;33&quot;
+        }]
+    }]
+
+}
+
+</code></pre>
+
+<p><em><strong>goods参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">商品名称</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">categoryId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品类别</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">freightPrice</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">邮费</td>
+<td align="left">0 包邮 否则填具体运费</td>
+</tr>
+<tr>
+<td align="left">detail</td>
+<td align="center">是</td>
+<td align="left">image 数组</td>
+<td align="left">图片</td>
+<td align="left">至少一张，格式参见 image 说明</td>
+</tr>
+<tr>
+<td align="left">videos</td>
+<td align="center">否</td>
+<td align="left">Video 数组</td>
+<td align="left">视频</td>
+<td align="left">格式参见 Video 说明</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>image参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">图片地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">图片尺寸</td>
+<td align="left">例如 1024*768</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>Video参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">视频地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">cover</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">封面地址</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">视频尺寸</td>
+<td align="left">例如 1024*768</td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>specifications参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">规格ID</td>
+<td align="left">id 不为空则是更新</td>
+</tr>
+<tr>
+<td align="left">specificationId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">规格ID</td>
+<td align="left">透过类别规格获取</td>
+</tr>
+<tr>
+<td align="left">specificationName</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">规格名称</td>
+<td align="left">透过类别规格获取</td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">规格值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>products参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">规格商品ID</td>
+<td align="left">id 不为空则是更新</td>
+</tr>
+<tr>
+<td align="left">specifications</td>
+<td align="center">是</td>
+<td align="left">Specification 数组</td>
+<td align="left"></td>
+<td align="left">参见Specification  格式说明</td>
+</tr>
+<tr>
+<td align="left">price</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">价格</td>
+<td align="left">价格</td>
+</tr>
+<tr>
+<td align="left">number</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">库存数量</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">url</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">商品url</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>Specification参数说明</strong></em></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">规格ID</td>
+<td align="left">根据规格类别取得</td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">规格值</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_26">错误说明</h5>
+<h5 id="_27">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="114">1.1.4 获取类别信息</h4>
+<h5 id="_28">接口说明</h5>
+<p>类别信息获取</p>
+<h5 id="_29">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/catalog/all</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_30">输入参数</h5>
+<p>无</p>
+<h5 id="_31">错误说明</h5>
+<h5 id="_32">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;categoryList&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;水果&quot;,
+                &quot;keywords&quot;: &quot;水果&quot;,
+                &quot;desc&quot;: &quot;&quot;,
+                &quot;pid&quot;: 0,
+                &quot;iconUrl&quot;: &quot;&quot;,
+                &quot;picUrl&quot;: &quot;&quot;,
+                &quot;level&quot;: &quot;L1&quot;,
+                &quot;sortOrder&quot;: 50,
+                &quot;addTime&quot;: null,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;蔬菜&quot;,
+                &quot;keywords&quot;: &quot;蔬菜&quot;,
+                &quot;desc&quot;: &quot;&quot;,
+                &quot;pid&quot;: 0,
+                &quot;iconUrl&quot;: &quot;&quot;,
+                &quot;picUrl&quot;: &quot;&quot;,
+                &quot;level&quot;: &quot;L1&quot;,
+                &quot;sortOrder&quot;: 50,
+                &quot;addTime&quot;: null,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;currentCategory&quot;: {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;水果&quot;,
+            &quot;keywords&quot;: &quot;水果&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;pid&quot;: 0,
+            &quot;iconUrl&quot;: &quot;&quot;,
+            &quot;picUrl&quot;: &quot;&quot;,
+            &quot;level&quot;: &quot;L1&quot;,
+            &quot;sortOrder&quot;: 50,
+            &quot;addTime&quot;: null,
+            &quot;updateTime&quot;: null,
+            &quot;deleted&quot;: false
+        },
+        &quot;currentSubCategory&quot;: [
+            {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;苹果&quot;,
+                &quot;keywords&quot;: &quot;苹果&quot;,
+                &quot;desc&quot;: &quot;&quot;,
+                &quot;pid&quot;: 1,
+                &quot;iconUrl&quot;: &quot;&quot;,
+                &quot;picUrl&quot;: &quot;&quot;,
+                &quot;level&quot;: &quot;L2&quot;,
+                &quot;sortOrder&quot;: 50,
+                &quot;addTime&quot;: null,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;allList&quot;: {
+            &quot;1&quot;: [
+                {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;苹果&quot;,
+                    &quot;keywords&quot;: &quot;苹果&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;pid&quot;: 1,
+                    &quot;iconUrl&quot;: &quot;&quot;,
+                    &quot;picUrl&quot;: &quot;&quot;,
+                    &quot;level&quot;: &quot;L2&quot;,
+                    &quot;sortOrder&quot;: 50,
+                    &quot;addTime&quot;: null,
+                    &quot;updateTime&quot;: null,
+                    &quot;deleted&quot;: false
+                }
+            ],
+            &quot;2&quot;: []
+        }
+    }
+}
+
+</code></pre>
+
+<h4 id="115">1.1.5 根据类别获取规格信息</h4>
+<h5 id="_33">接口说明</h5>
+<p>规格信息获取</p>
+<h5 id="_34">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/catalog/specification</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_35">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">类别ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_36">错误说明</h5>
+<h5 id="_37">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;catId&quot;: 0,
+            &quot;specificationName&quot;: &quot;规格&quot;,
+            &quot;addTime&quot;: null
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;catId&quot;: 3,
+            &quot;specificationName&quot;: &quot;颜色&quot;,
+            &quot;addTime&quot;: null
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;catId&quot;: 3,
+            &quot;specificationName&quot;: &quot;重量&quot;,
+            &quot;addTime&quot;: null
+        }
+    ]
+}
+
+</code></pre>
+
+<h4 id="116">1.1.6 商品详情</h4>
+<h5 id="_38">接口说明</h5>
+<p>店主端商品管理主页</p>
+<h5 id="_39">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/admin/goods/detail</td>
+</tr>
+</tbody>
+</table>
+<h5 id="header_3">Header 头</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">storeId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商店ID</td>
+<td align="left">用于店主权限校验</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_40">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_41">错误说明</h5>
+<h5 id="_42">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;catName&quot;: null,
+        &quot;goods&quot;: { //商品信息
+            &quot;id&quot;: 10000000,
+            &quot;storeId&quot;: 1,
+            &quot;goodsSn&quot;: &quot;&quot;,
+            &quot;name&quot;: &quot;测试&quot;,
+            &quot;categoryId&quot;: 3,
+            &quot;brandId&quot;: 0,
+            &quot;gallery&quot;: null,
+            &quot;keywords&quot;: &quot;&quot;,
+            &quot;brief&quot;: &quot;&quot;,
+            &quot;isOnSale&quot;: true,
+            &quot;sortOrder&quot;: 100,
+            &quot;picUrl&quot;: null,
+            &quot;shareUrl&quot;: null,
+            &quot;isNew&quot;: false,
+            &quot;isHot&quot;: false,
+            &quot;unit&quot;: &quot;’件‘&quot;,
+            &quot;counterPrice&quot;: 0.00,
+            &quot;retailPrice&quot;: 3.00, //售价
+            &quot;vipPrice&quot;: 100000.00,
+            &quot;addTime&quot;: &quot;2020-11-20 03:28:41&quot;,
+            &quot;updateTime&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;tags&quot;: null,
+            &quot;videos&quot;: null,
+            &quot;testReports&quot;: null,
+            &quot;goodsType&quot;: null,
+            &quot;auditStatus&quot;: 0,
+            &quot;freightPrice&quot;: 0.00, //运费
+            &quot;detail&quot;: null
+        },
+        &quot;specifications&quot;: [ //商品规格
+            {
+                &quot;id&quot;: 14,
+                &quot;storeId&quot;: 1,
+                &quot;goodsId&quot;: 10000000,
+                &quot;specificationId&quot;: 1,
+                &quot;specificationName&quot;: &quot;规格&quot;,
+                &quot;value&quot;: &quot;标准&quot;,
+                &quot;picUrl&quot;: &quot;&quot;,
+                &quot;addTime&quot;: &quot;2020-11-20 03:28:42&quot;,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;products&quot;: [ //规格商品信息
+            {
+                &quot;id&quot;: 13,
+                &quot;storeId&quot;: 1,
+                &quot;goodsId&quot;: 10000000,
+                &quot;specifications&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;value&quot;: &quot;标准&quot;
+                    }
+                ],
+                &quot;price&quot;: 3.00,
+                &quot;number&quot;: 50,
+                &quot;url&quot;: null,
+                &quot;addTime&quot;: &quot;2020-11-20 03:28:42&quot;,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false,
+                &quot;vipPrice&quot;: 0.00,
+                &quot;counterPrice&quot;: 0.00
+            }
+        ]
+    }
+}
+
+</code></pre>
+
+<h4 id="117">1.1.7 删除商品</h4>
+<h5 id="_43">接口说明</h5>
+<p>删除商品信息</p>
+<h5 id="_44">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/admin/goods/del</td>
+</tr>
+</tbody>
+</table>
+<h5 id="header_4">Header 头</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">storeId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商店ID</td>
+<td align="left">用于店主权限校验</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_45">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_46">错误说明</h5>
+<h5 id="_47">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="118">1.1.8 商品下架</h4>
+<h5 id="_48">接口说明</h5>
+<p>下架商品</p>
+<h5 id="_49">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/admin/goods/down</td>
+</tr>
+</tbody>
+</table>
+<h5 id="header_5">Header 头</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">storeId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商店ID</td>
+<td align="left">用于店主权限校验</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_51">错误说明</h5>
+<h5 id="_52">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h3 id="_53">用户端</h3>
+<hr />
+<h4 id="11_1">1.1 商品</h4>
+<h4 id="111_1">1.1.1 小店商品列表接口</h4>
+<h5 id="_54">接口说明</h5>
+<p>店主端商品管理主页</p>
+<h5 id="_55">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/goods/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_56">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">storeId</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">商店ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">roomId</td>
+<td align="center">否</td>
+<td align="left">string</td>
+<td align="left">空间ID</td>
+<td align="left">空间/商店ID（有一个必填）</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">当前页</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_57">错误说明</h5>
+<h5 id="_58">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 10000000,
+                &quot;storeId&quot;: 1,
+                &quot;detail&quot;: null,
+                &quot;name&quot;: &quot;测试&quot;,
+                &quot;retailPrice&quot;: 3.00
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;storeId&quot;: 1,
+        &quot;name&quot;: &quot;大头娃&quot;,
+        &quot;images&quot;: null,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
+</code></pre>
+
+<h4 id="112_1">1.1.2 商品详情</h4>
+<h5 id="_59">接口说明</h5>
+<p>店主端商品管理主页</p>
+<h5 id="_60">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/goods/detail</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_61">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">goodsId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_62">错误说明</h5>
+<h5 id="_63">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;catName&quot;: null,
+        &quot;goods&quot;: { //商品信息
+            &quot;id&quot;: 10000000,
+            &quot;storeId&quot;: 1,
+            &quot;goodsSn&quot;: &quot;&quot;,
+            &quot;name&quot;: &quot;测试&quot;,
+            &quot;categoryId&quot;: 3,
+            &quot;brandId&quot;: 0,
+            &quot;gallery&quot;: null,
+            &quot;keywords&quot;: &quot;&quot;,
+            &quot;brief&quot;: &quot;&quot;,
+            &quot;isOnSale&quot;: true,
+            &quot;sortOrder&quot;: 100,
+            &quot;picUrl&quot;: null,
+            &quot;shareUrl&quot;: null,
+            &quot;isNew&quot;: false,
+            &quot;isHot&quot;: false,
+            &quot;unit&quot;: &quot;’件‘&quot;,
+            &quot;counterPrice&quot;: 0.00,
+            &quot;retailPrice&quot;: 3.00, //售价
+            &quot;vipPrice&quot;: 100000.00,
+            &quot;addTime&quot;: &quot;2020-11-20 03:28:41&quot;,
+            &quot;updateTime&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;tags&quot;: null,
+            &quot;videos&quot;: null,
+            &quot;testReports&quot;: null,
+            &quot;goodsType&quot;: null,
+            &quot;auditStatus&quot;: 0,
+            &quot;freightPrice&quot;: 0.00, //运费
+            &quot;detail&quot;: null
+        },
+        &quot;specifications&quot;: [ //商品规格
+            {
+                &quot;id&quot;: 14,
+                &quot;storeId&quot;: 1,
+                &quot;goodsId&quot;: 10000000,
+                &quot;specificationId&quot;: 1,
+                &quot;specificationName&quot;: &quot;规格&quot;,
+                &quot;value&quot;: &quot;标准&quot;,
+                &quot;picUrl&quot;: &quot;&quot;,
+                &quot;addTime&quot;: &quot;2020-11-20 03:28:42&quot;,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;products&quot;: [ //规格商品信息
+            {
+                &quot;id&quot;: 13,
+                &quot;storeId&quot;: 1,
+                &quot;goodsId&quot;: 10000000,
+                &quot;specifications&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;value&quot;: &quot;标准&quot;
+                    }
+                ],
+                &quot;price&quot;: 3.00,
+                &quot;number&quot;: 50,
+                &quot;url&quot;: null,
+                &quot;addTime&quot;: &quot;2020-11-20 03:28:42&quot;,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false,
+                &quot;vipPrice&quot;: 0.00,
+                &quot;counterPrice&quot;: 0.00
+            }
+        ]
+    }
+}
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
