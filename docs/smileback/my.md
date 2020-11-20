@@ -57,6 +57,7 @@
     "c": 0,
     "m": null,
     "d": {
+        "hasStore":false, //是否有小店
         "userRoleList": [
             {
                 "id": "B0FFJIYRS9",
