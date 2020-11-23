@@ -70,6 +70,7 @@
             "inviteCode": "http://smileback.xiaogang.org.cn/invite/116.470293,39.996171_84/11632",  //邀请码
             "userRole": 1, // 用户角色
             "name": "大头娃", // 商店名称
+            "auditStatus":0,  // 0
             "images": [ //商店图片
                 "FkbNac6aQOaEVZU6Fam45uand5fv.png"
             ],
