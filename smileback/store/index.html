@@ -88,6 +88,10 @@
 <li>
     <a href="./" class="dropdown-item active">小商店</a>
 </li>
+                                    
+<li>
+    <a href="../address/" class="dropdown-item">地址</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -104,7 +108,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../address/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -268,6 +272,14 @@
 <li><a href="#_61">输入参数</a></li>
 <li><a href="#_62">错误说明</a></li>
 <li><a href="#_63">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#113_1">1.1.3 订单信息预览</a><ul>
+<li><a href="#_64">接口说明</a></li>
+<li><a href="#_65">请求说明</a></li>
+<li><a href="#_66">输入参数</a></li>
+<li><a href="#_67">错误说明</a></li>
+<li><a href="#_68">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -1688,6 +1700,132 @@
 </table>
 <h5 id="_62">错误说明</h5>
 <h5 id="_63">返回实例</h5>
+<pre><code class="json">
+
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;catName&quot;: null,
+        &quot;goods&quot;: { //商品信息
+            &quot;id&quot;: 10000000,
+            &quot;storeId&quot;: 1,
+            &quot;goodsSn&quot;: &quot;&quot;,
+            &quot;name&quot;: &quot;测试&quot;,
+            &quot;categoryId&quot;: 3,
+            &quot;brandId&quot;: 0,
+            &quot;gallery&quot;: null,
+            &quot;keywords&quot;: &quot;&quot;,
+            &quot;brief&quot;: &quot;&quot;,
+            &quot;isOnSale&quot;: true,
+            &quot;sortOrder&quot;: 100,
+            &quot;picUrl&quot;: null,
+            &quot;shareUrl&quot;: null,
+            &quot;isNew&quot;: false,
+            &quot;isHot&quot;: false,
+            &quot;unit&quot;: &quot;’件‘&quot;,
+            &quot;counterPrice&quot;: 0.00,
+            &quot;retailPrice&quot;: 3.00, //售价
+            &quot;vipPrice&quot;: 100000.00,
+            &quot;addTime&quot;: &quot;2020-11-20 03:28:41&quot;,
+            &quot;updateTime&quot;: null,
+            &quot;deleted&quot;: false,
+            &quot;tags&quot;: null,
+            &quot;videos&quot;: null,
+            &quot;testReports&quot;: null,
+            &quot;goodsType&quot;: null,
+            &quot;auditStatus&quot;: 0,
+            &quot;freightPrice&quot;: 0.00, //运费
+            &quot;detail&quot;: null
+        },
+        &quot;specifications&quot;: [ //商品规格
+            {
+                &quot;id&quot;: 14,
+                &quot;storeId&quot;: 1,
+                &quot;goodsId&quot;: 10000000,
+                &quot;specificationId&quot;: 1,
+                &quot;specificationName&quot;: &quot;规格&quot;,
+                &quot;value&quot;: &quot;标准&quot;,
+                &quot;picUrl&quot;: &quot;&quot;,
+                &quot;addTime&quot;: &quot;2020-11-20 03:28:42&quot;,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false
+            }
+        ],
+        &quot;products&quot;: [ //规格商品信息
+            {
+                &quot;id&quot;: 13,
+                &quot;storeId&quot;: 1,
+                &quot;goodsId&quot;: 10000000,
+                &quot;specifications&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;value&quot;: &quot;标准&quot;
+                    }
+                ],
+                &quot;price&quot;: 3.00,
+                &quot;number&quot;: 50,
+                &quot;url&quot;: null,
+                &quot;addTime&quot;: &quot;2020-11-20 03:28:42&quot;,
+                &quot;updateTime&quot;: null,
+                &quot;deleted&quot;: false,
+                &quot;vipPrice&quot;: 0.00,
+                &quot;counterPrice&quot;: 0.00
+            }
+        ]
+    }
+}
+
+</code></pre>
+
+<h4 id="113_1">1.1.3 订单信息预览</h4>
+<h5 id="_64">接口说明</h5>
+<p>店主端商品管理主页</p>
+<h5 id="_65">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/order/checkout</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_66">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">productId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">amount</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">商品数量</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_67">错误说明</h5>
+<h5 id="_68">返回实例</h5>
 <pre><code class="json">
 
 {
