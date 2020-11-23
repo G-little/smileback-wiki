@@ -976,6 +976,116 @@ _**Specification参数说明**_
 
 
 
+#### 1.1.3 订单信息预览
+
+##### 接口说明
+
+店主端商品管理主页
+
+##### 请求说明
+
+| http 请求方式          |post             |
+|:------------- |:---------------:|
+| url      |/mall/order/checkout |
+
+
+
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| productId      | 是 | int  |  商品ID|  |
+| amount      | 是 | int  |  商品数量|  |
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "catName": null,
+        "goods": { //商品信息
+            "id": 10000000,
+            "storeId": 1,
+            "goodsSn": "",
+            "name": "测试",
+            "categoryId": 3,
+            "brandId": 0,
+            "gallery": null,
+            "keywords": "",
+            "brief": "",
+            "isOnSale": true,
+            "sortOrder": 100,
+            "picUrl": null,
+            "shareUrl": null,
+            "isNew": false,
+            "isHot": false,
+            "unit": "’件‘",
+            "counterPrice": 0.00,
+            "retailPrice": 3.00, //售价
+            "vipPrice": 100000.00,
+            "addTime": "2020-11-20 03:28:41",
+            "updateTime": null,
+            "deleted": false,
+            "tags": null,
+            "videos": null,
+            "testReports": null,
+            "goodsType": null,
+            "auditStatus": 0,
+            "freightPrice": 0.00, //运费
+            "detail": null
+        },
+        "specifications": [ //商品规格
+            {
+                "id": 14,
+                "storeId": 1,
+                "goodsId": 10000000,
+                "specificationId": 1,
+                "specificationName": "规格",
+                "value": "标准",
+                "picUrl": "",
+                "addTime": "2020-11-20 03:28:42",
+                "updateTime": null,
+                "deleted": false
+            }
+        ],
+        "products": [ //规格商品信息
+            {
+                "id": 13,
+                "storeId": 1,
+                "goodsId": 10000000,
+                "specifications": [
+                    {
+                        "id": 1,
+                        "value": "标准"
+                    }
+                ],
+                "price": 3.00,
+                "number": 50,
+                "url": null,
+                "addTime": "2020-11-20 03:28:42",
+                "updateTime": null,
+                "deleted": false,
+                "vipPrice": 0.00,
+                "counterPrice": 0.00
+            }
+        ]
+    }
+}
+
+```
+
+
+
+
 
 
 

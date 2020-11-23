@@ -13,5 +13,6 @@ nav:
     - 封面: './smileback/cover.md'
     - 群组: './smileback/group.md'        
     - Boss: './smileback/boss.md'
-    - 小商店: './smileback/store.md'        
+    - 小商店: './smileback/store.md'
+    - 地址: './smileback/address.md'        
   
