@@ -575,102 +575,32 @@
     &quot;c&quot;: 0,
     &quot;m&quot;: null,
     &quot;d&quot;: {
-        &quot;pageSize&quot;: 20,
-        &quot;total&quot;: 0,
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,
         &quot;currentPage&quot;: 1,
         &quot;list&quot;: [
             {
-                &quot;id&quot;: 64,
-                &quot;orderSn&quot;: &quot;20201123608626&quot;,
-                &quot;actualPrice&quot;: 3.00,
-                &quot;orderStatusText&quot;: &quot;已付款&quot;,
-                &quot;aftersaleStatus&quot;: 0,
-                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
-                &quot;totalNumber&quot;: 1,
-                &quot;goodsList&quot;: [
-                    {
-                        &quot;id&quot;: 59,
-                        &quot;orderId&quot;: null,
-                        &quot;goodsId&quot;: null,
-                        &quot;goodsName&quot;: &quot;测试&quot;,
-                        &quot;goodsSn&quot;: null,
-                        &quot;productId&quot;: null,
-                        &quot;number&quot;: 1,
-                        &quot;price&quot;: 3.00,
-                        &quot;specifications&quot;: [
-                            {
-                                &quot;id&quot;: 1,
-                                &quot;value&quot;: &quot;33&quot;
-                            }
-                        ],
-                        &quot;picUrl&quot;: &quot;&quot;,
-                        &quot;comment&quot;: null,
-                        &quot;addTime&quot;: null,
-                        &quot;updateTime&quot;: null,
-                        &quot;brief&quot;: null,
-                        &quot;gallery&quot;: null,
-                        &quot;videos&quot;: null,
-                        &quot;tags&quot;: null,
-                        &quot;aftersaleId&quot;: null,
-                        &quot;handleOption&quot;: null
-                    }
-                ]
-            },
-            {
-                &quot;id&quot;: 63,
-                &quot;orderSn&quot;: &quot;20201123991222&quot;,
-                &quot;actualPrice&quot;: 3.00,
-                &quot;orderStatusText&quot;: &quot;已付款&quot;,
-                &quot;aftersaleStatus&quot;: 0,
-                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
-                &quot;totalNumber&quot;: 0,
-                &quot;goodsList&quot;: []
-            },
-            {
-                &quot;id&quot;: 62,
-                &quot;orderSn&quot;: &quot;20201123887811&quot;,
-                &quot;actualPrice&quot;: 3.00,
-                &quot;orderStatusText&quot;: &quot;已付款&quot;,
-                &quot;aftersaleStatus&quot;: 0,
-                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
-                &quot;totalNumber&quot;: 0,
-                &quot;goodsList&quot;: []
-            },
-            {
-                &quot;id&quot;: 61,
-                &quot;orderSn&quot;: &quot;20201123010927&quot;,
-                &quot;actualPrice&quot;: 3.00,
-                &quot;orderStatusText&quot;: &quot;已付款&quot;,
-                &quot;aftersaleStatus&quot;: 0,
-                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
-                &quot;totalNumber&quot;: 0,
-                &quot;goodsList&quot;: []
-            },
-            {
-                &quot;id&quot;: 60,
-                &quot;orderSn&quot;: &quot;20201123010768&quot;,
-                &quot;actualPrice&quot;: 3.00,
-                &quot;orderStatusText&quot;: &quot;已付款&quot;,
-                &quot;aftersaleStatus&quot;: 0,
-                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
-                &quot;totalNumber&quot;: 0,
-                &quot;goodsList&quot;: []
-            },
-            {
-                &quot;id&quot;: 59,
-                &quot;orderSn&quot;: &quot;20201123194506&quot;,
-                &quot;actualPrice&quot;: 3.00,
-                &quot;orderStatusText&quot;: &quot;已付款&quot;,
-                &quot;aftersaleStatus&quot;: 0,
-                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
-                &quot;totalNumber&quot;: 0,
-                &quot;goodsList&quot;: []
+                &quot;id&quot;: 10000000,
+                &quot;storeId&quot;: 1,
+                &quot;goodsSn&quot;: &quot;&quot;,
+                &quot;detail&quot;: null, 图片
+                &quot;name&quot;: &quot;测试&quot;,
+                &quot;retailPrice&quot;: 3.00,  //价格 
+                &quot;isOnSale&quot;: true, //在售状态
+                &quot;number&quot;: null, //库存
+                &quot;auditStatus&quot;: 0, //审核状态
+                &quot;saleCount&quot;: null //销售量
             }
         ],
         &quot;end&quot;: true,
+        &quot;summary&quot;: {  //计数信息，只有第一页返回
+            &quot;onsaleTotal&quot;: 0,
+            &quot;tosaleTotal&quot;: 1,
+            &quot;downsaleTotal&quot;: 0
+        },
         &quot;empty&quot;: false,
         &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 0
+        &quot;totalPage&quot;: 1
     }
 }
 
@@ -1847,21 +1777,11 @@
                 &quot;id&quot;: 64,
                 &quot;orderSn&quot;: &quot;20201123608626&quot;,
                 &quot;actualPrice&quot;: 3.00,
-                &quot;orderStatusText&quot;: &quot;未付款&quot;,
-                &quot;handleOption&quot;: { //操作按钮
-                    &quot;cancel&quot;: true,
-                    &quot;delete&quot;: false,
-                    &quot;pay&quot;: true,
-                    &quot;comment&quot;: false,
-                    &quot;confirm&quot;: false,
-                    &quot;refund&quot;: false,
-                    &quot;rebuy&quot;: false,
-                    &quot;aftersale&quot;: false,
-                    &quot;remind&quot;: false,
-                    &quot;logistic&quot;: false
-                },
+                &quot;orderStatusText&quot;: &quot;已付款&quot;,
                 &quot;aftersaleStatus&quot;: 0,
-                &quot;goodsList&quot;: [  //订单商品信息
+                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
+                &quot;totalNumber&quot;: 1,
+                &quot;goodsList&quot;: [
                     {
                         &quot;id&quot;: 59,
                         &quot;orderId&quot;: null,
@@ -1888,15 +1808,58 @@
                         &quot;aftersaleId&quot;: null,
                         &quot;handleOption&quot;: null
                     }
-                ],
-                &quot;storeInfo&quot;: {
-                    &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;大头娃&quot;,
-                    &quot;intro&quot;: null,
-                    &quot;images&quot;: null
-                },
-                &quot;groupin&quot;: false
-            }       
+                ]
+            },
+            {
+                &quot;id&quot;: 63,
+                &quot;orderSn&quot;: &quot;20201123991222&quot;,
+                &quot;actualPrice&quot;: 3.00,
+                &quot;orderStatusText&quot;: &quot;已付款&quot;,
+                &quot;aftersaleStatus&quot;: 0,
+                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
+                &quot;totalNumber&quot;: 0,
+                &quot;goodsList&quot;: []
+            },
+            {
+                &quot;id&quot;: 62,
+                &quot;orderSn&quot;: &quot;20201123887811&quot;,
+                &quot;actualPrice&quot;: 3.00,
+                &quot;orderStatusText&quot;: &quot;已付款&quot;,
+                &quot;aftersaleStatus&quot;: 0,
+                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
+                &quot;totalNumber&quot;: 0,
+                &quot;goodsList&quot;: []
+            },
+            {
+                &quot;id&quot;: 61,
+                &quot;orderSn&quot;: &quot;20201123010927&quot;,
+                &quot;actualPrice&quot;: 3.00,
+                &quot;orderStatusText&quot;: &quot;已付款&quot;,
+                &quot;aftersaleStatus&quot;: 0,
+                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
+                &quot;totalNumber&quot;: 0,
+                &quot;goodsList&quot;: []
+            },
+            {
+                &quot;id&quot;: 60,
+                &quot;orderSn&quot;: &quot;20201123010768&quot;,
+                &quot;actualPrice&quot;: 3.00,
+                &quot;orderStatusText&quot;: &quot;已付款&quot;,
+                &quot;aftersaleStatus&quot;: 0,
+                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
+                &quot;totalNumber&quot;: 0,
+                &quot;goodsList&quot;: []
+            },
+            {
+                &quot;id&quot;: 59,
+                &quot;orderSn&quot;: &quot;20201123194506&quot;,
+                &quot;actualPrice&quot;: 3.00,
+                &quot;orderStatusText&quot;: &quot;已付款&quot;,
+                &quot;aftersaleStatus&quot;: 0,
+                &quot;payTime&quot;: &quot;2020-11-24 08:07:17&quot;,
+                &quot;totalNumber&quot;: 0,
+                &quot;goodsList&quot;: []
+            }
         ],
         &quot;end&quot;: true,
         &quot;empty&quot;: false,
