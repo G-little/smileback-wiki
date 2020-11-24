@@ -124,32 +124,102 @@
     "c": 0,
     "m": null,
     "d": {
-        "pageSize": 10,
-        "total": 1,
+        "pageSize": 20,
+        "total": 0,
         "currentPage": 1,
         "list": [
             {
-                "id": 10000000,
-                "storeId": 1,
-                "goodsSn": "",
-                "detail": null, 图片
-                "name": "测试",
-                "retailPrice": 3.00,  //价格 
-                "isOnSale": true, //在售状态
-                "number": null, //库存
-                "auditStatus": 0, //审核状态
-                "saleCount": null //销售量
+                "id": 64,
+                "orderSn": "20201123608626",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 1,
+                "goodsList": [
+                    {
+                        "id": 59,
+                        "orderId": null,
+                        "goodsId": null,
+                        "goodsName": "测试",
+                        "goodsSn": null,
+                        "productId": null,
+                        "number": 1,
+                        "price": 3.00,
+                        "specifications": [
+                            {
+                                "id": 1,
+                                "value": "33"
+                            }
+                        ],
+                        "picUrl": "",
+                        "comment": null,
+                        "addTime": null,
+                        "updateTime": null,
+                        "brief": null,
+                        "gallery": null,
+                        "videos": null,
+                        "tags": null,
+                        "aftersaleId": null,
+                        "handleOption": null
+                    }
+                ]
+            },
+            {
+                "id": 63,
+                "orderSn": "20201123991222",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 62,
+                "orderSn": "20201123887811",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 61,
+                "orderSn": "20201123010927",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 60,
+                "orderSn": "20201123010768",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 59,
+                "orderSn": "20201123194506",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
             }
         ],
         "end": true,
-        "summary": {  //计数信息，只有第一页返回
-            "onsaleTotal": 0,
-            "tosaleTotal": 1,
-            "downsaleTotal": 0
-        },
         "empty": false,
         "startIndex": 0,
-        "totalPage": 1
+        "totalPage": 0
     }
 }
 
@@ -626,11 +696,11 @@ _**Specification参数说明**_
     "c": 0,
     "m": null,
     "d": {
-        "catName": null,
+        "catName": null,  //类别名称
         "goods": { //商品信息
             "id": 10000000,
-            "storeId": 1,
-            "goodsSn": "",
+            "storeId": 1, //商店ID
+            "goodsSn": "", //商品sn
             "name": "测试",
             "categoryId": 3,
             "brandId": 0,
@@ -790,6 +860,127 @@ _**Specification参数说明**_
 }
 
 ```
+
+
+#### 1.2 订单
+
+
+#### 1.2.1 订单列表
+
+##### 接口说明
+
+订单列表信息
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /mall/admin/order/list |
+
+#####  Header 头
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| storeId      | 是| int  |  商店ID |   用于店主权限校验 |
+
+
+
+#####  输入参数
+
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| showType      | 是|  int  |  订单列表  | 显示类型， 2，待发货； 3，待收货 5，已完成  |
+| page      | 否|  int  |  分页  | 默认1  |
+| limit      | 否|  int  |  限制单页条数  | 默认10  |
+
+
+
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 20,
+        "total": 0,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 64,
+                "orderSn": "20201123608626",
+                "actualPrice": 3.00,
+                "orderStatusText": "未付款",
+                "handleOption": { //操作按钮
+                    "cancel": true,
+                    "delete": false,
+                    "pay": true,
+                    "comment": false,
+                    "confirm": false,
+                    "refund": false,
+                    "rebuy": false,
+                    "aftersale": false,
+                    "remind": false,
+                    "logistic": false
+                },
+                "aftersaleStatus": 0,
+                "goodsList": [  //订单商品信息
+                    {
+                        "id": 59,
+                        "orderId": null,
+                        "goodsId": null,
+                        "goodsName": "测试",
+                        "goodsSn": null,
+                        "productId": null,
+                        "number": 1,
+                        "price": 3.00,
+                        "specifications": [
+                            {
+                                "id": 1,
+                                "value": "33"
+                            }
+                        ],
+                        "picUrl": "",
+                        "comment": null,
+                        "addTime": null,
+                        "updateTime": null,
+                        "brief": null,
+                        "gallery": null,
+                        "videos": null,
+                        "tags": null,
+                        "aftersaleId": null,
+                        "handleOption": null
+                    }
+                ],
+                "storeInfo": {
+                    "id": 1,
+                    "name": "大头娃",
+                    "intro": null,
+                    "images": null
+                },
+                "groupin": false
+            }       
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": 0
+    }
+}
+
+```
+
+
+
 
 
 
