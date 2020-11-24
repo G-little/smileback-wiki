@@ -881,56 +881,6 @@ _**Specification参数说明**_
                         "handleOption": null
                     }
                 ]
-            },
-            {
-                "id": 63,
-                "orderSn": "20201123991222",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 62,
-                "orderSn": "20201123887811",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 61,
-                "orderSn": "20201123010927",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 60,
-                "orderSn": "20201123010768",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 59,
-                "orderSn": "20201123194506",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
             }
         ],
         "end": true,
@@ -940,6 +890,268 @@ _**Specification参数说明**_
     }
 }
 
+```
+
+
+#### 1.2.2 订单列表
+
+##### 接口说明
+
+订单列表信息
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /mall/admin/order/list |
+
+#####  Header 头
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| storeId      | 是| int  |  商店ID |   用于店主权限校验 |
+
+
+
+#####  输入参数
+
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| showType      | 是|  int  |  订单列表  | 显示类型， 2，待发货； 3，待收货 5，已完成  |
+| page      | 否|  int  |  分页  | 默认1  |
+| limit      | 否|  int  |  限制单页条数  | 默认10  |
+
+
+
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 20,
+        "total": 0,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": 64,
+                "orderSn": "20201123608626",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 1,
+                "goodsList": [
+                    {
+                        "id": 59,
+                        "orderId": null,
+                        "goodsId": null,
+                        "goodsName": "测试",
+                        "goodsSn": null,
+                        "productId": null,
+                        "number": 1,
+                        "price": 3.00,
+                        "specifications": [
+                            {
+                                "id": 1,
+                                "value": "33"
+                            }
+                        ],
+                        "picUrl": "",
+                        "comment": null,
+                        "addTime": null,
+                        "updateTime": null,
+                        "brief": null,
+                        "gallery": null,
+                        "videos": null,
+                        "tags": null,
+                        "aftersaleId": null,
+                        "handleOption": null
+                    }
+                ]
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": 0
+    }
+}
+
+```
+
+
+#### 1.2.3 订单发货
+
+##### 接口说明
+
+订单列表信息
+
+##### 请求说明
+
+| http 请求方式          | post     |
+|:------------- |:---------------:|
+| url      | /mall/admin/order/ship |
+
+#####  Header 头
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| storeId      | 是| int  |  商店ID |   用于店主权限校验 |
+
+
+
+#####  输入参数
+
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| orderId      | 是|  int  |  订单ID  | 订单ID |
+| shipSn      | 是 |  string  |  物流单号  |  |
+| shipChannel      | 是 |  string  | 物流编号  | 根据 /channel 接口返回 |
+
+
+
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+{
+    "c": 0,
+    "m": null,
+    "d": {
+    
+    }
+}
+
+```
+
+
+#### 1.2.4 物流公司查询
+
+##### 接口说明
+
+物流公司查询
+
+##### 请求说明
+
+| http 请求方式          | get     |
+|:------------- |:---------------:|
+| url      | /mall/admin/order/channel |
+
+#####  Header 头
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| storeId      | 是| int  |  商店ID |   用于店主权限校验 |
+
+
+
+#####  输入参数
+
+
+无
+
+
+
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+    
+{
+    "c": 0,
+    "m": null,
+    "d": [
+        {
+            "code": "YZPY",
+            "name": "中国邮政"
+        },
+        {
+            "code": "JDKY",
+            "name": "京东快递"
+        },
+        {
+            "code": "SF",
+            "name": "顺丰速运"
+        },
+        {
+            "code": "ZTO",
+            "name": "中通快递"
+        },
+        {
+            "code": "YTO",
+            "name": "圆通速递"
+        },
+        {
+            "code": "YD",
+            "name": "韵达速递"
+        },
+        {
+            "code": "YZPY",
+            "name": "邮政快递包裹"
+        },
+        {
+            "code": "EMS",
+            "name": "EMS"
+        },
+        {
+            "code": "DBL",
+            "name": "德邦快递"
+        },
+        {
+            "code": "FAST",
+            "name": "快捷快递"
+        },
+        {
+            "code": "ZJS",
+            "name": "宅急送"
+        },
+        {
+            "code": "TNT",
+            "name": "TNT快递"
+        },
+        {
+            "code": "UPS",
+            "name": "UPS"
+        },
+        {
+            "code": "DHL",
+            "name": "DHL"
+        },
+        {
+            "code": "FEDEX",
+            "name": "FEDEX联邦(国内件)"
+        },
+        {
+            "code": "FEDEX_GJ",
+            "name": "FEDEX联邦(国际件)"
+        }
+    ]
+}
 ```
 
 
