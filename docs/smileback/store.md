@@ -124,102 +124,32 @@
     "c": 0,
     "m": null,
     "d": {
-        "pageSize": 20,
-        "total": 0,
+        "pageSize": 10,
+        "total": 1,
         "currentPage": 1,
         "list": [
             {
-                "id": 64,
-                "orderSn": "20201123608626",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 1,
-                "goodsList": [
-                    {
-                        "id": 59,
-                        "orderId": null,
-                        "goodsId": null,
-                        "goodsName": "测试",
-                        "goodsSn": null,
-                        "productId": null,
-                        "number": 1,
-                        "price": 3.00,
-                        "specifications": [
-                            {
-                                "id": 1,
-                                "value": "33"
-                            }
-                        ],
-                        "picUrl": "",
-                        "comment": null,
-                        "addTime": null,
-                        "updateTime": null,
-                        "brief": null,
-                        "gallery": null,
-                        "videos": null,
-                        "tags": null,
-                        "aftersaleId": null,
-                        "handleOption": null
-                    }
-                ]
-            },
-            {
-                "id": 63,
-                "orderSn": "20201123991222",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 62,
-                "orderSn": "20201123887811",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 61,
-                "orderSn": "20201123010927",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 60,
-                "orderSn": "20201123010768",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
-            },
-            {
-                "id": 59,
-                "orderSn": "20201123194506",
-                "actualPrice": 3.00,
-                "orderStatusText": "已付款",
-                "aftersaleStatus": 0,
-                "payTime": "2020-11-24 08:07:17",
-                "totalNumber": 0,
-                "goodsList": []
+                "id": 10000000,
+                "storeId": 1,
+                "goodsSn": "",
+                "detail": null, 图片
+                "name": "测试",
+                "retailPrice": 3.00,  //价格 
+                "isOnSale": true, //在售状态
+                "number": null, //库存
+                "auditStatus": 0, //审核状态
+                "saleCount": null //销售量
             }
         ],
         "end": true,
+        "summary": {  //计数信息，只有第一页返回
+            "onsaleTotal": 0,
+            "tosaleTotal": 1,
+            "downsaleTotal": 0
+        },
         "empty": false,
         "startIndex": 0,
-        "totalPage": 0
+        "totalPage": 1
     }
 }
 
@@ -919,21 +849,11 @@ _**Specification参数说明**_
                 "id": 64,
                 "orderSn": "20201123608626",
                 "actualPrice": 3.00,
-                "orderStatusText": "未付款",
-                "handleOption": { //操作按钮
-                    "cancel": true,
-                    "delete": false,
-                    "pay": true,
-                    "comment": false,
-                    "confirm": false,
-                    "refund": false,
-                    "rebuy": false,
-                    "aftersale": false,
-                    "remind": false,
-                    "logistic": false
-                },
+                "orderStatusText": "已付款",
                 "aftersaleStatus": 0,
-                "goodsList": [  //订单商品信息
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 1,
+                "goodsList": [
                     {
                         "id": 59,
                         "orderId": null,
@@ -960,15 +880,58 @@ _**Specification参数说明**_
                         "aftersaleId": null,
                         "handleOption": null
                     }
-                ],
-                "storeInfo": {
-                    "id": 1,
-                    "name": "大头娃",
-                    "intro": null,
-                    "images": null
-                },
-                "groupin": false
-            }       
+                ]
+            },
+            {
+                "id": 63,
+                "orderSn": "20201123991222",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 62,
+                "orderSn": "20201123887811",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 61,
+                "orderSn": "20201123010927",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 60,
+                "orderSn": "20201123010768",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            },
+            {
+                "id": 59,
+                "orderSn": "20201123194506",
+                "actualPrice": 3.00,
+                "orderStatusText": "已付款",
+                "aftersaleStatus": 0,
+                "payTime": "2020-11-24 08:07:17",
+                "totalNumber": 0,
+                "goodsList": []
+            }
         ],
         "end": true,
         "empty": false,
