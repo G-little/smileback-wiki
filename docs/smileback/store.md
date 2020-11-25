@@ -291,7 +291,7 @@ _**Specification参数说明**_
 
 | http 请求方式          |post             |
 |:------------- |:---------------:|
-| url      |/mall/admin/goods/add |
+| url      |/mall/admin/goods/update |
 
 #####  Header 头
 
