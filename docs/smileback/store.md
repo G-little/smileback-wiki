@@ -1167,7 +1167,7 @@ _**Specification参数说明**_
 
 | http 请求方式          | get     |
 |:------------- |:---------------:|
-| url      | /mall/address/list |
+| url      | /admin/mall/address/list |
 
 #####  输入参数
 
@@ -1231,7 +1231,7 @@ _**Specification参数说明**_
 
 | http 请求方式          | get     |
 |:------------- |:---------------:|
-| url      | /mall/address/detail |
+| url      | /mall/admin/address/detail |
 
 #####  输入参数
 
@@ -1279,7 +1279,7 @@ _**Specification参数说明**_
 
 | http 请求方式          | get     |
 |:------------- |:---------------:|
-| url      | /mall/address/save |
+| url      | /mall/admin/address/save |
 
 #####  输入参数
 
@@ -1324,7 +1324,7 @@ _**Specification参数说明**_
 
 | http 请求方式          | get     |
 |:------------- |:---------------:|
-| url      | /mall/address/delete |
+| url      | /mall/admin/address/delete |
 
 #####  输入参数
 
@@ -1360,7 +1360,7 @@ _**Specification参数说明**_
 
 | http 请求方式          | post     |
 |:------------- |:---------------:|
-| url      | /mall/address/default |
+| url      | /mall/admin/address/default |
 
 #####  输入参数
 
@@ -1996,22 +1996,61 @@ _**Specification参数说明**_
                 "deleted": false //是否已删除
             }
         ],
-        "expressInfo": {   //物流信息
-            "state": "0",
-            "success": true,
-            "reason": "暂无轨迹信息",  //原因
-            "logisticCode": "1234561", //快递号
-            "shipperCode": "ZTO", //编码
-            "traces": [],   //轨迹
-            "ebusinessID": "1638638",  //厂商b
-            "shipperName": "中通快递",  //快递名称
-            "LogisticCode": "1234561",
-            "ShipperCode": "ZTO",
-            "Traces": [],
-            "State": "0",
-            "EBusinessID": "1638638",
-            "Success": true,
-            "Reason": "暂无轨迹信息"
+        "expressInfo": {
+            "message": "ok",
+            "nu": "SF1196520227006",
+            "ischeck": "0",
+            "condition": "00",
+            "com": "shunfeng",
+            "status": "200",
+            "state": "0",
+            "data": [
+                {
+                    "time": "2020-11-25 14:36:36",
+                    "ftime": "2020-11-25 14:36:36",
+                    "context": "[北京市]快件已发车"
+                },
+                {
+                    "time": "2020-11-25 14:36:32",
+                    "ftime": "2020-11-25 14:36:32",
+                    "context": "[北京市]快件在【北京南法信中转场】已装车,准备发往 【北京海淀亿世界营业点】"
+                },
+                {
+                    "time": "2020-11-25 14:05:25",
+                    "ftime": "2020-11-25 14:05:25",
+                    "context": "[北京市]快件到达 【北京南法信中转场】"
+                },
+                {
+                    "time": "2020-11-25 13:57:30",
+                    "ftime": "2020-11-25 13:57:30",
+                    "context": "[北京市]快件已发车"
+                },
+                {
+                    "time": "2020-11-25 13:52:50",
+                    "ftime": "2020-11-25 13:52:50",
+                    "context": "[北京市]快件在【北京顺义集散中心】已装车,准备发往 【北京南法信中转场】"
+                },
+                {
+                    "time": "2020-11-25 13:02:45",
+                    "ftime": "2020-11-25 13:02:45",
+                    "context": "[北京市]快件到达 【北京顺义集散中心】"
+                },
+                {
+                    "time": "2020-11-25 12:24:10",
+                    "ftime": "2020-11-25 12:24:10",
+                    "context": "[北京市]快件已发车"
+                },
+                {
+                    "time": "2020-11-25 12:24:02",
+                    "ftime": "2020-11-25 12:24:02",
+                    "context": "[北京市]快件在【北京朝阳新荟城营业点】已装车,准备发往 【北京顺义集散中心】"
+                },
+                {
+                    "time": "2020-11-25 11:08:19",
+                    "ftime": "2020-11-25 11:08:19",
+                    "context": "[北京市]顺丰速运 已收取快件"
+                }
+            ]
         }
     }
 }
