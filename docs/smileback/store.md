@@ -3705,7 +3705,8 @@ _**Specification参数说明**_
             "updateTime": "2020-11-25 12:38:23",
             "deleted": false,
             "shipSn": null,
-            "shipChannel": null
+            "shipChannel": null,
+            "refuseReason":"拒绝理由"
         },
         "goodsList": [
             {
