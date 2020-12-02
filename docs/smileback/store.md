@@ -3615,6 +3615,126 @@ _**Specification参数说明**_
 ```
 
 
+#### 1.3.5 售后详情
+
+##### 接口说明
+
+受理售后
+
+
+##### 请求说明
+
+| http 请求方式          | post     |
+|:------------- |:---------------:|
+| url      | /mall/admin/aftersale/detail |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 是 | int  |  售后ID| |
+
+#####  错误说明
+
+
+#####  返回实例
+```json
+    
+  {
+    "c": 0,
+    "m": null,
+    "d": {
+        "aftersale": {
+            "id": 1,
+            "aftersaleSn": "20201125332940",
+            "storeId": 1,
+            "orderId": 68,
+            "orderGoodsId": 63,
+            "userId": 11632,
+            "type": 0,
+            "reason": "测试一下",
+            "amount": 3.00,
+            "pictures": [],
+            "comment": "",
+            "status": 1,
+            "handleTime": null,
+            "addTime": "2020-11-25 12:38:23",
+            "updateTime": "2020-11-25 12:38:23",
+            "deleted": false,
+            "shipSn": null,
+            "shipChannel": null
+        },
+        "goodsList": [
+            {
+                "id": 63,
+                "storeId": 1,
+                "orderId": 68,
+                "goodsId": 10000000,
+                "goodsName": "测试",
+                "goodsSn": "",
+                "productId": 13,
+                "number": 1,
+                "price": 3.00,
+                "specifications": [
+                    {
+                        "id": 1,
+                        "value": "33"
+                    }
+                ],
+                "picUrl": "",
+                "comment": 0,
+                "addTime": "2020-11-25 12:30:36",
+                "updateTime": "2020-11-25 12:38:24",
+                "deleted": false,
+                "aftersaleStatus": 1,
+                "refundAmount": null,
+                "refundType": null,
+                "refundContent": null,
+                "refundTime": null
+            }
+        ],
+        "order": {
+            "id": 68,
+            "storeId": 1,
+            "userId": 11632,
+            "orderSn": "20201125274465",
+            "orderStatus": 201,
+            "aftersaleStatus": 0,
+            "consignee": "测试",
+            "mobile": "15201008961",
+            "address": "北京市北京市辖区朝阳区 北京",
+            "message": "备注",
+            "goodsPrice": 3.00,
+            "freightPrice": 0.00,
+            "couponPrice": 0.00,
+            "integralPrice": 0.00,
+            "grouponPrice": 0.00,
+            "orderPrice": 3.00,
+            "actualPrice": 3.00,
+            "payId": "KIN201125203025493969FB7F661001",
+            "payTime": "2020-11-25 12:30:49",
+            "shipSn": null,
+            "shipChannel": null,
+            "shipTime": null,
+            "refundAmount": 0.00,
+            "refundType": null,
+            "refundContent": null,
+            "refundTime": null,
+            "confirmTime": null,
+            "comments": 0,
+            "endTime": null,
+            "addTime": "2020-11-25 04:30:36",
+            "updateTime": 1606307904118,
+            "deleted": false,
+            "payType": "WX_APP"
+        },
+        "expressInfo": null
+    }
+}
+
+```
+
+
 
 
 
