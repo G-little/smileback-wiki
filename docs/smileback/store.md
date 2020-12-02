@@ -3438,29 +3438,62 @@ _**Specification参数说明**_
     "m": null,
     "d": {
         "pageSize": 10,
+        "total": null,
         "currentPage": 1,
         "list": [
             {
-                "id": 2,  //ID
-                "storeId":2, //商店ID
-                "orderId": 99, //订单ID
-                "goodsId": 0, //订单产品ID
-                "goodsName": null, //商品名称
-                "picUrl": null, //商品图片
-                "price": null, //商品售价
-                "number": 0, //商品数量
-                "type": null, // 退款类型 售后类型，0是未收货退款，1是已收货（无需退货）退款，2用户退货退款
-                "aftersaleStatus": 2, //售后状态，0是可申请，1是用户已申请，2是管理员审核通过，3是管理员退款成功，4是管理员审核拒绝，5是用户已取消
-                "handleOption": {  //处理项
-                    "apply": false,  //申请
-                    "hotline": false, //客服热线
-                    "cancel": false  //取消
-                }
+                "goodsList": [
+                    {
+                        "id": 63,
+                        "orderId": 68,
+                        "goodsId": 10000000,
+                        "goodsName": "测试",
+                        "goodsSn": "",
+                        "productId": 13,
+                        "number": 1,
+                        "price": 3.00,
+                        "specifications": [
+                            {
+                                "id": 1,
+                                "value": "33"
+                            }
+                        ],
+                        "picUrl": "",
+                        "comment": 0,
+                        "addTime": "2020-11-25 12:30:36",
+                        "updateTime": "2020-11-25 12:38:24",
+                        "brief": null,
+                        "gallery": null,
+                        "videos": null,
+                        "tags": null,
+                        "aftersaleId": null,
+                        "handleOption": null
+                    }
+                ],
+                "id": 1,
+                "orderId": 68,
+                "amount": 3.00,
+                "type": null,
+                "aftersaleStatus": 1,
+                "aftersaleStatusText": "已申请",
+                "storeInfo": {
+                    "id": 1,
+                    "name": "大头娃",
+                    "intro": null,
+                    "images": null
+                },
+                "handleOption": {
+                    "apply": false,
+                    "hotline": true,
+                    "cancel": true
+                },
+                "limitProcessSeconds": 0
             }
         ],
         "end": true,
         "empty": false,
-        "startIndex": 0
+        "startIndex": 0,
+        "totalPage": null
     }
 }
     
