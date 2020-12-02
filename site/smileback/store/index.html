@@ -592,6 +592,14 @@
 <li><a href="#_248">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#135_1">1.3.5 售后详情</a><ul>
+<li><a href="#_249">接口说明</a></li>
+<li><a href="#_250">请求说明</a></li>
+<li><a href="#_251">输入参数</a></li>
+<li><a href="#_252">错误说明</a></li>
+<li><a href="#_253">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -5370,29 +5378,62 @@
     &quot;m&quot;: null,
     &quot;d&quot;: {
         &quot;pageSize&quot;: 10,
+        &quot;total&quot;: null,
         &quot;currentPage&quot;: 1,
         &quot;list&quot;: [
             {
-                &quot;id&quot;: 2,  //ID
-                &quot;storeId&quot;:2, //商店ID
-                &quot;orderId&quot;: 99, //订单ID
-                &quot;goodsId&quot;: 0, //订单产品ID
-                &quot;goodsName&quot;: null, //商品名称
-                &quot;picUrl&quot;: null, //商品图片
-                &quot;price&quot;: null, //商品售价
-                &quot;number&quot;: 0, //商品数量
-                &quot;type&quot;: null, // 退款类型 售后类型，0是未收货退款，1是已收货（无需退货）退款，2用户退货退款
-                &quot;aftersaleStatus&quot;: 2, //售后状态，0是可申请，1是用户已申请，2是管理员审核通过，3是管理员退款成功，4是管理员审核拒绝，5是用户已取消
-                &quot;handleOption&quot;: {  //处理项
-                    &quot;apply&quot;: false,  //申请
-                    &quot;hotline&quot;: false, //客服热线
-                    &quot;cancel&quot;: false  //取消
-                }
+                &quot;goodsList&quot;: [
+                    {
+                        &quot;id&quot;: 63,
+                        &quot;orderId&quot;: 68,
+                        &quot;goodsId&quot;: 10000000,
+                        &quot;goodsName&quot;: &quot;测试&quot;,
+                        &quot;goodsSn&quot;: &quot;&quot;,
+                        &quot;productId&quot;: 13,
+                        &quot;number&quot;: 1,
+                        &quot;price&quot;: 3.00,
+                        &quot;specifications&quot;: [
+                            {
+                                &quot;id&quot;: 1,
+                                &quot;value&quot;: &quot;33&quot;
+                            }
+                        ],
+                        &quot;picUrl&quot;: &quot;&quot;,
+                        &quot;comment&quot;: 0,
+                        &quot;addTime&quot;: &quot;2020-11-25 12:30:36&quot;,
+                        &quot;updateTime&quot;: &quot;2020-11-25 12:38:24&quot;,
+                        &quot;brief&quot;: null,
+                        &quot;gallery&quot;: null,
+                        &quot;videos&quot;: null,
+                        &quot;tags&quot;: null,
+                        &quot;aftersaleId&quot;: null,
+                        &quot;handleOption&quot;: null
+                    }
+                ],
+                &quot;id&quot;: 1,
+                &quot;orderId&quot;: 68,
+                &quot;amount&quot;: 3.00,
+                &quot;type&quot;: null,
+                &quot;aftersaleStatus&quot;: 1,
+                &quot;aftersaleStatusText&quot;: &quot;已申请&quot;,
+                &quot;storeInfo&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;大头娃&quot;,
+                    &quot;intro&quot;: null,
+                    &quot;images&quot;: null
+                },
+                &quot;handleOption&quot;: {
+                    &quot;apply&quot;: false,
+                    &quot;hotline&quot;: true,
+                    &quot;cancel&quot;: true
+                },
+                &quot;limitProcessSeconds&quot;: 0
             }
         ],
         &quot;end&quot;: true,
         &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
     }
 }
 
@@ -5596,6 +5637,142 @@
 
     }
 }   
+</code></pre>
+
+<h4 id="135_1">1.3.5 售后详情</h4>
+<h5 id="_249">接口说明</h5>
+<p>受理售后</p>
+<h5 id="_250">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/mall/admin/aftersale/detail</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_251">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">售后ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_252">错误说明</h5>
+<h5 id="_253">返回实例</h5>
+<pre><code class="json">
+  {
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;aftersale&quot;: {
+            &quot;id&quot;: 1,
+            &quot;aftersaleSn&quot;: &quot;20201125332940&quot;,
+            &quot;storeId&quot;: 1,
+            &quot;orderId&quot;: 68,
+            &quot;orderGoodsId&quot;: 63,
+            &quot;userId&quot;: 11632,
+            &quot;type&quot;: 0,
+            &quot;reason&quot;: &quot;测试一下&quot;,
+            &quot;amount&quot;: 3.00,
+            &quot;pictures&quot;: [],
+            &quot;comment&quot;: &quot;&quot;,
+            &quot;status&quot;: 1,
+            &quot;handleTime&quot;: null,
+            &quot;addTime&quot;: &quot;2020-11-25 12:38:23&quot;,
+            &quot;updateTime&quot;: &quot;2020-11-25 12:38:23&quot;,
+            &quot;deleted&quot;: false,
+            &quot;shipSn&quot;: null,
+            &quot;shipChannel&quot;: null
+        },
+        &quot;goodsList&quot;: [
+            {
+                &quot;id&quot;: 63,
+                &quot;storeId&quot;: 1,
+                &quot;orderId&quot;: 68,
+                &quot;goodsId&quot;: 10000000,
+                &quot;goodsName&quot;: &quot;测试&quot;,
+                &quot;goodsSn&quot;: &quot;&quot;,
+                &quot;productId&quot;: 13,
+                &quot;number&quot;: 1,
+                &quot;price&quot;: 3.00,
+                &quot;specifications&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;value&quot;: &quot;33&quot;
+                    }
+                ],
+                &quot;picUrl&quot;: &quot;&quot;,
+                &quot;comment&quot;: 0,
+                &quot;addTime&quot;: &quot;2020-11-25 12:30:36&quot;,
+                &quot;updateTime&quot;: &quot;2020-11-25 12:38:24&quot;,
+                &quot;deleted&quot;: false,
+                &quot;aftersaleStatus&quot;: 1,
+                &quot;refundAmount&quot;: null,
+                &quot;refundType&quot;: null,
+                &quot;refundContent&quot;: null,
+                &quot;refundTime&quot;: null
+            }
+        ],
+        &quot;order&quot;: {
+            &quot;id&quot;: 68,
+            &quot;storeId&quot;: 1,
+            &quot;userId&quot;: 11632,
+            &quot;orderSn&quot;: &quot;20201125274465&quot;,
+            &quot;orderStatus&quot;: 201,
+            &quot;aftersaleStatus&quot;: 0,
+            &quot;consignee&quot;: &quot;测试&quot;,
+            &quot;mobile&quot;: &quot;15201008961&quot;,
+            &quot;address&quot;: &quot;北京市北京市辖区朝阳区 北京&quot;,
+            &quot;message&quot;: &quot;备注&quot;,
+            &quot;goodsPrice&quot;: 3.00,
+            &quot;freightPrice&quot;: 0.00,
+            &quot;couponPrice&quot;: 0.00,
+            &quot;integralPrice&quot;: 0.00,
+            &quot;grouponPrice&quot;: 0.00,
+            &quot;orderPrice&quot;: 3.00,
+            &quot;actualPrice&quot;: 3.00,
+            &quot;payId&quot;: &quot;KIN201125203025493969FB7F661001&quot;,
+            &quot;payTime&quot;: &quot;2020-11-25 12:30:49&quot;,
+            &quot;shipSn&quot;: null,
+            &quot;shipChannel&quot;: null,
+            &quot;shipTime&quot;: null,
+            &quot;refundAmount&quot;: 0.00,
+            &quot;refundType&quot;: null,
+            &quot;refundContent&quot;: null,
+            &quot;refundTime&quot;: null,
+            &quot;confirmTime&quot;: null,
+            &quot;comments&quot;: 0,
+            &quot;endTime&quot;: null,
+            &quot;addTime&quot;: &quot;2020-11-25 04:30:36&quot;,
+            &quot;updateTime&quot;: 1606307904118,
+            &quot;deleted&quot;: false,
+            &quot;payType&quot;: &quot;WX_APP&quot;
+        },
+        &quot;expressInfo&quot;: null
+    }
+}
+
 </code></pre></div>
             </div>
         </div>
