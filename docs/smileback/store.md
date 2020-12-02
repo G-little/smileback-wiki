@@ -3626,7 +3626,7 @@ _**Specification参数说明**_
 
 | http 请求方式          | post     |
 |:------------- |:---------------:|
-| url      | /mall/admin/aftersale/detail |
+| url      | /mall/aftersale/detail |
 
 #####  输入参数
 
