@@ -447,7 +447,7 @@
 			     "createTime": 1233434343l, //创建时间戳
 			     "msg":{
 			         "role":1 , //1用户  2 店铺的
-			         "noticeType":  1, //通知类型   1 通用  2 物流  3 退货物流（）                
+			         "noticeType":  1, //通知类型   1 通用  2 订单 3 物流  4 退货物流（）      
 			         "title":"待发货通知",
 			         "content":"通知内容",
 			         "imageUrl":"/xxxx",
