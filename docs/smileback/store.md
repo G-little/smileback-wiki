@@ -2357,6 +2357,60 @@ _**Specification参数说明**_
 
 ```
 
+#### 1.1.3 产品简介信息
+
+##### 接口说明
+
+用于聊天窗口产品简介信息显示
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/mall/goods/brief |
+
+
+
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| goodsId      | 是 | int  |  商品ID|  |
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "id": 10000053,
+        "goodsName": "面",
+        "picUrl": "Fs-UctrCkT-ja4UCulFAfTGIa7V2.jpg",
+        "price": 0.02,
+        "storeInfo": {
+            "id": 24,
+            "name": "真传泰拳馆",
+            "intro": null,
+            "roomId": "B0G39HMP4L",
+            "images": [
+                "http://resources.kinstalk.com/yaljtdqiezt1l4cs5z8s.jpg"
+            ],
+            "owner": 12748
+        }
+    }
+}
+
+```
+
+
 
 #### 1.2 订单
 
