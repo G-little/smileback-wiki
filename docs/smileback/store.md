@@ -2052,7 +2052,9 @@ _**Specification参数说明**_
         "storeId": 1,
         "money": 0.00, //可提现金额
         "frozenMoney": 45.00, //冻结金额
-        "totalMoney": 45.00 //总金额
+        "totalMoney": 45.00, //总金额
+        "bindAccount":"xxxxx", //绑定账户
+        "bindStatus":0, //绑定状态 0 未绑定  1已绑定
     }
 }
 
@@ -2150,7 +2152,7 @@ _**Specification参数说明**_
 
 | 参数          |必选             | 类型       | 参数说明        | 备注          |
 |:-------------|:---------------:|:-------------|:-------------|:-------------|
-| money      | 是 | double  | 提现金额 | 提现金额 |
+| money      | 是 | double  | 提现jin'e | 提现金额 |
 
 #####  错误说明
 
@@ -2158,12 +2160,14 @@ _**Specification参数说明**_
 #####  返回实例
 ```json
     
-  {
+    {
     "c": 0,
     "m": null,
     "d": {
-        "money":200.00,
-        "drawMoney":12, //可取现金额
+        "storeId": 1,
+        "money": 0.00, //可提现金额
+        "frozenMoney": 45.00, //冻结金额
+        "totalMoney": 45.00, //总金额
         "bindAccount":"xxxxx", //绑定账户
         "bindStatus":0, //绑定状态 0 未绑定  1已绑定
     }
