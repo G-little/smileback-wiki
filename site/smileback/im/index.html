@@ -94,7 +94,7 @@
 </li>
                                     
 <li>
-    <a href="../live/" class="dropdown-item">地址</a>
+    <a href="../live/" class="dropdown-item">对讲</a>
 </li>
                                 </ul>
                             </li>
@@ -225,6 +225,11 @@
 <li><a href="#12">12) 服务通知</a><ul>
 <li><a href="#_27">接口说明</a></li>
 <li><a href="#_28">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#13">13) 直播状态通知</a><ul>
+<li><a href="#_29">接口说明</a></li>
+<li><a href="#_30">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -758,6 +763,44 @@
                          &quot;aftersaleId&quot;:123,
                          &quot;storeId&quot;:2222, //店铺ID
                      }    //附加信息
+                 }
+        }
+
+
+</code></pre>
+
+<h3 id="13">13) 直播状态通知</h3>
+<h4 id="_29">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">13</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">群消息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_30">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 13,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{
+                    &quot;action&quot;:&quot;START&quot; , // START / STOP
+                    &quot;liveType&quot;: &quot;VIDEO&quot; , // VIDEO  VOICE
+                    &quot;playUrl&quot;:&quot;rtmp://xxx&quot; //播放地址
+
                  }
         }
 
