@@ -86,6 +86,8 @@
                     "longitude": 116.473344,
                     "latitude": 39.992997,
                     "times": 1
+                    "auditStatus":0,  //审核状态 1 通过 0 待审核  -1 驳回
+                    "onlineCount":1 //在线人数
                 }
             ],
             "end": true,
