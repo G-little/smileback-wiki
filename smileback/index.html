@@ -284,6 +284,22 @@
 <li><a href="#_76">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#19">1.9 收藏空间</a><ul>
+<li><a href="#_77">接口说明</a></li>
+<li><a href="#_78">请求说明</a></li>
+<li><a href="#_79">输入参数</a></li>
+<li><a href="#_80">错误说明</a></li>
+<li><a href="#_81">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#110">1.10 取消收藏空间</a><ul>
+<li><a href="#_82">接口说明</a></li>
+<li><a href="#_83">请求说明</a></li>
+<li><a href="#_84">输入参数</a></li>
+<li><a href="#_85">错误说明</a></li>
+<li><a href="#_86">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -410,6 +426,8 @@
                 &quot;roomType&quot;:1, // 0 普通 1 城市空间 2 商圈
                 &quot;hasGroup&quot;:false, //是否有小组
                 &quot;groupCount&quot;:0, //小组计数
+                &quot;onlineCount&quot;:22,// 在线人数
+                &quot;level&quot;:1 ,//空间等级
                 &quot;ext&quot;: {  //附加信息
                     &quot;id&quot;: &quot;01020200810001&quot;, //id
                     &quot;parentId&quot;: &quot;010&quot;, //父节点
@@ -1453,6 +1471,110 @@
                 &quot;likeStatus&quot;: 0
             }
         ]
+    }
+}
+
+</code></pre>
+
+<h4 id="19">1.9 收藏空间</h4>
+<h5 id="_77">接口说明</h5>
+<p>收藏空间</p>
+<h5 id="_78">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room/favorite/add</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_79">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">roomId</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">空间ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_80">错误说明</h5>
+<h5 id="_81">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}
+
+</code></pre>
+
+<h4 id="110">1.10 取消收藏空间</h4>
+<h5 id="_82">接口说明</h5>
+<p>取消收藏</p>
+<h5 id="_83">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room/favorite/remove</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_84">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">roomId</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">空间ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_85">错误说明</h5>
+<h5 id="_86">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
     }
 }
 
