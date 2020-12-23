@@ -1973,6 +1973,23 @@ _**Specification参数说明**_
                 "refundTime": null
             }
         ],
+        "refundAddress":{
+            "id": 3,  //地址ID
+            "name": "我", //地址名称
+            "storeId": 11445, //店铺ID
+            "province": "北京市", //省份
+            "city": "市辖区", //市区
+            "county": "朝阳区", //地区
+            "addressDetail": "211", //地址详情
+            "areaCode": "110105", //地区编码
+            "postalCode": null, //邮政编码
+            "tel": "15201008961", //手机号
+            "isDefault": true, //是否默认地址
+            "addTime": "2020-06-29 14:46:15", //创建时间
+            "updateTime": "2020-06-29 14:46:15", //更新时间
+            "deleted": false //是否已删除
+
+        }
         "order": {
             "id": 68,
             "storeId": 1,
