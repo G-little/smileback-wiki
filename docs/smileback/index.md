@@ -60,7 +60,30 @@
     "d": {
         "pageSize": 10,
         "currentPage": 1,
-        "list": [
+        "list": [{  //寻找同乡
+                "id": null,
+                "images": null,
+                "name": "寻找同乡",
+                "longitude": null,
+                "latitude": null,
+                "distance": "0",
+                "userCount": null,
+                "allowEntry": true,
+                "roomType": 7,  //空间类型
+                "typeCode": null,
+                "hasGroup": false,
+                "groupCount": null,
+                "showStore": false,
+                "ext": {
+                    "status": -1  //没有同乡群的情况
+                },
+                "logo": null,
+                "parent": null,
+                "level": 0,
+                "onlineCount": null,
+                "bossUid": null,
+                "creatorUid": null
+            },
             {
                 "id": "B0FFLIND01",  //ID
                 "images": [  //图片
@@ -948,6 +971,78 @@ __签到类型(3)__
     }
 }
 
+```
+
+
+
+#### 1.11 设置家乡
+
+##### 接口说明
+
+设置家乡
+
+##### 请求说明
+
+| http 请求方式          |post             |
+|:------------- |:---------------:|
+| url      |/room/set_home|
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| code      | 是| string  | 家乡省份code |   |
+| longtitude |是 | double  | 经度 |   |
+| latitude |是 | double  | 维度 |   |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "name": "山东人在110000",
+        "groupCount": 0,
+        "hasGroup": false,
+        "bossStatus": -1,
+        "roomType": 7,
+        "bossUid": null,
+        "showStore": false,
+        "storeId": null,
+        "level": null,
+        "favorite": false,
+        "images": [
+            "Fjt3oB_msFfsELeYvmb546PQu-zs.jpg"
+        ],
+        "roomId": "370000in110000",
+        "roomNum": 256,
+        "inviteUrl": "http://smileback.xiaogang.org.cn/invite/370000in110000/11632",
+        "creatorUid": null,
+        "counter": {
+            "onlineCount": 0,
+            "noteCount": 0,
+            "signinCount": 0
+        },
+        "users": {
+            "pageSize": 500,
+            "total": null,
+            "currentPage": 1,
+            "list": null,
+            "end": true,
+            "empty": true,
+            "startIndex": 0,
+            "totalPage": null
+        },
+        "firstTime": false
+    }
+}
 ```
 
 
