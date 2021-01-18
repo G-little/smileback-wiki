@@ -217,19 +217,24 @@
 <li><a href="#_24">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#11">11) 产品消息</a><ul>
+<li><a href="#1001">1001 ) 视频消息</a><ul>
 <li><a href="#_25">接口说明</a></li>
 <li><a href="#_26">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#12">12) 服务通知</a><ul>
+<li><a href="#11">11) 产品消息</a><ul>
 <li><a href="#_27">接口说明</a></li>
 <li><a href="#_28">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#13">13) 直播状态通知</a><ul>
+<li><a href="#12">12) 服务通知</a><ul>
 <li><a href="#_29">接口说明</a></li>
 <li><a href="#_30">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#13">13) 直播状态通知</a><ul>
+<li><a href="#_31">接口说明</a></li>
+<li><a href="#_32">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -677,8 +682,47 @@
 
 </code></pre>
 
-<h3 id="11">11) 产品消息</h3>
+<h3 id="1001">1001 ) 视频消息</h3>
 <h4 id="_25">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">1001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_26">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 1001,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;videoUrl&quot;:&quot;/a&quot;,
+                     &quot;coverUrl&quot;:&quot;/b&quot;,
+                     &quot;length&quot;:15, //视频时长
+                     &quot;w&quot;:333,  //宽
+                     &quot;h&quot;:444 //高
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="11">11) 产品消息</h3>
+<h4 id="_27">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -697,7 +741,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_26">协议说明</h4>
+<h4 id="_28">协议说明</h4>
 <pre><code class="json">
       {    
                  &quot;type&quot;: 11,  //协议号 依次递增  具体格式参见下面协议定义
@@ -726,7 +770,7 @@
 </code></pre>
 
 <h3 id="12">12) 服务通知</h3>
-<h4 id="_27">接口说明</h4>
+<h4 id="_29">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -745,7 +789,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_28">协议说明</h4>
+<h4 id="_30">协议说明</h4>
 <pre><code class="json">
       {    
                  &quot;type&quot;: 12,  //协议号 依次递增  具体格式参见下面协议定义
@@ -770,7 +814,7 @@
 </code></pre>
 
 <h3 id="13">13) 直播状态通知</h3>
-<h4 id="_29">接口说明</h4>
+<h4 id="_31">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -789,7 +833,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_30">协议说明</h4>
+<h4 id="_32">协议说明</h4>
 <pre><code class="json">
       {    
                  &quot;type&quot;: 13,  //协议号 依次递增  具体格式参见下面协议定义
