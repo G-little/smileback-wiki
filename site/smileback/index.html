@@ -300,6 +300,14 @@
 <li><a href="#_86">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#111">1.11 设置家乡</a><ul>
+<li><a href="#_87">接口说明</a></li>
+<li><a href="#_88">请求说明</a></li>
+<li><a href="#_89">输入参数</a></li>
+<li><a href="#_90">错误说明</a></li>
+<li><a href="#_91">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -412,7 +420,30 @@
     &quot;d&quot;: {
         &quot;pageSize&quot;: 10,
         &quot;currentPage&quot;: 1,
-        &quot;list&quot;: [
+        &quot;list&quot;: [{  //寻找同乡
+                &quot;id&quot;: null,
+                &quot;images&quot;: null,
+                &quot;name&quot;: &quot;寻找同乡&quot;,
+                &quot;longitude&quot;: null,
+                &quot;latitude&quot;: null,
+                &quot;distance&quot;: &quot;0&quot;,
+                &quot;userCount&quot;: null,
+                &quot;allowEntry&quot;: true,
+                &quot;roomType&quot;: 7,  //空间类型
+                &quot;typeCode&quot;: null,
+                &quot;hasGroup&quot;: false,
+                &quot;groupCount&quot;: null,
+                &quot;showStore&quot;: false,
+                &quot;ext&quot;: {
+                    &quot;status&quot;: -1  //没有同乡群的情况
+                },
+                &quot;logo&quot;: null,
+                &quot;parent&quot;: null,
+                &quot;level&quot;: 0,
+                &quot;onlineCount&quot;: null,
+                &quot;bossUid&quot;: null,
+                &quot;creatorUid&quot;: null
+            },
             {
                 &quot;id&quot;: &quot;B0FFLIND01&quot;,  //ID
                 &quot;images&quot;: [  //图片
@@ -1578,6 +1609,103 @@
     }
 }
 
+</code></pre>
+
+<h4 id="111">1.11 设置家乡</h4>
+<h5 id="_87">接口说明</h5>
+<p>设置家乡</p>
+<h5 id="_88">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room/set_home</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_89">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">code</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">家乡省份code</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">longtitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">经度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">latitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left">维度</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_90">错误说明</h5>
+<h5 id="_91">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;name&quot;: &quot;山东人在110000&quot;,
+        &quot;groupCount&quot;: 0,
+        &quot;hasGroup&quot;: false,
+        &quot;bossStatus&quot;: -1,
+        &quot;roomType&quot;: 7,
+        &quot;bossUid&quot;: null,
+        &quot;showStore&quot;: false,
+        &quot;storeId&quot;: null,
+        &quot;level&quot;: null,
+        &quot;favorite&quot;: false,
+        &quot;images&quot;: [
+            &quot;Fjt3oB_msFfsELeYvmb546PQu-zs.jpg&quot;
+        ],
+        &quot;roomId&quot;: &quot;370000in110000&quot;,
+        &quot;roomNum&quot;: 256,
+        &quot;inviteUrl&quot;: &quot;http://smileback.xiaogang.org.cn/invite/370000in110000/11632&quot;,
+        &quot;creatorUid&quot;: null,
+        &quot;counter&quot;: {
+            &quot;onlineCount&quot;: 0,
+            &quot;noteCount&quot;: 0,
+            &quot;signinCount&quot;: 0
+        },
+        &quot;users&quot;: {
+            &quot;pageSize&quot;: 500,
+            &quot;total&quot;: null,
+            &quot;currentPage&quot;: 1,
+            &quot;list&quot;: null,
+            &quot;end&quot;: true,
+            &quot;empty&quot;: true,
+            &quot;startIndex&quot;: 0,
+            &quot;totalPage&quot;: null
+        },
+        &quot;firstTime&quot;: false
+    }
+}
 </code></pre></div>
             </div>
         </div>

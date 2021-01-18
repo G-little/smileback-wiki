@@ -140,6 +140,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">通用接口</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -153,7 +157,60 @@
 <ul>
 <li>测试域名  <a href="http://smileback.xiaogang.org.cn">http://smileback.xiaogang.org.cn</a></li>
 <li>获取上传token接口: {{host}}/upload/token</li>
-</ul></div>
+</ul>
+<h2 id="_3">通用接口</h2>
+<h3 id="_4">通用配置接口</h3>
+<h5 id="_5">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/config/global</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_6">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">platform</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">android/ios</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="json">
+{
+c: 0,
+m: null,
+d: {
+    provinces: [
+    {
+    code: &quot;110000&quot;,
+    name: &quot;北京&quot;
+    }],
+    servicePhone: &quot;17301082390&quot;
+  }
+}
+
+</code></pre></div>
             </div>
         </div>
 
@@ -237,5 +294,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-01-18 07:08:48.480698+00:00
+Build Date UTC : 2021-01-18 13:36:40.019073+00:00
 -->
