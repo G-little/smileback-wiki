@@ -16,4 +16,5 @@ nav:
     - 小商店: './smileback/store.md'
     - 地址: './smileback/address.md'        
     - 对讲: './smileback/live.md'        
+    - 白噪音: './smileback/video.md'        
   
