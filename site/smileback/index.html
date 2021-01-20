@@ -109,6 +109,10 @@
 <li >
     <a href="live/">对讲</a>
 </li>
+                                    
+<li >
+    <a href="video/">白噪音</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -290,6 +294,14 @@
 <li><a href="#_89">输入参数</a></li>
 <li><a href="#_90">错误说明</a></li>
 <li><a href="#_91">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#112">1.12 陪伴灯</a><ul>
+<li><a href="#_92">接口说明</a></li>
+<li><a href="#_93">请求说明</a></li>
+<li><a href="#_94">输入参数</a></li>
+<li><a href="#_95">错误说明</a></li>
+<li><a href="#_96">返回实例</a></li>
 </ul>
 </li>
 </ul>
@@ -1688,6 +1700,65 @@
             &quot;totalPage&quot;: null
         },
         &quot;firstTime&quot;: false
+    }
+}
+</code></pre>
+
+<h4 id="112">1.12 陪伴灯</h4>
+<h5 id="_92">接口说明</h5>
+<p>设置家乡</p>
+<h5 id="_93">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room_user/light</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_94">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">roomId</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">房间号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">light</td>
+<td align="center">是</td>
+<td align="left">boolean</td>
+<td align="left">灯的状态</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_95">错误说明</h5>
+<h5 id="_96">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;lightTime&quot;:123434, //点灯开始时间，毫秒值
+        &quot;light&quot;:true, //灯状态
     }
 }
 </code></pre></div>
