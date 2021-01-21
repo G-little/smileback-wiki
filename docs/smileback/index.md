@@ -1093,6 +1093,77 @@ __签到类型(3)__
 
 
 
+#### 1.13 首页提醒
+
+##### 接口说明
+
+设置家乡
+
+##### 请求说明
+
+| http 请求方式          |post             |
+|:------------- |:---------------:|
+| url      |/room/remind_list|
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page |否 |  int  | 分页 |  默认值1  |
+| limit |否 |  int  | 分页条数 |  默认值10  |
+| latitude |是 |  double  |  |  经度  |
+| longtitude |是 |  double  |  |  维度   |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "total": 2,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": "AbekYmJDejcqGHV",
+                "images": [
+                    "FvKvc62BV_qHf0Zx20SnRkXue8WC.jpg"
+                ],
+                "roomType": 6,  //空间类型
+                "name": "奇幻电影",
+                "userCount": 0, //在线人数
+                "noteCount": 0 //未读留言
+            },
+            {
+                "id": "B0GRBMF2XV",
+                "images": [
+                    "http://resources.kinstalk.com/qap1kqa5ez2ohv82s8gb.jpg"
+                ],
+                "roomType": 0,
+                "name": "庭珍牛肉粉",
+                "userCount": 0,
+                "noteCount": 0
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": 1
+    }
+}
+
+```
+
+
+
 
 
 
