@@ -339,6 +339,10 @@ __在线类型(1)__
             "noteCount": null, //留言数
             "signinCount": 0 // 签到数
         },
+        "unReadCounter": { //未读数
+            "noteCount": 0, // 新增留言
+            "userCount": 0 //新增签到
+        },
         "bossStatus":-1 , //-1 无  0 待领取 1 已有Boss
         "bossUid":123,// boss ID
         "users": {

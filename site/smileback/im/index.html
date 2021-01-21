@@ -225,6 +225,11 @@
 <li><a href="#_32">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#15">15) 陪伴灯协议</a><ul>
+<li><a href="#_33">接口说明</a></li>
+<li><a href="#_34">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -832,6 +837,43 @@
                     &quot;action&quot;:&quot;START&quot; , // START / STOP
                     &quot;liveType&quot;: &quot;VIDEO&quot; , // VIDEO  VOICE
                     &quot;playUrl&quot;:&quot;rtmp://xxx&quot; //播放地址
+
+                 }
+        }
+
+
+</code></pre>
+
+<h3 id="15">15) 陪伴灯协议</h3>
+<h4 id="_33">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">15</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">群消息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_34">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 13,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{
+                    &quot;light&quot;: true , //点灯状态
+                    &quot;lightTime&quot;: 122333 // 点灯开始时间毫秒
 
                  }
         }
