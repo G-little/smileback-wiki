@@ -304,6 +304,14 @@
 <li><a href="#_96">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#113">1.13 首页提醒</a><ul>
+<li><a href="#_97">接口说明</a></li>
+<li><a href="#_98">请求说明</a></li>
+<li><a href="#_99">输入参数</a></li>
+<li><a href="#_100">错误说明</a></li>
+<li><a href="#_101">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1765,6 +1773,107 @@
         &quot;light&quot;:true, //灯状态
     }
 }
+</code></pre>
+
+<h4 id="113">1.13 首页提醒</h4>
+<h5 id="_97">接口说明</h5>
+<p>设置家乡</p>
+<h5 id="_98">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/room/remind_list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_99">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left">默认值1</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页条数</td>
+<td align="left">默认值10</td>
+</tr>
+<tr>
+<td align="left">latitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left"></td>
+<td align="left">经度</td>
+</tr>
+<tr>
+<td align="left">longtitude</td>
+<td align="center">是</td>
+<td align="left">double</td>
+<td align="left"></td>
+<td align="left">维度</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_100">错误说明</h5>
+<h5 id="_101">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 2,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: &quot;AbekYmJDejcqGHV&quot;,
+                &quot;images&quot;: [
+                    &quot;FvKvc62BV_qHf0Zx20SnRkXue8WC.jpg&quot;
+                ],
+                &quot;roomType&quot;: 6,  //空间类型
+                &quot;name&quot;: &quot;奇幻电影&quot;,
+                &quot;userCount&quot;: 0, //在线人数
+                &quot;noteCount&quot;: 0 //未读留言
+            },
+            {
+                &quot;id&quot;: &quot;B0GRBMF2XV&quot;,
+                &quot;images&quot;: [
+                    &quot;http://resources.kinstalk.com/qap1kqa5ez2ohv82s8gb.jpg&quot;
+                ],
+                &quot;roomType&quot;: 0,
+                &quot;name&quot;: &quot;庭珍牛肉粉&quot;,
+                &quot;userCount&quot;: 0,
+                &quot;noteCount&quot;: 0
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}
+
 </code></pre></div>
         </div>
 
