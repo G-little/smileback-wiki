@@ -48,6 +48,7 @@
 | imageUrl      | 否| string  |  图片地址 | |
 | videoUrl      | 否| string  |  视频地址 | |
 | tags      | 否| string  |  tag 标签json数组 |  参照tag参数说明 |
+| multiRoom      | 否| boolean  |  是否同步连锁空间 | 默认值false|
 
 
 __tags 参数说明__

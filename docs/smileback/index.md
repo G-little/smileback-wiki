@@ -614,6 +614,7 @@ __签到类型(3)__
 | roomId      | 是| string  | 空间ID |   |
 | content      | 是| string  | 内容 |   |
 | danmuType      | 否| int  | 弹幕类型 |  0 普通 1广告  |
+| multiRoom      | 否| boolean  | 是否连锁空间同步 |  默认否  |
 
 
 #####  错误说明
