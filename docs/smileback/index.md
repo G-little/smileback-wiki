@@ -1097,7 +1097,7 @@ __签到类型(3)__
 
 ##### 接口说明
 
-设置家乡
+首页提醒
 
 ##### 请求说明
 
@@ -1157,6 +1157,87 @@ __签到类型(3)__
         "empty": false,
         "startIndex": 0,
         "totalPage": 1
+    }
+}
+
+```
+
+
+
+
+
+#### 1.14 连锁空间列表
+
+##### 接口说明
+
+连锁空间列表，只有baoss 有权限获取
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/room/chain_list|
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page |否 |  int  | 分页 |  默认值1  |
+| limit |否 |  int  | 分页条数 |  默认值10  |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": "B0FFI0M9RJ",
+                "images": [
+                    "http://resources.kinstalk.com/usslqxrmlvrlzu0ujgs9.jpg"
+                ],
+                "name": "晓寿司(望京soho店)",
+                "onlineCount": 6,
+                "userCount": 55,
+                "level": 0,
+                "roomType": 0,
+                "showStore": null,
+                "chainName": "晓寿司(望京soho店)001",
+                "bossUid": 12762,
+                "creatorUid": null
+            },
+            {
+                "id": "utTlgufNSVCrPTX",
+                "images": [
+                    "http://resources.kinstalk.com/usslqxrmlvrlzu0ujgs9.jpg"
+                ],
+                "name": "晓寿司(望京soho店)",
+                "onlineCount": 0,
+                "userCount": 1,
+                "level": 0,
+                "roomType": 0,
+                "showStore": false,
+                "chainName": "晓寿司(望京soho店)001",
+                "bossUid": 12762,
+                "creatorUid": null
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
     }
 }
 
