@@ -292,6 +292,41 @@
 <li><a href="#_76">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#_77">提问</a><ul>
+<li><a href="#112">1.12 提问</a><ul>
+<li><a href="#_78">接口说明</a></li>
+<li><a href="#_79">请求说明</a></li>
+<li><a href="#_80">输入参数</a></li>
+<li><a href="#_81">错误说明</a></li>
+<li><a href="#_82">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#113">1.13 提问列表</a><ul>
+<li><a href="#_83">接口说明</a></li>
+<li><a href="#_84">请求说明</a></li>
+<li><a href="#_85">输入参数</a></li>
+<li><a href="#_86">错误说明</a></li>
+<li><a href="#_87">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#114">1.14 同问</a><ul>
+<li><a href="#_88">接口说明</a></li>
+<li><a href="#_89">请求说明</a></li>
+<li><a href="#_90">输入参数</a></li>
+<li><a href="#_91">错误说明</a></li>
+<li><a href="#_92">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#115">1.15 删除提问</a><ul>
+<li><a href="#_93">接口说明</a></li>
+<li><a href="#_94">请求说明</a></li>
+<li><a href="#_95">输入参数</a></li>
+<li><a href="#_96">错误说明</a></li>
+<li><a href="#_97">返回实例</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1203,6 +1238,259 @@
             }
         ]
 }    
+
+</code></pre>
+
+<h3 id="_77">提问</h3>
+<hr />
+<h4 id="112">1.12 提问</h4>
+<h5 id="_78">接口说明</h5>
+<h5 id="_79">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/question/add</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_80">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">roomId</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">用户当前空间ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">question</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">问题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">talkId</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播id</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_81">错误说明</h5>
+<h5 id="_82">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;id&quot;:1
+    }
+}    
+
+</code></pre>
+
+<h4 id="113">1.13 提问列表</h4>
+<h5 id="_83">接口说明</h5>
+<h5 id="_84">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/question/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_85">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">页面</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">每页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_86">错误说明</h5>
+<h5 id="_87">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 10,
+        &quot;total&quot;: 1,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;uid&quot;: 11632,
+                &quot;avatar&quot;: null,
+                &quot;certStatus&quot;: null,
+                &quot;level&quot;: 1,
+                &quot;id&quot;: 1,
+                &quot;talkId&quot;: 1,
+                &quot;question&quot;: &quot;test&quot;,
+                &quot;hotCount&quot;: 0, //同问
+                &quot;addTime&quot;: 1615461728675
+            }
+        ],
+        &quot;end&quot;: true,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: 1
+    }
+}   
+
+</code></pre>
+
+<h4 id="114">1.14 同问</h4>
+<h5 id="_88">接口说明</h5>
+<h5 id="_89">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/question/agree</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_90">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_91">错误说明</h5>
+<h5 id="_92">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}   
+
+</code></pre>
+
+<h4 id="115">1.15 删除提问</h4>
+<h5 id="_93">接口说明</h5>
+<h5 id="_94">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/question/delete</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_95">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_96">错误说明</h5>
+<h5 id="_97">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}   
 
 </code></pre></div>
             </div>
