@@ -458,6 +458,7 @@
                 "level": 1,
                 "times": 0,
                 "addTime": null
+                "subscribeCount":0 //预约人数
             }
         ],
         "end": true,
