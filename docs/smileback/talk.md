@@ -235,7 +235,12 @@
     "c": 0,
     "m": null,
     "d": {
-    
+        "id":1, //邀请ID
+        "content":"直播主体",
+        "mayStartTime":12334,//开始时间毫秒
+        "inviteUrl":"/xxxxx",
+        "status":0,//直播状态 0 预约  1开始 -1结束  -2 取消
+        "type":1, //1 普通 2 嘉宾
     }
 }    
 
