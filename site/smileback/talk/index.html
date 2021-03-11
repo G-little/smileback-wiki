@@ -244,6 +244,38 @@
 <li><a href="#_46">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#16">1.6 举手</a><ul>
+<li><a href="#_47">接口说明</a></li>
+<li><a href="#_48">请求说明</a></li>
+<li><a href="#_49">输入参数</a></li>
+<li><a href="#_50">错误说明</a></li>
+<li><a href="#_51">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#17">1.7 取消举手</a><ul>
+<li><a href="#_52">接口说明</a></li>
+<li><a href="#_53">请求说明</a></li>
+<li><a href="#_54">输入参数</a></li>
+<li><a href="#_55">错误说明</a></li>
+<li><a href="#_56">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#18">1.8 举手列表</a><ul>
+<li><a href="#_57">接口说明</a></li>
+<li><a href="#_58">请求说明</a></li>
+<li><a href="#_59">输入参数</a></li>
+<li><a href="#_60">错误说明</a></li>
+<li><a href="#_61">返回实例</a></li>
+</ul>
+</li>
+<li><a href="#19">1.9 订阅直播</a><ul>
+<li><a href="#_62">接口说明</a></li>
+<li><a href="#_63">请求说明</a></li>
+<li><a href="#_64">输入参数</a></li>
+<li><a href="#_65">错误说明</a></li>
+<li><a href="#_66">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -769,6 +801,248 @@
         &quot;name&quot;: &quot;空间名称&quot;, // 空间名称
         &quot;uid&quot;: 2222, // 用户ID
         &quot;avatar&quot;: &quot;/b&quot;, // 用户头像
+
+    }
+}    
+
+</code></pre>
+
+<h4 id="16">1.6 举手</h4>
+<h5 id="_47">接口说明</h5>
+<h5 id="_48">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/talk/handup</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_49">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">roomId</td>
+<td align="center">是</td>
+<td align="left">string</td>
+<td align="left">用户所在子空间ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_50">错误说明</h5>
+<h5 id="_51">返回实例</h5>
+<p><strong><code>^B</code>开头直播邀请</strong></p>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}    
+
+</code></pre>
+
+<h4 id="17">1.7 取消举手</h4>
+<h5 id="_52">接口说明</h5>
+<h5 id="_53">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/talk/handdown</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播ID</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_55">错误说明</h5>
+<h5 id="_56">返回实例</h5>
+<p><strong><code>^B</code>开头直播邀请</strong></p>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}    
+
+</code></pre>
+
+<h4 id="18">1.8 举手列表</h4>
+<h5 id="_57">接口说明</h5>
+<h5 id="_58">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/talk/handup/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_59">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">talkRole</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户角色</td>
+<td align="left">0 普通用户 1 主播 2 特邀嘉宾</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_60">错误说明</h5>
+<h5 id="_61">返回实例</h5>
+<p><strong><code>^B</code>开头直播邀请</strong></p>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+
+    }
+}    
+
+</code></pre>
+
+<h4 id="19">1.9 订阅直播</h4>
+<h5 id="_62">接口说明</h5>
+<h5 id="_63">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/talk/subscribe</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_64">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">直播ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="center">是</td>
+<td align="left">boolean</td>
+<td align="left">用户角色</td>
+<td align="left">true 订阅  fasle 取消订阅</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_65">错误说明</h5>
+<h5 id="_66">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
 
     }
 }    
