@@ -732,6 +732,7 @@ __签到类型(3)__
 |:-------------|:---------------:|:-------------|:-------------|:-------------|
 | page      | 否 |  int  |  分页 |   |
 | limit      | 否 |  int  |  条数 |   |
+| uid      | 否 |  int  |  用户ID |   |
 
 
 
@@ -804,7 +805,7 @@ __签到类型(3)__
 
 | 参数          |必选             | 类型       | 参数说明        | 备注          |
 |:-------------|:---------------:|:-------------|:-------------|:-------------|
-| id      | 否 |  stirng  |  房间ID |   |
+| id      | 是 |  stirng[]  |  房间ID |   |
 
 
 
@@ -826,9 +827,81 @@ __签到类型(3)__
 ```
 
 
+#### 1.4.4  我创建的空间
+
+##### 接口说明
+
+我创建的空间
+
+##### 请求说明
+
+| http 请求方式          | get             |
+|:------------- |:---------------:|
+| url      |/my/room_list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否 |  int  |  分页 |   |
+| limit      | 否 |  int  |  条数 |   |
 
 
 
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": "JzYaVMAgXAEJiDp",
+                "images": [
+                    "/b"
+                ],
+                "name": "test",
+                "longitude": null,
+                "latitude": null,
+                "distance": null,
+                "userCount": null,
+                "allowEntry": true,
+                "roomType": 6,
+                "typeCode": null,
+                "hasGroup": false,
+                "groupCount": 0,
+                "showStore": false,
+                "ext": null,
+                "logo": null,
+                "parent": null,
+                "level": 0,
+                "onlineCount": null,
+                "bossUid": 11632,
+                "creatorUid": 11632,
+                "chainStore": false,
+                "seq": null,
+                "talk": null,
+                "checked": true
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+
+```
 
 
 
