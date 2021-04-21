@@ -523,6 +523,44 @@ __签到类型(3)__
             "likeStatus": 0  //喜欢状态
         },
         "hint":false, //是否有暗号
+        "rooms":{
+                "pageSize": 10,
+                "total": null,
+                "currentPage": 1,
+                "list": [
+                    {
+                        "id": "XgJMUNdlTaxKbfU",
+                        "images": [
+                            "Fr7_9xj8GEX1_ljebvMPK9-NBQr6.jpg"
+                        ],
+                        "name": "民谣在路上",
+                        "longitude": null,
+                        "latitude": null,
+                        "distance": null,
+                        "userCount": 26,
+                        "allowEntry": false,
+                        "roomType": 6,
+                        "typeCode": null,
+                        "hasGroup": false,
+                        "groupCount": 0,
+                        "showStore": false,
+                        "ext": null,
+                        "logo": null,
+                        "parent": null,
+                        "level": 5,
+                        "onlineCount": 16,
+                        "bossUid": 14853,
+                        "creatorUid": 14853,
+                        "chainStore": false,
+                        "seq": null,
+                        "talk": null
+                    }
+                ],
+                "end": true,
+                "empty": false,
+                "startIndex": 0,
+                "totalPage": null
+            },
         "notes": { //留言数据
             "pageSize": 500,
             "currentPage": 1,
@@ -635,6 +673,161 @@ __签到类型(3)__
 }
 
 ```
+
+
+#### 1.4.3  添加主页房间
+
+##### 接口说明
+
+添加主页房间
+
+##### 请求说明
+
+| http 请求方式          | post             |
+|:------------- |:---------------:|
+| url      |/room_user/add_room |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| roomList      | 是| string[]  | 房间 array |   |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+    
+    }
+}
+
+```
+
+
+#### 1.4.2  分页获取主页房间
+
+##### 接口说明
+
+添加主页房间
+
+##### 请求说明
+
+| http 请求方式          | get             |
+|:------------- |:---------------:|
+| url      |/room_user/index_room_list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否 |  int  |  分页 |   |
+| limit      | 否 |  int  |  条数 |   |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 10,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+            {
+                "id": "XgJMUNdlTaxKbfU",
+                "images": [
+                    "Fr7_9xj8GEX1_ljebvMPK9-NBQr6.jpg"
+                ],
+                "name": "民谣在路上",
+                "longitude": null,
+                "latitude": null,
+                "distance": null,
+                "userCount": 26,
+                "allowEntry": false,
+                "roomType": 6,
+                "typeCode": null,
+                "hasGroup": false,
+                "groupCount": 0,
+                "showStore": false,
+                "ext": null,
+                "logo": null,
+                "parent": null,
+                "level": 5,
+                "onlineCount": 16,
+                "bossUid": 14853,
+                "creatorUid": 14853,
+                "chainStore": false,
+                "seq": null,
+                "talk": null
+            }
+        ],
+        "end": true,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+```
+
+
+#### 1.4.3  删除主页
+
+##### 接口说明
+
+添加主页房间
+
+##### 请求说明
+
+| http 请求方式          | post             |
+|:------------- |:---------------:|
+| url      |/room_user/del_room |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 否 |  stirng  |  房间ID |   |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+    
+    }
+}
+```
+
+
+
+
 
 
 
@@ -1311,6 +1504,7 @@ __签到类型(3)__
 | coverUrl |是 |  string  | 封面 |  |
 | name |是 |  string  | 空间名 |   |
 | privacy |是 |  boolean  | 是否隐私空间 | 
+| syncIndex |否 |  boolean  | 是否同步首页 | 
 
 
 
