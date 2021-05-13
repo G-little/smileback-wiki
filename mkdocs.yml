@@ -17,5 +17,6 @@ nav:
     - 地址: './smileback/address.md'        
     - 对讲: './smileback/live.md'        
     - 白噪音: './smileback/video.md'
-    - 直播: './smileback/talk.md'        
+    - 直播: './smileback/talk.md'
+    - 共享屏幕: './smileback/screen.md'        
   

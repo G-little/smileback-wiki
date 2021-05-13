@@ -50,6 +50,7 @@
 | tags      | 否| string  |  tag 标签json数组 |  参照tag参数说明 |
 | multiRoom      | 否| boolean  |  是否同步连锁空间 | 默认值false|
 | noteSize      | 否| string  |  尺寸 | 长*宽 |
+| showScreen      | 否| boolean  |  是否显示在主屏幕 | 只有房主有权限 默认 false  |
 
 
 __tags 参数说明__
