@@ -256,6 +256,14 @@
 <li><a href="#_51">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#18">1.8 分页获取留言数据</a><ul>
+<li><a href="#_52">接口说明</a></li>
+<li><a href="#_53">请求说明</a></li>
+<li><a href="#_54">输入参数</a></li>
+<li><a href="#_55">错误说明</a></li>
+<li><a href="#_56">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -962,6 +970,134 @@
     &quot;m&quot;: null,
     &quot;d&quot;: {
 
+    }
+}
+</code></pre>
+
+<h4 id="18">1.8 分页获取留言数据</h4>
+<h5 id="_52">接口说明</h5>
+<p>分页面拉取留言数据</p>
+<h5 id="_53">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/note/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int</td>
+<td align="left">空间ID</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">uid</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">用户ID</td>
+<td align="left">查看某个用户在该空间的留言</td>
+</tr>
+<tr>
+<td align="left">limit</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">单页条数</td>
+<td align="left">默认10条</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="center">否</td>
+<td align="left">int</td>
+<td align="left">分页数</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="_55">错误说明</h5>
+<h5 id="_56">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: {
+        &quot;pageSize&quot;: 1,
+        &quot;total&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;list&quot;: [
+           {
+                &quot;uid&quot;: 11454,
+                &quot;name&quot;: &quot;用户xnEFY&quot;,
+                &quot;avatar&quot;: &quot;FonAFb_WlcDtbQFinDuh3QaGrqd0.jpeg&quot;,
+                &quot;certStatus&quot;: 1,
+                &quot;level&quot;: 1,
+                &quot;id&quot;: 183,
+                &quot;roomId&quot;: &quot;B0FFK5WBZ0&quot;,
+                &quot;note&quot;: &quot;23&quot;,
+                &quot;color&quot;: &quot;DAB8F3&quot;,
+                &quot;addTime&quot;: 1602324668400,
+                &quot;commentsCount&quot;: 5,
+                &quot;noteType&quot;: 0,
+                &quot;imageUrl&quot;: null,
+                &quot;tags&quot;: null,
+                &quot;userRole&quot;: 0,
+                &quot;auditStatus&quot;: 0,
+                &quot;thumbCount&quot;: 0,
+                &quot;thumbStatus&quot;: false,
+                &quot;hint&quot;: false,
+                &quot;topTime&quot;: null,
+                &quot;times&quot;: 6,
+                &quot;videoUrl&quot;: null,
+                &quot;goodsIds&quot;: null,
+                &quot;noteSize&quot;: null,
+                &quot;showScreen&quot;: false,
+                &quot;commentList&quot;: [ //留言数据
+                    {
+                        &quot;id&quot;: 233,
+                        &quot;uid&quot;: 12399,
+                        &quot;noteId&quot;: 183,
+                        &quot;name&quot;: &quot;用户uCJsc&quot;,
+                        &quot;commentsCount&quot;: 1,
+                        &quot;delete&quot;: false,
+                        &quot;comment&quot;: &quot;不&quot;
+                    },
+                    {
+                        &quot;id&quot;: 190,
+                        &quot;uid&quot;: 11454,
+                        &quot;noteId&quot;: 183,
+                        &quot;name&quot;: &quot;用户xnEFY&quot;,
+                        &quot;commentsCount&quot;: 2,
+                        &quot;delete&quot;: false,
+                        &quot;comment&quot;: &quot;哈哈哈&quot;
+                    }
+                ],
+                &quot;creator&quot;: false
+            }
+        ],
+        &quot;end&quot;: false,
+        &quot;empty&quot;: false,
+        &quot;startIndex&quot;: 0,
+        &quot;totalPage&quot;: null
     }
 }
 </code></pre></div>
