@@ -548,6 +548,7 @@
                 "checked": false
              }        
            ],
+        "more":false,//是否展示更多  
         "empty": false,
         "startIndex": 0,
         "totalPage": null
