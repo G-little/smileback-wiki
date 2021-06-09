@@ -44,6 +44,7 @@
 | keywords      | 否| string  |  关键词 |  |
 | limit      | 否| int  |  单页条数 |  |
 | page      | 否| int  |  当前页 |  |
+| type      | 否| int  |  类型 |  0 地理位置 1 虚拟空间 |
 
 
 #####  错误说明
@@ -113,7 +114,23 @@
                     "name": "POP PARTY 001", //名字
                     "deleted": false, //删除状态
                     "remainMillisSeconds": 7577269 //剩余时间(毫秒）
-                }
+                },
+                 "userList": [ //用户列表
+                    {
+                        "uid": 11478,
+                        "name": "用户skdEn",
+                        "avatar": "FqsHvZCJcN5XPwHmiuKqia2z6YJD.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 11625,
+                        "name": "用户啦啦。？？？😭",
+                        "avatar": "FvN80juKw2ZOmSXaklpHw17hrcay.jpg",
+                        "certStatus": 1,
+                        "level": 1
+                    }
+                ]
             }
         ],
         "end": false,

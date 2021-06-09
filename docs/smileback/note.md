@@ -465,6 +465,106 @@ __tags 参数说明__
 
 
 
+#### 1.8 分页获取留言数据
+
+##### 接口说明
+
+分页面拉取留言数据
+
+##### 请求说明
+
+| http 请求方式          | get    |
+|:------------- |:---------------:|
+| url      |/note/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 是| int  | 空间ID| |
+| uid      | 否| int  | 用户ID|  查看某个用户在该空间的留言|
+| limit      | 否| int  | 单页条数 |   默认10条|
+| page      | 否| int  | 分页数 |    |
+
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 1,
+        "total": null,
+        "currentPage": 1,
+        "list": [
+           {
+                "uid": 11454,
+                "name": "用户xnEFY",
+                "avatar": "FonAFb_WlcDtbQFinDuh3QaGrqd0.jpeg",
+                "certStatus": 1,
+                "level": 1,
+                "id": 183,
+                "roomId": "B0FFK5WBZ0",
+                "note": "23",
+                "color": "DAB8F3",
+                "addTime": 1602324668400,
+                "commentsCount": 5,
+                "noteType": 0,
+                "imageUrl": null,
+                "tags": null,
+                "userRole": 0,
+                "auditStatus": 0,
+                "thumbCount": 0,
+                "thumbStatus": false,
+                "hint": false,
+                "topTime": null,
+                "times": 6,
+                "videoUrl": null,
+                "goodsIds": null,
+                "noteSize": null,
+                "showScreen": false,
+                "commentList": [ //留言数据
+                    {
+                        "id": 233,
+                        "uid": 12399,
+                        "noteId": 183,
+                        "name": "用户uCJsc",
+                        "commentsCount": 1,
+                        "delete": false,
+                        "comment": "不"
+                    },
+                    {
+                        "id": 190,
+                        "uid": 11454,
+                        "noteId": 183,
+                        "name": "用户xnEFY",
+                        "commentsCount": 2,
+                        "delete": false,
+                        "comment": "哈哈哈"
+                    }
+                ],
+                "creator": false
+            }
+        ],
+        "end": false,
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+```
+
+
+
+
+
 
 
 

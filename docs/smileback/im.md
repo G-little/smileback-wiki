@@ -691,7 +691,7 @@
 			        "talkId": 0, // 沙龙ID
 			        "uid":123, //发送人ID  
 			        "questionId":123, //提问Id
-			        "question":"提问" //提问Id
+			        "question":"提问" //提问内容
 			     }
         }
 

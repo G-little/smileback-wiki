@@ -396,6 +396,168 @@
 
 
 
+#### 1.8 收藏
+
+##### 接口说明
+
+添加留言信息
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/my/favourite/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| page      | 否| int  |   |   分页 默认第一页  |
+| limit      | 否| int  |   |   限制条数  |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": {
+        "pageSize": 1,
+        "total": null,
+        "currentPage": 1,
+        "list": [  //我收藏的空间分页查询
+            {
+                "id": "SThggtVyGGYySVB",
+                "images": [
+                    "FpieKiGGnBaC61StMWSMKLflN3YQ.jpg"
+                ],
+                "name": "音乐和社交的碰撞",
+                "longitude": null,
+                "latitude": null,
+                "distance": null,
+                "userCount": 51,
+                "allowEntry": false,
+                "roomType": 6,
+                "typeCode": null,
+                "hasGroup": false,
+                "groupCount": 0,
+                "showStore": false,
+                "ext": null,
+                "logo": null,
+                "parent": null,
+                "level": 4,
+                "onlineCount": 17,
+                "bossUid": 11552,
+                "creatorUid": 11552,
+                "chainStore": false,
+                "seq": null,
+                "talk": null,
+                "talkStatus": null,
+                "privacy": false,
+                "userList": [
+                    {
+                        "uid": 11454,
+                        "name": "用户xnEFY",
+                        "avatar": "FonAFb_WlcDtbQFinDuh3QaGrqd0.jpeg",
+                        "certStatus": 1,
+                        "level": 1
+                    },
+                    {
+                        "uid": 11455,
+                        "name": "用户VGQom",
+                        "avatar": "FmevEt6RtAtjKSzVy7P2a-O3IFfU.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 11468,
+                        "name": "用户IPrqe",
+                        "avatar": "FkpEdl5YiM7vkblsCYNwg6eTq1oB.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 11552,
+                        "name": "用户eGUNI",
+                        "avatar": "Fk2xCK40yl1MatKBYVgwvkO-vltQ.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 12193,
+                        "name": "用户nnNaY",
+                        "avatar": "FjTF7mzQPIEqj3x4kH89y0nUXcdH.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 12244,
+                        "name": "用户BhHDO",
+                        "avatar": "FlXRpGu3buxg4UXYP08hxPaNCERy.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    }
+                ]
+            }
+        ],
+        "end": false,
+        "myRoomList": [ //我创建的空间，只有第一页有
+            {
+                "id": "B0FFIKDKS5",
+                "images": [
+                    "http://resources.kinstalk.com/gfetifkkhop3zbdfhmo9.jpg"
+                ],
+                "name": "山西刀削面",
+                "longitude": 116.481368,
+                "latitude": 39.995825,
+                "distance": null,
+                "userCount": 1,
+                "allowEntry": true,
+                "roomType": 0,
+                "typeCode": "050300",
+                "hasGroup": false,
+                "groupCount": 0,
+                "showStore": false,
+                "ext": null,
+                "logo": null,
+                "parent": [],
+                "level": 0,
+                "onlineCount": 1,
+                "bossUid": 11478,
+                "creatorUid": null,
+                "chainStore": false,
+                "seq": null,
+                "talk": null,
+                "talkStatus": null,
+                "privacy": false,
+                "userList": [
+                    {
+                        "uid": 11478,
+                        "name": "用户skdEn",
+                        "avatar": "FqsHvZCJcN5XPwHmiuKqia2z6YJD.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    }
+                ],
+                "checked": false
+             }        
+           ],
+        "empty": false,
+        "startIndex": 0,
+        "totalPage": null
+    }
+}
+
+```
+
+
+
 
 
 
