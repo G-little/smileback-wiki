@@ -256,6 +256,14 @@
 <li><a href="#_51">返回实例</a></li>
 </ul>
 </li>
+<li><a href="#19-id">1.9 根据空间ID列表查询空间信息</a><ul>
+<li><a href="#_52">接口说明</a></li>
+<li><a href="#_53">请求说明</a></li>
+<li><a href="#_54">输入参数</a></li>
+<li><a href="#_55">错误说明</a></li>
+<li><a href="#_56">返回实例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -879,6 +887,7 @@
                 &quot;talk&quot;: null,
                 &quot;talkStatus&quot;: null,
                 &quot;privacy&quot;: false,
+                &quot;unRead&quot;:false, //是否已读
                 &quot;userList&quot;: [
                     {
                         &quot;uid&quot;: 11454,
@@ -972,6 +981,131 @@
         &quot;startIndex&quot;: 0,
         &quot;totalPage&quot;: null
     }
+}
+
+</code></pre>
+
+<h4 id="19-id">1.9 根据空间ID列表查询空间信息</h4>
+<h5 id="_52">接口说明</h5>
+<p>根据空间ID列表查询空间信息</p>
+<h5 id="_53">请求说明</h5>
+<table>
+<thead>
+<tr>
+<th align="left">http 请求方式</th>
+<th align="center">get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">url</td>
+<td align="center">/my/room/list</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_54">输入参数</h5>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">必选</th>
+<th align="left">类型</th>
+<th align="left">参数说明</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">id</td>
+<td align="center">是</td>
+<td align="left">int数组</td>
+<td align="left">空间ID</td>
+<td align="left">example: /a?id=1&amp;id=2&amp;id=3</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_55">错误说明</h5>
+<h5 id="_56">返回实例</h5>
+<pre><code class="json">
+{
+    &quot;c&quot;: 0,
+    &quot;m&quot;: null,
+    &quot;d&quot;: [  
+            {
+                &quot;id&quot;: &quot;SThggtVyGGYySVB&quot;,
+                &quot;images&quot;: [
+                    &quot;FpieKiGGnBaC61StMWSMKLflN3YQ.jpg&quot;
+                ],
+                &quot;name&quot;: &quot;音乐和社交的碰撞&quot;,
+                &quot;longitude&quot;: null,
+                &quot;latitude&quot;: null,
+                &quot;distance&quot;: null,
+                &quot;userCount&quot;: 51,
+                &quot;allowEntry&quot;: false,
+                &quot;roomType&quot;: 6,
+                &quot;typeCode&quot;: null,
+                &quot;hasGroup&quot;: false,
+                &quot;groupCount&quot;: 0,
+                &quot;showStore&quot;: false,
+                &quot;ext&quot;: null,
+                &quot;logo&quot;: null,
+                &quot;parent&quot;: null,
+                &quot;level&quot;: 4,
+                &quot;onlineCount&quot;: 17,
+                &quot;bossUid&quot;: 11552,
+                &quot;creatorUid&quot;: 11552,
+                &quot;chainStore&quot;: false,
+                &quot;seq&quot;: null,
+                &quot;talk&quot;: null,
+                &quot;talkStatus&quot;: null,
+                &quot;privacy&quot;: false,
+                &quot;unRead&quot;:false, //是否已读
+                &quot;userList&quot;: [
+                    {
+                        &quot;uid&quot;: 11454,
+                        &quot;name&quot;: &quot;用户xnEFY&quot;,
+                        &quot;avatar&quot;: &quot;FonAFb_WlcDtbQFinDuh3QaGrqd0.jpeg&quot;,
+                        &quot;certStatus&quot;: 1,
+                        &quot;level&quot;: 1
+                    },
+                    {
+                        &quot;uid&quot;: 11455,
+                        &quot;name&quot;: &quot;用户VGQom&quot;,
+                        &quot;avatar&quot;: &quot;FmevEt6RtAtjKSzVy7P2a-O3IFfU.jpg&quot;,
+                        &quot;certStatus&quot;: null,
+                        &quot;level&quot;: 1
+                    },
+                    {
+                        &quot;uid&quot;: 11468,
+                        &quot;name&quot;: &quot;用户IPrqe&quot;,
+                        &quot;avatar&quot;: &quot;FkpEdl5YiM7vkblsCYNwg6eTq1oB.jpg&quot;,
+                        &quot;certStatus&quot;: null,
+                        &quot;level&quot;: 1
+                    },
+                    {
+                        &quot;uid&quot;: 11552,
+                        &quot;name&quot;: &quot;用户eGUNI&quot;,
+                        &quot;avatar&quot;: &quot;Fk2xCK40yl1MatKBYVgwvkO-vltQ.jpg&quot;,
+                        &quot;certStatus&quot;: null,
+                        &quot;level&quot;: 1
+                    },
+                    {
+                        &quot;uid&quot;: 12193,
+                        &quot;name&quot;: &quot;用户nnNaY&quot;,
+                        &quot;avatar&quot;: &quot;FjTF7mzQPIEqj3x4kH89y0nUXcdH.jpg&quot;,
+                        &quot;certStatus&quot;: null,
+                        &quot;level&quot;: 1
+                    },
+                    {
+                        &quot;uid&quot;: 12244,
+                        &quot;name&quot;: &quot;用户BhHDO&quot;,
+                        &quot;avatar&quot;: &quot;FlXRpGu3buxg4UXYP08hxPaNCERy.jpg&quot;,
+                        &quot;certStatus&quot;: null,
+                        &quot;level&quot;: 1
+                    }
+                ]
+            }
+        ]
 }
 
 </code></pre></div>

@@ -274,6 +274,16 @@
 <li><a href="#_42">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#20">20) 移除用户通知</a><ul>
+<li><a href="#_43">接口说明</a></li>
+<li><a href="#_44">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#21">21) 对讲状态变更通知</a><ul>
+<li><a href="#_45">接口说明</a></li>
+<li><a href="#_46">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1072,6 +1082,90 @@
                     &quot;questionId&quot;:123, //提问Id
                     &quot;question&quot;:&quot;提问&quot; //提问内容
                  }
+        }
+
+
+</code></pre>
+
+<h3 id="20">20) 移除用户通知</h3>
+<h4 id="_43">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_44">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 20,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{
+                    &quot;roomId&quot;: &quot;xxxxxx&quot; , //空间ID
+                    &quot;roomName&quot;: &quot;空间名称&quot; // 空间名称               }
+        }
+
+
+</code></pre>
+
+<h3 id="21">21) 对讲状态变更通知</h3>
+<h4 id="_45">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">21</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_46">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 21,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{
+                    &quot;talk&quot;: {
+                        &quot;id&quot;: 1,
+                        &quot;roomId&quot;: &quot;InCPRnDIdsekVcR&quot;,//空间ID
+                        &quot;streamId&quot;: null,
+                        &quot;mayStartTime&quot;: 1615395600000, //预约时间
+                        &quot;uid&quot;: 11455,//用户ID
+                        &quot;status&quot;: -1, //沙龙状态 0: 预约 -1 结束 -2 删除 1 直播中
+                        &quot;content&quot;: &quot;11&quot;, // 沙龙内容
+                        &quot;subscribed&quot;: false,  // 是否已预约
+                        &quot;subscribeCount&quot;: null, // 预约人数
+                        &quot;inviteType&quot;: null,
+                        &quot;handsCount&quot;: 0,
+                        &quot;addTime&quot;: 1615356361114, //发起时间
+                        &quot;startTime&quot;: null //实际开始时间
+                    }
+             }
         }
 
 
