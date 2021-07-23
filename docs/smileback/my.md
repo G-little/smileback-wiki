@@ -460,6 +460,7 @@
                 "talk": null,
                 "talkStatus": null,
                 "privacy": false,
+                "unRead":false, //是否已读
                 "userList": [
                     {
                         "uid": 11454,
@@ -553,6 +554,121 @@
         "startIndex": 0,
         "totalPage": null
     }
+}
+
+```
+
+
+
+
+
+
+#### 1.9 根据空间ID列表查询空间信息
+
+##### 接口说明
+
+根据空间ID列表查询空间信息
+
+##### 请求说明
+
+| http 请求方式          |get             |
+|:------------- |:---------------:|
+| url      |/my/room/list |
+
+#####  输入参数
+
+| 参数          |必选             | 类型       | 参数说明        | 备注          |
+|:-------------|:---------------:|:-------------|:-------------|:-------------|
+| id      | 是| int数组  |  空间ID  |  example: /a?id=1&id=2&id=3    |
+
+
+#####  错误说明
+
+
+
+
+#####  返回实例
+```json
+
+{
+    "c": 0,
+    "m": null,
+    "d": [  
+            {
+                "id": "SThggtVyGGYySVB",
+                "images": [
+                    "FpieKiGGnBaC61StMWSMKLflN3YQ.jpg"
+                ],
+                "name": "音乐和社交的碰撞",
+                "longitude": null,
+                "latitude": null,
+                "distance": null,
+                "userCount": 51,
+                "allowEntry": false,
+                "roomType": 6,
+                "typeCode": null,
+                "hasGroup": false,
+                "groupCount": 0,
+                "showStore": false,
+                "ext": null,
+                "logo": null,
+                "parent": null,
+                "level": 4,
+                "onlineCount": 17,
+                "bossUid": 11552,
+                "creatorUid": 11552,
+                "chainStore": false,
+                "seq": null,
+                "talk": null,
+                "talkStatus": null,
+                "privacy": false,
+                "unRead":false, //是否已读
+                "userList": [
+                    {
+                        "uid": 11454,
+                        "name": "用户xnEFY",
+                        "avatar": "FonAFb_WlcDtbQFinDuh3QaGrqd0.jpeg",
+                        "certStatus": 1,
+                        "level": 1
+                    },
+                    {
+                        "uid": 11455,
+                        "name": "用户VGQom",
+                        "avatar": "FmevEt6RtAtjKSzVy7P2a-O3IFfU.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 11468,
+                        "name": "用户IPrqe",
+                        "avatar": "FkpEdl5YiM7vkblsCYNwg6eTq1oB.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 11552,
+                        "name": "用户eGUNI",
+                        "avatar": "Fk2xCK40yl1MatKBYVgwvkO-vltQ.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 12193,
+                        "name": "用户nnNaY",
+                        "avatar": "FjTF7mzQPIEqj3x4kH89y0nUXcdH.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    },
+                    {
+                        "uid": 12244,
+                        "name": "用户BhHDO",
+                        "avatar": "FlXRpGu3buxg4UXYP08hxPaNCERy.jpg",
+                        "certStatus": null,
+                        "level": 1
+                    }
+                ]
+            }
+        ]
 }
 
 ```
