@@ -12,11 +12,11 @@
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
@@ -344,7 +344,7 @@
 </table>
 <h2 id="_6">接口说明</h2>
 <p>自定义协议格式说明</p>
-<pre><code class="json">
+<pre><code class="language-json">
         {
     &quot;SyncOtherMachine&quot;: 1, //消息同步至发送方
     &quot;From_Account&quot;: &quot;10001&quot;,
@@ -373,7 +373,6 @@
 }
 
 </code></pre>
-
 <h3 id="1">1) 文本消息</h3>
 <h4 id="_7">接口说明</h4>
 <table>
@@ -391,7 +390,7 @@
 </tbody>
 </table>
 <h4 id="_8">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -404,7 +403,6 @@
 
 
 </code></pre>
-
 <h3 id="2">2) 匹配结果通知</h3>
 <h4 id="_9">接口说明</h4>
 <table>
@@ -426,7 +424,7 @@
 </tbody>
 </table>
 <h4 id="_10">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 2,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -441,7 +439,6 @@
 
 
 </code></pre>
-
 <h3 id="3">3)  好友匹配成功消息</h3>
 <h4 id="_11">接口说明</h4>
 <table>
@@ -463,7 +460,7 @@
 </tbody>
 </table>
 <h4 id="_12">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 3,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -483,7 +480,6 @@
 
 
 </code></pre>
-
 <h3 id="4">4)  评论消息</h3>
 <h4 id="_13">接口说明</h4>
 <table>
@@ -505,7 +501,7 @@
 </tbody>
 </table>
 <h4 id="_14">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 4,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -526,7 +522,6 @@
 
 
 </code></pre>
-
 <h3 id="5">5)  头像审核消息</h3>
 <h4 id="_15">接口说明</h4>
 <table>
@@ -548,7 +543,7 @@
 </tbody>
 </table>
 <h4 id="_16">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 5,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -563,7 +558,6 @@
 
 
 </code></pre>
-
 <h3 id="6">6)  弹幕消息</h3>
 <h4 id="_17">接口说明</h4>
 <table>
@@ -585,7 +579,7 @@
 </tbody>
 </table>
 <h4 id="_18">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 6,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -599,7 +593,6 @@
 
 
 </code></pre>
-
 <h3 id="7">7)  留言通知</h3>
 <h4 id="_19">接口说明</h4>
 <table>
@@ -621,7 +614,7 @@
 </tbody>
 </table>
 <h4 id="_20">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 7,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -651,7 +644,6 @@
 
 
 </code></pre>
-
 <h3 id="8">8)  房间用户变更通知</h3>
 <h4 id="_21">接口说明</h4>
 <table>
@@ -673,7 +665,7 @@
 </tbody>
 </table>
 <h4 id="_22">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 8,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -691,7 +683,6 @@
 
 
 </code></pre>
-
 <h3 id="9">9) 图片消息</h3>
 <h4 id="_23">接口说明</h4>
 <table>
@@ -713,7 +704,7 @@
 </tbody>
 </table>
 <h4 id="_24">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 9,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -728,7 +719,6 @@
 
 
 </code></pre>
-
 <h3 id="1001">1001 ) 视频消息</h3>
 <h4 id="_25">接口说明</h4>
 <table>
@@ -750,7 +740,7 @@
 </tbody>
 </table>
 <h4 id="_26">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 1001,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -767,7 +757,6 @@
 
 
 </code></pre>
-
 <h3 id="11">11) 产品消息</h3>
 <h4 id="_27">接口说明</h4>
 <table>
@@ -789,7 +778,7 @@
 </tbody>
 </table>
 <h4 id="_28">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 11,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -815,7 +804,6 @@
 
 
 </code></pre>
-
 <h3 id="12">12) 服务通知</h3>
 <h4 id="_29">接口说明</h4>
 <table>
@@ -837,7 +825,7 @@
 </tbody>
 </table>
 <h4 id="_30">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 12,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -859,7 +847,6 @@
 
 
 </code></pre>
-
 <h3 id="13">13) 直播状态通知</h3>
 <h4 id="_31">接口说明</h4>
 <table>
@@ -881,7 +868,7 @@
 </tbody>
 </table>
 <h4 id="_32">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 13,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -897,7 +884,6 @@
 
 
 </code></pre>
-
 <h3 id="15">15) 陪伴灯协议</h3>
 <h4 id="_33">接口说明</h4>
 <table>
@@ -919,7 +905,7 @@
 </tbody>
 </table>
 <h4 id="_34">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 13,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -934,7 +920,6 @@
 
 
 </code></pre>
-
 <h3 id="16">16) 视频变更通知</h3>
 <h4 id="_35">接口说明</h4>
 <table>
@@ -956,7 +941,7 @@
 </tbody>
 </table>
 <h4 id="_36">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 16,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -971,7 +956,6 @@
 
 
 </code></pre>
-
 <h3 id="17">17) 直播状态变更通知</h3>
 <h4 id="_37">接口说明</h4>
 <table>
@@ -993,7 +977,7 @@
 </tbody>
 </table>
 <h4 id="_38">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 17,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1010,7 +994,6 @@
 
 
 </code></pre>
-
 <h3 id="18">18) 举手状态变更通知</h3>
 <h4 id="_39">接口说明</h4>
 <table>
@@ -1032,7 +1015,7 @@
 </tbody>
 </table>
 <h4 id="_40">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 18,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1047,7 +1030,6 @@
 
 
 </code></pre>
-
 <h3 id="19">19) 提问通知</h3>
 <h4 id="_41">接口说明</h4>
 <table>
@@ -1069,7 +1051,7 @@
 </tbody>
 </table>
 <h4 id="_42">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 19,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1086,7 +1068,6 @@
 
 
 </code></pre>
-
 <h3 id="20">20) 移除用户通知</h3>
 <h4 id="_43">接口说明</h4>
 <table>
@@ -1108,7 +1089,7 @@
 </tbody>
 </table>
 <h4 id="_44">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 20,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1121,7 +1102,6 @@
 
 
 </code></pre>
-
 <h3 id="21">21) 对讲状态变更通知</h3>
 <h4 id="_45">接口说明</h4>
 <table>
@@ -1143,7 +1123,7 @@
 </tbody>
 </table>
 <h4 id="_46">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 21,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1192,16 +1172,13 @@
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
+                <p>From here you can search these documents. Enter your search terms below.</p>
                 <form>
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
