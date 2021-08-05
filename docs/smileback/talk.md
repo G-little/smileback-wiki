@@ -78,6 +78,7 @@
 |  roomId      | 是|  string  |  空间ID | |
 |  mayStartTime      | 是|  string  |  时间 | 格式  yyyy-MM-dd HH:mm |
 |  content      | 是|  string  |  时间 | 主题 |
+|  talkType      | 否 |  int  |   沙龙类型  |  0 语音 1 视频 |
 
 #####  错误说明
 
@@ -115,6 +116,7 @@
 |  roomId      | 是|  string  |  空间ID | |
 |  mayStartTime      | 是|  string  |  时间 | 格式  yyyy-MM-dd HH:mm |
 |  content      | 是|  string  |  时间 | 主题 |
+|  talkType      | 否 |  int  |   沙龙类型  |  0 语音 1 视频 |
 
 #####  错误说明
 
