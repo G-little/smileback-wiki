@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>群组 - 回眸</title>
+        <title>通知 - 回眸</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -58,77 +58,77 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">交往 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../jiaowang/im/">通知</a>
+<li class="active">
+    <a href="./">通知</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">回眸 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../">首页</a>
+    <a href="../../smileback/">首页</a>
 </li>
                                     
 <li >
-    <a href="../note/">留言</a>
+    <a href="../../smileback/note/">留言</a>
 </li>
                                     
 <li >
-    <a href="../like/">喜欢</a>
+    <a href="../../smileback/like/">喜欢</a>
 </li>
                                     
 <li >
-    <a href="../my/">我的</a>
+    <a href="../../smileback/my/">我的</a>
 </li>
                                     
 <li >
-    <a href="../im/">消息</a>
+    <a href="../../smileback/im/">消息</a>
 </li>
                                     
 <li >
-    <a href="../report/">举报</a>
+    <a href="../../smileback/report/">举报</a>
 </li>
                                     
 <li >
-    <a href="../cover/">封面</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">群组</a>
+    <a href="../../smileback/cover/">封面</a>
 </li>
                                     
 <li >
-    <a href="../boss/">Boss</a>
+    <a href="../../smileback/group/">群组</a>
 </li>
                                     
 <li >
-    <a href="../store/">小商店</a>
+    <a href="../../smileback/boss/">Boss</a>
 </li>
                                     
 <li >
-    <a href="../address/">地址</a>
+    <a href="../../smileback/store/">小商店</a>
 </li>
                                     
 <li >
-    <a href="../live/">对讲</a>
+    <a href="../../smileback/address/">地址</a>
 </li>
                                     
 <li >
-    <a href="../video/">白噪音</a>
+    <a href="../../smileback/live/">对讲</a>
 </li>
                                     
 <li >
-    <a href="../talk/">直播</a>
+    <a href="../../smileback/video/">白噪音</a>
 </li>
                                     
 <li >
-    <a href="../screen/">共享屏幕</a>
+    <a href="../../smileback/talk/">直播</a>
+</li>
+                                    
+<li >
+    <a href="../../smileback/screen/">共享屏幕</a>
 </li>
                                 </ul>
                             </li>
@@ -141,12 +141,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../cover/">
+                                <a rel="next" href="../../user/user/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../boss/">
+                                <a rel="prev" href="../../smileback/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -158,55 +158,48 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">首页接口文档</a></li>
+        <li class="main active"><a href="#_1">交往自定义消息</a></li>
             <li><a href="#_2">修订记录</a></li>
             <li><a href="#_3">背景</a></li>
             <li><a href="#_4">产品说明</a></li>
-            <li><a href="#_5">关键流程说明</a></li>
+            <li><a href="#_5">关键账户说明</a></li>
             <li><a href="#_6">接口说明</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="_1">首页接口文档</h1>
+<h1 id="_1">交往自定义消息</h1>
 <div class="toc">
 <ul>
-<li><a href="#_1">首页接口文档</a><ul>
+<li><a href="#_1">交往自定义消息</a><ul>
 <li><a href="#_2">修订记录</a></li>
 <li><a href="#_3">背景</a></li>
 <li><a href="#_4">产品说明</a></li>
-<li><a href="#_5">关键流程说明</a></li>
+<li><a href="#_5">关键账户说明</a></li>
 <li><a href="#_6">接口说明</a><ul>
-<li><a href="#10">1.0 拉取群组列表</a><ul>
+<li><a href="#1">1) 文本消息</a><ul>
 <li><a href="#_7">接口说明</a></li>
-<li><a href="#_8">请求说明</a></li>
-<li><a href="#_9">输入参数</a></li>
-<li><a href="#_10">错误说明</a></li>
-<li><a href="#_11">返回实例</a></li>
+<li><a href="#_8">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#11">1.1 提交群组信息</a><ul>
-<li><a href="#_12">接口说明</a></li>
-<li><a href="#_13">请求说明</a></li>
-<li><a href="#_14">输入参数</a></li>
-<li><a href="#_15">错误说明</a></li>
-<li><a href="#_16">返回实例</a></li>
+<li><a href="#300">300 ) 红包通知</a><ul>
+<li><a href="#_9">接口说明</a></li>
+<li><a href="#_10">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#12">1.2 解散群组</a><ul>
-<li><a href="#_17">接口说明</a></li>
-<li><a href="#_18">请求说明</a></li>
-<li><a href="#_19">输入参数</a></li>
-<li><a href="#_20">错误说明</a></li>
-<li><a href="#_21">返回实例</a></li>
+<li><a href="#301">301 ) 点赞通知</a><ul>
+<li><a href="#_11">接口说明</a></li>
+<li><a href="#_12">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#13">1.3 创建兴趣空间</a><ul>
-<li><a href="#_22">接口说明</a></li>
-<li><a href="#_23">请求说明</a></li>
-<li><a href="#_24">输入参数</a></li>
-<li><a href="#_25">错误说明</a></li>
-<li><a href="#_26">返回实例</a></li>
+<li><a href="#302">302 ) 会话状态通知</a><ul>
+<li><a href="#_13">接口说明</a></li>
+<li><a href="#_14">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#303">303 ) 酬金状态通知</a><ul>
+<li><a href="#_15">接口说明</a></li>
+<li><a href="#_16">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -229,7 +222,7 @@
 </thead>
 <tbody>
 <tr>
-<td>2020年07月03日</td>
+<td>2020年07月10日</td>
 <td>冷立纲</td>
 <td>A</td>
 <td>新增设计方案</td>
@@ -241,290 +234,253 @@
 <p>【修订类型：A-新增  M-修改 D-删除】</p>
 </blockquote>
 <h2 id="_3">背景</h2>
-<p>获取就近空间数据</p>
+<p>自定义消息格式文档</p>
 <h2 id="_4">产品说明</h2>
-<h2 id="_5">关键流程说明</h2>
+<p>满足产品自定义展示消息</p>
+<h2 id="_5">关键账户说明</h2>
+<table>
+<thead>
+<tr>
+<th align="center">用户ID</th>
+<th align="center">身份</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">9999</td>
+<td align="center">通知</td>
+</tr>
+<tr>
+<td align="center">9998</td>
+<td align="center">用户通知</td>
+</tr>
+<tr>
+<td align="center">9997</td>
+<td align="center">官方小二</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_6">接口说明</h2>
-<h4 id="10">1.0 拉取群组列表</h4>
-<h5 id="_7">接口说明</h5>
-<p>获取就近空间数据</p>
-<h5 id="_8">请求说明</h5>
-<table>
-<thead>
-<tr>
-<th align="left">http 请求方式</th>
-<th align="center">get</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">url</td>
-<td align="center">/group/list</td>
-</tr>
-</tbody>
-</table>
-<h5 id="_9">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">roomId</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">经度</td>
-<td align="left">房间ID</td>
-</tr>
-<tr>
-<td align="left">limit</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">单页条数</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">page</td>
-<td align="center">否</td>
-<td align="left">int</td>
-<td align="left">当前页</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_10">错误说明</h5>
-<h5 id="_11">返回实例</h5>
+<p>自定义协议格式说明</p>
 <pre><code class="json">
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 1,//总数
-        &quot;currentPage&quot;: 1 ,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 2, //空间ID
-                &quot;uid&quot;: 11632, //用户ID
-                &quot;addTime&quot;: 1600094228691,//添加时间
-                &quot;name&quot;: &quot;xxx&quot;, //名称 
-                &quot;auditStatus&quot;: 1,//审核状态 1 审核通过  -1 驳回  0 待审核
-                &quot;coverUrl&quot;: &quot;/a&quot;, //封面地址
-                &quot;auditTime&quot;: null, //审核时间
-                &quot;userCount&quot;: 0, //用户数
-                &quot;level&quot;:0 //用户等级
+        {
+    &quot;SyncOtherMachine&quot;: 1, //消息同步至发送方
+    &quot;From_Account&quot;: &quot;10001&quot;,
+    &quot;To_Account&quot;: &quot;10002&quot;,
+    &quot;MsgRandom&quot;: 1287657,
+    &quot;MsgTimeStamp&quot;: 5454457,
+    &quot;MsgBody&quot;: [
+        {
+            &quot;MsgType&quot;: &quot;TIMCustomElem&quot;, //自定义消息类型
+            &quot;MsgContent&quot;: {    
+                     &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
+                     &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别        
+                     &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                     &quot;createTime&quot;: 1233434343l, //创建时间戳
+                     &quot;msg&quot;:{                    //消息体
+                      &quot;title&quot;:&quot;标题&quot;, //标题
+                      &quot;url&quot;:&quot;http://kistalk.com&quot;, // h5 广告页面
+                      &quot;content&quot;:&quot;这是消息内容&quot;,
+                      &quot;imageUrl&quot;:&quot;头图地址&quot;, //相对地址，自行追加
+                      &quot;coverWidth&quot;:300,  //高度
+                      &quot;coverHeight&quot;:400   //宽度
+                      }
             }
-        ],
-        &quot;end&quot;: true,
-        &quot;name&quot;: &quot;解放北&quot;,//名称
-        &quot;roomId&quot;: &quot;113.262183,23.142072&quot;, //空间
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 1
-    }
+        }
+    ]
 }
 
 </code></pre>
 
-<h4 id="11">1.1 提交群组信息</h4>
-<h5 id="_12">接口说明</h5>
-<p>获取就近空间数据</p>
-<h5 id="_13">请求说明</h5>
+<h3 id="1">1) 文本消息</h3>
+<h4 id="_7">接口说明</h4>
 <table>
 <thead>
 <tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
+<th align="left">Type</th>
+<th align="center">1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">url</td>
-<td align="center">/group/add</td>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_14">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">parentId</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">父房间ID</td>
-<td align="left">房间ID</td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">群组名称</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">coverUrl</td>
-<td align="center">是</td>
-<td align="left">stirng</td>
-<td align="left">封面地址</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_15">错误说明</h5>
-<h5 id="_16">返回实例</h5>
+<h4 id="_8">协议说明</h4>
 <pre><code class="json">
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;pageSize&quot;: 10,
-        &quot;total&quot;: 1,//总数
-        &quot;currentPage&quot;: 1 ,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 2, //空间ID
-                &quot;uid&quot;: 11632, //用户ID
-                &quot;addTime&quot;: 1600094228691,//添加时间
-                &quot;name&quot;: &quot;xxx&quot;, //名称 
-                &quot;auditStatus&quot;: 1,//审核状态 1 审核通过  -1 驳回  0 待审核
-                &quot;coverUrl&quot;: &quot;/a&quot;, //封面地址
-                &quot;auditTime&quot;: null, //审核时间
-                &quot;userCount&quot;: 0 //用户数
-            }
-        ],
-        &quot;end&quot;: true,
-        &quot;name&quot;: &quot;解放北&quot;,//名称
-        &quot;roomId&quot;: &quot;113.262183,23.142072&quot;, //空间
-        &quot;empty&quot;: false,
-        &quot;startIndex&quot;: 0,
-        &quot;totalPage&quot;: 1
-    }
-}
+      {    
+                 &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;text&quot;:'xxxx'
+                  }
+        }
+
 
 </code></pre>
 
-<h4 id="12">1.2 解散群组</h4>
-<h5 id="_17">接口说明</h5>
-<p>解散群组</p>
-<h5 id="_18">请求说明</h5>
+<h3 id="300">300 ) 红包通知</h3>
+<h4 id="_9">接口说明</h4>
 <table>
 <thead>
 <tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
+<th align="left">Type</th>
+<th align="center">300</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">url</td>
-<td align="center">/group/dissolve</td>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_19">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">id</td>
-<td align="center">是</td>
-<td align="left">int</td>
-<td align="left">群组ID</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_20">错误说明</h5>
-<h5 id="_21">返回实例</h5>
+<h4 id="_10">协议说明</h4>
 <pre><code class="json">
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-    }
-}
+      {    
+                 &quot;type&quot;: 300,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //红包通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;user&quot;:{   //发送人信息
+                         &quot;uid&quot;:123, //用户ID
+                         &quot;avatar&quot;:&quot;/b&quot;, //用户头像
+                         &quot;name&quot;:&quot;b&quot;, //昵称
+                         &quot;certStatus&quot;:0, //头像认证状态 0 初始 1 认证
+                         &quot;verifyStatus&quot;:0, //实名认证状态 0 初始 1 认证
+                         &quot;creditLevel&quot;:1 //信用等级
+                     },
+
+                    toUid:123, //被打赏人
+                    toName:&quot;xxx&quot;, //被打赏人姓名
+                    content:&quot;附言&quot;, //附言
+                    money:12.33 //价格
+                  }
+        }
+
 
 </code></pre>
 
-<h4 id="13">1.3 创建兴趣空间</h4>
-<h5 id="_22">接口说明</h5>
-<p>创建兴趣空间</p>
-<h5 id="_23">请求说明</h5>
+<h3 id="301">301 ) 点赞通知</h3>
+<h4 id="_11">接口说明</h4>
 <table>
 <thead>
 <tr>
-<th align="left">http 请求方式</th>
-<th align="center">post</th>
+<th align="left">Type</th>
+<th align="center">301</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">url</td>
-<td align="center">/room/create</td>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
 </tr>
 </tbody>
 </table>
-<h5 id="_24">输入参数</h5>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="center">必选</th>
-<th align="left">类型</th>
-<th align="left">参数说明</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">coverUrl</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">封面</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="center">是</td>
-<td align="left">string</td>
-<td align="left">名称</td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<h5 id="_25">错误说明</h5>
-<h5 id="_26">返回实例</h5>
+<h4 id="_12">协议说明</h4>
 <pre><code class="json">
-{
-    &quot;c&quot;: 0,
-    &quot;m&quot;: null,
-    &quot;d&quot;: {
-        &quot;id&quot;:&quot;xxxxxxx&quot; //空间ID
-    }
-}
+      {    
+                 &quot;type&quot;: 301,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;uid&quot;: 123, //用户ID
+                     &quot;toUid&quot;: 123, //被点赞用户ID
+                     &quot;value&quot;: true, // 点赞值  true: 点赞  false: 取消
+                     &quot;thumbCount&quot;: 123 //点赞数
+                     &quot;time&quot;:12345678  //发生时间
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="302">302 ) 会话状态通知</h3>
+<h4 id="_13">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">302</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_14">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 302,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;status&quot;: 1, //状态 1 开始  -1 结束
+                  }
+        }
+
+
+</code></pre>
+
+<h3 id="303">303 ) 酬金状态通知</h3>
+<h4 id="_15">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">303</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_16">协议说明</h4>
+<pre><code class="json">
+      {    
+                 &quot;type&quot;: 303,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;uid&quot;:22, //指定用户
+                     &quot;value&quot;: true, // true: 获得  false:  取消
+                  }
+        }
+
 
 </code></pre></div>
         </div>
