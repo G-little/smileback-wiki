@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>通知 - 回眸</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">回眸</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../user/user/" class="dropdown-item">Main</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">交往 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">通知</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">回眸 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../smileback/" class="dropdown-item">首页</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/note/" class="dropdown-item">留言</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/like/" class="dropdown-item">喜欢</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/my/" class="dropdown-item">我的</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/im/" class="dropdown-item">消息</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/report/" class="dropdown-item">举报</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/cover/" class="dropdown-item">封面</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/group/" class="dropdown-item">群组</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/boss/" class="dropdown-item">Boss</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/store/" class="dropdown-item">小商店</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/address/" class="dropdown-item">地址</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/live/" class="dropdown-item">对讲</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/video/" class="dropdown-item">白噪音</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/talk/" class="dropdown-item">直播</a>
+</li>
+                                    
+<li>
+    <a href="../../smileback/screen/" class="dropdown-item">共享屏幕</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../user/user/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../smileback/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">交往自定义消息</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键账户说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1">交往自定义消息</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">交往自定义消息</a><ul>
+<li><a href="#_2">修订记录</a></li>
+<li><a href="#_3">背景</a></li>
+<li><a href="#_4">产品说明</a></li>
+<li><a href="#_5">关键账户说明</a></li>
+<li><a href="#_6">接口说明</a><ul>
+<li><a href="#1">1) 文本消息</a><ul>
+<li><a href="#_7">接口说明</a></li>
+<li><a href="#_8">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#300">300 ) 红包通知</a><ul>
+<li><a href="#_9">接口说明</a></li>
+<li><a href="#_10">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#301">301 ) 点赞通知</a><ul>
+<li><a href="#_11">接口说明</a></li>
+<li><a href="#_12">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#302">302 ) 会话状态通知</a><ul>
+<li><a href="#_13">接口说明</a></li>
+<li><a href="#_14">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#303">303 ) 酬金状态通知</a><ul>
+<li><a href="#_15">接口说明</a></li>
+<li><a href="#_16">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#351">351 ) 邀请卡片消息</a><ul>
+<li><a href="#_17">接口说明</a></li>
+<li><a href="#_18">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#352">352 ) 邀请消息</a><ul>
+<li><a href="#_19">接口说明</a></li>
+<li><a href="#_20">协议说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_2">修订记录</h2>
+<hr />
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>作者</th>
+<th>修订类型</th>
+<th>修订内容</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020年07月10日</td>
+<td>冷立纲</td>
+<td>A</td>
+<td>新增设计方案</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>【修订类型：A-新增  M-修改 D-删除】</p>
+</blockquote>
+<h2 id="_3">背景</h2>
+<p>自定义消息格式文档</p>
+<h2 id="_4">产品说明</h2>
+<p>满足产品自定义展示消息</p>
+<h2 id="_5">关键账户说明</h2>
+<table>
+<thead>
+<tr>
+<th align="center">用户ID</th>
+<th align="center">身份</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">9999</td>
+<td align="center">通知</td>
+</tr>
+<tr>
+<td align="center">9998</td>
+<td align="center">用户通知</td>
+</tr>
+<tr>
+<td align="center">9997</td>
+<td align="center">官方小二</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">接口说明</h2>
+<p>自定义协议格式说明</p>
+<pre><code class="language-json">
+        {
+    &quot;SyncOtherMachine&quot;: 1, //消息同步至发送方
+    &quot;From_Account&quot;: &quot;10001&quot;,
+    &quot;To_Account&quot;: &quot;10002&quot;,
+    &quot;MsgRandom&quot;: 1287657,
+    &quot;MsgTimeStamp&quot;: 5454457,
+    &quot;MsgBody&quot;: [
+        {
+            &quot;MsgType&quot;: &quot;TIMCustomElem&quot;, //自定义消息类型
+            &quot;MsgContent&quot;: {    
+                     &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
+                     &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别        
+                     &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                     &quot;createTime&quot;: 1233434343l, //创建时间戳
+                     &quot;msg&quot;:{                    //消息体
+                      &quot;title&quot;:&quot;标题&quot;, //标题
+                      &quot;url&quot;:&quot;http://kistalk.com&quot;, // h5 广告页面
+                      &quot;content&quot;:&quot;这是消息内容&quot;,
+                      &quot;imageUrl&quot;:&quot;头图地址&quot;, //相对地址，自行追加
+                      &quot;coverWidth&quot;:300,  //高度
+                      &quot;coverHeight&quot;:400   //宽度
+                      }
+            }
+        }
+    ]
+}
+
+</code></pre>
+<h3 id="1">1) 文本消息</h3>
+<h4 id="_7">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_8">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //文本消息
+                     &quot;text&quot;:'xxxx'
+                  }
+        }
+
+
+</code></pre>
+<h3 id="300">300 ) 红包通知</h3>
+<h4 id="_9">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">300</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_10">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 300,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //红包通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;user&quot;:{   //发送人信息
+                         &quot;uid&quot;:123, //用户ID
+                         &quot;avatar&quot;:&quot;/b&quot;, //用户头像
+                         &quot;name&quot;:&quot;b&quot;, //昵称
+                         &quot;certStatus&quot;:0, //头像认证状态 0 初始 1 认证
+                         &quot;verifyStatus&quot;:0, //实名认证状态 0 初始 1 认证
+                         &quot;creditLevel&quot;:1 //信用等级
+                     },
+
+                    toUid:123, //被打赏人
+                    toName:&quot;xxx&quot;, //被打赏人姓名
+                    content:&quot;附言&quot;, //附言
+                    money:12.33 //价格
+                  }
+        }
+
+
+</code></pre>
+<h3 id="301">301 ) 点赞通知</h3>
+<h4 id="_11">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">301</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_12">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 301,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;uid&quot;: 123, //用户ID
+                     &quot;toUid&quot;: 123, //被点赞用户ID
+                     &quot;value&quot;: true, // 点赞值  true: 点赞  false: 取消
+                     &quot;thumbCount&quot;: 123 //点赞数
+                     &quot;time&quot;:12345678  //发生时间
+                  }
+        }
+
+
+</code></pre>
+<h3 id="302">302 ) 会话状态通知</h3>
+<h4 id="_13">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">302</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_14">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 302,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;status&quot;: 1, //状态 1 开始  -1 结束
+                  }
+        }
+
+
+</code></pre>
+<h3 id="303">303 ) 酬金状态通知</h3>
+<h4 id="_15">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">303</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_16">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 303,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //房间ID
+                     &quot;uid&quot;:22, //指定用户
+                     &quot;value&quot;: true, // true: 获得  false:  取消
+                  }
+        }
+
+
+</code></pre>
+<h3 id="351">351 ) 邀请卡片消息</h3>
+<h4 id="_17">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">351</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9997</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_18">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 351,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //会话ID
+                     &quot;fromUid&quot;:22 //来源用户
+                  }
+        }
+
+
+</code></pre>
+<h3 id="352">352 ) 邀请消息</h3>
+<h4 id="_19">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">352</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_20">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 351,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //会话ID
+                     &quot;title&quot;:&quot;标题&quot;, // 标题
+                     &quot;contentType&quot;: 0, //内容类型 0 图片 1 视频&quot;)
+                     &quot;content&quot;: &quot;xxx&quot;, //内容
+                     &quot;coverSize&quot;: &quot;x*y&quot;, //封面尺寸
+                     &quot;coverUrl&quot;: &quot;/xxx&quot;, //封面
+                     &quot;money&quot;:3333, //酬金
+                     &quot;talkType&quot;:1 // 话题类型 0 问问 1 沙龙
+                  }
+        }
+
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
