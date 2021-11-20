@@ -3,6 +3,8 @@ nav:
   - 首页: 'index.md'
   - 用户: 
     - Main: './user/user.md'
+  - 交往: 
+    - 通知: './jiaowang/im.md'  
   - 回眸: 
     - 首页: './smileback/index.md'    
     - 留言: './smileback/note.md'    
