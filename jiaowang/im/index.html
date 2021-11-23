@@ -226,6 +226,12 @@
 <li><a href="#352">352 ) 邀请消息</a><ul>
 <li><a href="#_19">接口说明</a></li>
 <li><a href="#_20">协议说明</a></li>
+<li><a href="#_21">接口说明</a></li>
+<li><a href="#_22">协议说明</a></li>
+<li><a href="#_23">接口说明</a></li>
+<li><a href="#_24">协议说明</a></li>
+<li><a href="#_25">接口说明</a></li>
+<li><a href="#_26">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -562,7 +568,7 @@
 <h4 id="_20">协议说明</h4>
 <pre><code class="language-json">
       {    
-                 &quot;type&quot;: 351,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;type&quot;: 352,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
                  &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
                  &quot;createTime&quot;: 1233434343l, //创建时间戳
@@ -576,6 +582,112 @@
                      &quot;money&quot;:3333, //酬金
                      &quot;talkType&quot;:1 // 话题类型 0 问问 1 沙龙
                   }
+        }
+
+
+</code></pre>
+<p>### 401 ) 关注消息</p>
+<h4 id="_21">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">401</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9998</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_22">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 401,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;fromUid&quot;:123456, //来源用户
+                     &quot;name&quot;:&quot;昵称&quot;, // 昵称
+                     &quot;avatar&quot;:&quot;头像&quot; //头像               }
+        }
+
+
+</code></pre>
+<p>### 402 ) 点赞消息</p>
+<h4 id="_23">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">402</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9998</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_24">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 402,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;fromUid&quot;:123456, //来源用户
+                     &quot;name&quot;:&quot;昵称&quot;, // 昵称
+                     &quot;avatar&quot;:&quot;头像&quot; //头像               }
+        }
+
+
+</code></pre>
+<p>### 403 ) 评论消息</p>
+<h4 id="_25">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">403</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9998</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_26">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 403,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;fromUid&quot;:123456, //来源用户
+                     &quot;name&quot;:&quot;昵称&quot;, // 昵称
+                     &quot;avatar&quot;:&quot;头像&quot;, //头像
+                     &quot;comment&quot;:&quot;test&quot; //点评                }
         }
 
 
