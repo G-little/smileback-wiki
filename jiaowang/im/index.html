@@ -243,6 +243,11 @@
 <li><a href="#_26">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#501">501 ) 小助手消息</a><ul>
+<li><a href="#_27">接口说明</a></li>
+<li><a href="#_28">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -701,6 +706,47 @@
                      &quot;name&quot;:&quot;昵称&quot;, // 昵称
                      &quot;avatar&quot;:&quot;头像&quot;, //头像
                      &quot;comment&quot;:&quot;test&quot; //点评
+                  }
+       }
+
+
+</code></pre>
+<h3 id="501">501 ) 小助手消息</h3>
+<h4 id="_27">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">500</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">10000</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_28">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 500,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;title&quot;:'xxx', //标题
+                     &quot;comment&quot;:&quot;描述&quot;, // 昵称
+                     &quot;urlType&quot;:&quot;app&quot;,  //跳转类型 app/h5
+                     &quot;url&quot;:&quot;跳转地址&quot;, //头像
+                     &quot;type&quot;: 101 // 消息类型， 101:认证消息  
+                     &quot;ext&quot;:{
+
+                     } //扩展参数
                   }
        }
 
