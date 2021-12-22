@@ -253,6 +253,16 @@
 <li><a href="#_30">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#600">600 ) 互动消息</a><ul>
+<li><a href="#_31">接口说明</a></li>
+<li><a href="#_32">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#601">601 ) 提问消息</a><ul>
+<li><a href="#_33">接口说明</a></li>
+<li><a href="#_34">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -787,6 +797,93 @@
                      &quot;ext&quot;:{
 
                      } //扩展参数
+                  }
+       }
+
+
+</code></pre>
+<h3 id="600">600 ) 互动消息</h3>
+<h4 id="_31">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">600</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">10000</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_32">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 600,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;user&quot;:{
+                         &quot;uid&quot;:123,
+                         &quot;name&quot;:xxxxx
+                     }, //用户
+                     &quot;to&quot;:{
+                         &quot;uid&quot;:123,
+                         &quot;name&quot;:xxxxx
+                     }, //用户
+                     &quot;msgType&quot;: 1  //1 点赞。2 上麦。3 举手
+
+                  }
+       }
+
+
+</code></pre>
+<h3 id="601">601 ) 提问消息</h3>
+<h4 id="_33">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">601</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">10000</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_34">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 601,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;user&quot;:{
+                         &quot;uid&quot;:123, //用户ID
+                         &quot;avatar&quot;:&quot;/b&quot;, //用户头像
+                         &quot;name&quot;:&quot;b&quot;, //昵称
+                         &quot;certStatus&quot;:0, //头像认证状态 0 初始 1 认证
+                         &quot;verifyStatus&quot;:0, //实名认证状态 0 初始 1 认证
+                         &quot;studentStatus&quot;: 0,
+                         &quot;creditLevel&quot;:1 //信用等级
+                     },
+                     &quot;talkId&quot;:1, //房间ID
+                     &quot;questionId&quot;: 123, //提问ID                   &quot;question&quot;: &quot;提问&quot; //提问
                   }
        }
 

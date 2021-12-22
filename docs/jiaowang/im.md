@@ -547,7 +547,7 @@
 			             "creditLevel":1 //信用等级
 			         },
 			         "talkId":1, //房间ID
-			         "questionId": 123, //提问ID			         "question": "提问" //提问
+			         "id":123, //提问ID			         "question": "提问" //提问
 			      }
        }
 
