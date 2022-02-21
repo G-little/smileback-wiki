@@ -273,6 +273,11 @@
 <li><a href="#_38">协议说明</a></li>
 </ul>
 </li>
+<li><a href="#800">800 ) 身份申请消息</a><ul>
+<li><a href="#_39">接口说明</a></li>
+<li><a href="#_40">协议说明</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -838,7 +843,7 @@
                      &quot;comment&quot;:&quot;描述&quot;, // 昵称
                      &quot;urlType&quot;:&quot;app&quot;,  //跳转类型 app/h5
                      &quot;url&quot;:&quot;跳转地址&quot;, //头像
-                     &quot;type&quot;: 101 // 消息类型， 101:认证消息  
+                     &quot;type&quot;: 101 // 消息类型， 101:认证消息  102:沙龙开始消息，103:沙龙取消，104:身份取消，105: 机构认证结果，106:身份认证结果，107:身份申请结果
                      &quot;ext&quot;:{
 
                      } //扩展参数
@@ -971,6 +976,52 @@
                      &quot;addTime&quot;:12223345, //添加时间
                      &quot;money&quot;:&quot;12.00&quot; //添加金额
                  }
+       }
+
+
+</code></pre>
+<h3 id="800">800 ) 身份申请消息</h3>
+<h4 id="_39">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">800</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9995</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_40">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 800,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                        &quot;user&quot;:{   //发送人信息
+                         &quot;uid&quot;:123, //用户ID
+                         &quot;avatar&quot;:&quot;/b&quot;, //用户头像
+                         &quot;name&quot;:&quot;b&quot;, //昵称
+                         &quot;certStatus&quot;:0, //头像认证状态 0 初始 1 认证
+                         &quot;verifyStatus&quot;:0, //实名认证状态 0 初始 1 认证
+                         &quot;creditLevel&quot;:1 //信用等级
+                     },           
+                     &quot;orgId&quot;:12345, //机构号
+                     &quot;id&quot;:12345, //申请ID
+                     &quot;titleId&quot;:123456, //身份ID
+                     &quot;titleName&quot;:&quot;身份名称&quot;, //身份名称
+                     &quot;images&quot;:&quot;xxxx&quot;, //图片数组
+                     &quot;remark&quot;:&quot;说明&quot; //申请说明                }
        }
 
 
