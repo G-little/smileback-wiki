@@ -228,54 +228,59 @@
 <li><a href="#_20">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#351">351 ) 邀请卡片消息</a><ul>
+<li><a href="#306">306 ) 更新公告通知</a><ul>
 <li><a href="#_21">接口说明</a></li>
 <li><a href="#_22">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#352">352 ) 邀请消息</a><ul>
+<li><a href="#351">351 ) 邀请卡片消息</a><ul>
 <li><a href="#_23">接口说明</a></li>
 <li><a href="#_24">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#401">401 ) 关注消息</a><ul>
+<li><a href="#352">352 ) 邀请消息</a><ul>
 <li><a href="#_25">接口说明</a></li>
 <li><a href="#_26">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#402">402 ) 点赞消息</a><ul>
+<li><a href="#401">401 ) 关注消息</a><ul>
 <li><a href="#_27">接口说明</a></li>
 <li><a href="#_28">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#403">403 ) 评论消息</a><ul>
+<li><a href="#402">402 ) 点赞消息</a><ul>
 <li><a href="#_29">接口说明</a></li>
 <li><a href="#_30">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#500">500 ) 小助手消息</a><ul>
+<li><a href="#403">403 ) 评论消息</a><ul>
 <li><a href="#_31">接口说明</a></li>
 <li><a href="#_32">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#600">600 ) 互动消息</a><ul>
+<li><a href="#500">500 ) 小助手消息</a><ul>
 <li><a href="#_33">接口说明</a></li>
 <li><a href="#_34">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#601">601 ) 提问消息</a><ul>
+<li><a href="#600">600 ) 互动消息</a><ul>
 <li><a href="#_35">接口说明</a></li>
 <li><a href="#_36">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#700">700 ) 收益通知</a><ul>
+<li><a href="#601">601 ) 提问消息</a><ul>
 <li><a href="#_37">接口说明</a></li>
 <li><a href="#_38">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#800">800 ) 身份申请消息</a><ul>
+<li><a href="#700">700 ) 收益通知</a><ul>
 <li><a href="#_39">接口说明</a></li>
 <li><a href="#_40">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#800">800 ) 身份申请消息</a><ul>
+<li><a href="#_41">接口说明</a></li>
+<li><a href="#_42">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -624,8 +629,46 @@
 
 
 </code></pre>
-<h3 id="351">351 ) 邀请卡片消息</h3>
+<h3 id="306">306 ) 更新公告通知</h3>
 <h4 id="_21">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">306</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_22">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 306,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;talkId&quot;:123456, //对话ID
+                  }
+        }
+
+
+</code></pre>
+<h3 id="351">351 ) 邀请卡片消息</h3>
+<h4 id="_23">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -644,7 +687,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_22">协议说明</h4>
+<h4 id="_24">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 351,  //协议号 依次递增  具体格式参见下面协议定义
@@ -660,7 +703,7 @@
 
 </code></pre>
 <h3 id="352">352 ) 邀请消息</h3>
-<h4 id="_23">接口说明</h4>
+<h4 id="_25">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -679,7 +722,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_24">协议说明</h4>
+<h4 id="_26">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 352,  //协议号 依次递增  具体格式参见下面协议定义
@@ -701,7 +744,7 @@
 
 </code></pre>
 <h3 id="401">401 ) 关注消息</h3>
-<h4 id="_25">接口说明</h4>
+<h4 id="_27">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -720,7 +763,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_26">协议说明</h4>
+<h4 id="_28">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 401,  //协议号 依次递增  具体格式参见下面协议定义
@@ -738,7 +781,7 @@
 
 </code></pre>
 <h3 id="402">402 ) 点赞消息</h3>
-<h4 id="_27">接口说明</h4>
+<h4 id="_29">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -757,7 +800,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_28">协议说明</h4>
+<h4 id="_30">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 402,  //协议号 依次递增  具体格式参见下面协议定义
@@ -775,7 +818,7 @@
 
 </code></pre>
 <h3 id="403">403 ) 评论消息</h3>
-<h4 id="_29">接口说明</h4>
+<h4 id="_31">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -794,7 +837,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_30">协议说明</h4>
+<h4 id="_32">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 403,  //协议号 依次递增  具体格式参见下面协议定义
@@ -812,7 +855,7 @@
 
 </code></pre>
 <h3 id="500">500 ) 小助手消息</h3>
-<h4 id="_31">接口说明</h4>
+<h4 id="_33">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -831,7 +874,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_32">协议说明</h4>
+<h4 id="_34">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 500,  //协议号 依次递增  具体格式参见下面协议定义
@@ -853,7 +896,7 @@
 
 </code></pre>
 <h3 id="600">600 ) 互动消息</h3>
-<h4 id="_33">接口说明</h4>
+<h4 id="_35">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -872,7 +915,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_34">协议说明</h4>
+<h4 id="_36">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 600,  //协议号 依次递增  具体格式参见下面协议定义
@@ -896,7 +939,7 @@
 
 </code></pre>
 <h3 id="601">601 ) 提问消息</h3>
-<h4 id="_35">接口说明</h4>
+<h4 id="_37">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -915,7 +958,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_36">协议说明</h4>
+<h4 id="_38">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 601,  //协议号 依次递增  具体格式参见下面协议定义
@@ -940,7 +983,7 @@
 
 </code></pre>
 <h3 id="700">700 ) 收益通知</h3>
-<h4 id="_37">接口说明</h4>
+<h4 id="_39">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -959,7 +1002,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_38">协议说明</h4>
+<h4 id="_40">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 700,  //协议号 依次递增  具体格式参见下面协议定义
@@ -981,7 +1024,7 @@
 
 </code></pre>
 <h3 id="800">800 ) 身份申请消息</h3>
-<h4 id="_39">接口说明</h4>
+<h4 id="_41">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1000,7 +1043,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_40">协议说明</h4>
+<h4 id="_42">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 800,  //协议号 依次递增  具体格式参见下面协议定义
