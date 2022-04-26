@@ -34,12 +34,19 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 c: 0,
 m: null,
 d: {
-    provinces: [
+    "provinces": [
     {
-    code: "110000",
-    name: "北京"
+    "code": "110000",
+    "name": "北京"
     }],
-    servicePhone: "17301082390"
+    "servicePhone": "17301082390",
+    "ad":{
+        "type":1,  //1 搜索结果。（留作扩展）
+        "imgUrl":"/xxxxxx", //（开屏广告图）        
+        "params":{
+            "keywords":"#校园云就业" // 搜索参数
+        }
+    }
   }
 }
 
