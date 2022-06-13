@@ -278,54 +278,94 @@
 <li><a href="#_40">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#351">351 ) 邀请卡片消息</a><ul>
+<li><a href="#316">316 ) 直播开始通知</a><ul>
 <li><a href="#_41">接口说明</a></li>
 <li><a href="#_42">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#352">352 ) 邀请消息</a><ul>
+<li><a href="#317">317 ) 直播结束通知</a><ul>
 <li><a href="#_43">接口说明</a></li>
 <li><a href="#_44">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#401">401 ) 关注消息</a><ul>
+<li><a href="#318">318 ) 投话题开始</a><ul>
 <li><a href="#_45">接口说明</a></li>
 <li><a href="#_46">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#402">402 ) 点赞消息</a><ul>
+<li><a href="#319">319 ) 投话题结束</a><ul>
 <li><a href="#_47">接口说明</a></li>
 <li><a href="#_48">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#403">403 ) 评论消息</a><ul>
+<li><a href="#320">320 ) 话题内容切换</a><ul>
 <li><a href="#_49">接口说明</a></li>
 <li><a href="#_50">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#500">500 ) 小助手消息</a><ul>
+<li><a href="#321">321 ) 投图片开始</a><ul>
 <li><a href="#_51">接口说明</a></li>
 <li><a href="#_52">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#600">600 ) 互动消息</a><ul>
+<li><a href="#322">322 ) 投图片结束</a><ul>
 <li><a href="#_53">接口说明</a></li>
 <li><a href="#_54">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#601">601 ) 提问消息</a><ul>
+<li><a href="#323">323 ) 投图片切换</a><ul>
 <li><a href="#_55">接口说明</a></li>
 <li><a href="#_56">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#700">700 ) 收益通知</a><ul>
+<li><a href="#351">351 ) 邀请卡片消息</a><ul>
 <li><a href="#_57">接口说明</a></li>
 <li><a href="#_58">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#800">800 ) 身份申请消息</a><ul>
+<li><a href="#352">352 ) 邀请消息</a><ul>
 <li><a href="#_59">接口说明</a></li>
 <li><a href="#_60">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#401">401 ) 关注消息</a><ul>
+<li><a href="#_61">接口说明</a></li>
+<li><a href="#_62">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#402">402 ) 点赞消息</a><ul>
+<li><a href="#_63">接口说明</a></li>
+<li><a href="#_64">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#403">403 ) 评论消息</a><ul>
+<li><a href="#_65">接口说明</a></li>
+<li><a href="#_66">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#500">500 ) 小助手消息</a><ul>
+<li><a href="#_67">接口说明</a></li>
+<li><a href="#_68">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#600">600 ) 互动消息</a><ul>
+<li><a href="#_69">接口说明</a></li>
+<li><a href="#_70">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#601">601 ) 提问消息</a><ul>
+<li><a href="#_71">接口说明</a></li>
+<li><a href="#_72">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#700">700 ) 收益通知</a><ul>
+<li><a href="#_73">接口说明</a></li>
+<li><a href="#_74">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#800">800 ) 身份申请消息</a><ul>
+<li><a href="#_75">接口说明</a></li>
+<li><a href="#_76">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -1074,8 +1114,332 @@
 
 
 </code></pre>
-<h3 id="351">351 ) 邀请卡片消息</h3>
+<h3 id="316">316 ) 直播开始通知</h3>
 <h4 id="_41">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">316</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_42">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 316,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+
+                     &quot;fromUid&quot;: 1, // 来源UID
+                     &quot;liveUrl&quot;: &quot;rtmp://xxx/xxx/xxxx&quot; // 拉流地址
+                  }
+        }
+
+
+</code></pre>
+<h3 id="317">317 ) 直播结束通知</h3>
+<h4 id="_43">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">317</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_44">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 317,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;fromUid&quot;: 1, // 来源UID
+                  }
+        }
+</code></pre>
+<h3 id="318">318 ) 投话题开始</h3>
+<h4 id="_45">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">318</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_46">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 318,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;sessionId&quot;: &quot;xxxxxx&quot;, // 会话ID
+                     &quot;fromUid&quot;:123, //发起人
+                     &quot;content&quot;: {  //话题内容
+                         &quot;id&quot;:123,  //话题ID
+                         &quot;name&quot;: &quot;xxxx&quot;, //话题名
+                         &quot;logoUrl&quot;: &quot;/xxx&quot;, //logo 地址
+                         &quot;guideWords&quot;: &quot;/xxx&quot;, // 话题引导语
+                         &quot;sortNo&quot;: 123, //排序值
+                         &quot;musicUrl&quot;:&quot;/xxxxxx&quot;, //背景音乐地址
+                         &quot;musicName&quot;:&quot;name&quot;, //背景音乐地址
+                         &quot;bgUrl&quot;:&quot;/xxxxx&quot;, //背景地址
+                         &quot;itemsCount&quot;: 222 //问题总数
+                     },
+                  }
+        }
+</code></pre>
+<h3 id="319">319 ) 投话题结束</h3>
+<h4 id="_47">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">319</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_48">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 319,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;sessionId&quot;: &quot;xxxxxx&quot;, // 会话ID
+                     &quot;fromUid&quot;:123, //发起人
+
+                  }
+        }
+</code></pre>
+<h3 id="320">320 ) 话题内容切换</h3>
+<h4 id="_49">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">320</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_50">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 320,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;sessionId&quot;: &quot;xxxxxx&quot;, // 会话ID
+                     &quot;fromUid&quot;:123, //发起人
+                     &quot;content&quot;:{
+                         &quot;topicId&quot;: 123L, //话题ID
+                         &quot;itemId&quot;: 123456, //话题项ID
+                         &quot;content&quot;: &quot;32432423&quot;, //话题内容
+                         &quot;musicUrl&quot;: &quot;/a/b/c&quot;, // 音乐地址
+                         &quot;musicName&quot;: &quot;xxx&quot;, //音乐名称
+                         &quot;bgUrl&quot;: &quot;xxx&quot;, //背景url
+                         &quot;itemsCount&quot;: 23, //总问题数
+                         &quot;currentCount&quot;: 11, //总问题数
+                     }
+                  }
+        }
+</code></pre>
+<h3 id="321">321 ) 投图片开始</h3>
+<h4 id="_51">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">321</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_52">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 321,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;sessionId&quot;: &quot;xxxxxx&quot;, // 会话ID
+                     &quot;fromUid&quot;:123, //发起人
+                  }
+        }
+</code></pre>
+<h3 id="322">322 ) 投图片结束</h3>
+<h4 id="_53">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">322</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_54">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 322,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;sessionId&quot;: &quot;xxxxxx&quot;, // 会话ID
+                     &quot;fromUid&quot;:123, //发起人
+                  }
+      }
+</code></pre>
+<h3 id="323">323 ) 投图片切换</h3>
+<h4 id="_55">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">323</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">消息类型</td>
+<td align="center">群消息</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">9999</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_56">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 323,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;sessionId&quot;: &quot;xxxxxx&quot;, // 会话ID
+                     &quot;fromUid&quot;:123, //发起人
+                     &quot;content&quot;:{
+                         &quot;url&quot;:&quot;xxxxx&quot; ,//资源URL
+                         &quot;size&quot;: &quot;xxxx&quot; //尺寸
+                     }
+                  }
+      }
+</code></pre>
+<h3 id="351">351 ) 邀请卡片消息</h3>
+<h4 id="_57">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1094,7 +1458,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_42">协议说明</h4>
+<h4 id="_58">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 351,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1110,7 +1474,7 @@
 
 </code></pre>
 <h3 id="352">352 ) 邀请消息</h3>
-<h4 id="_43">接口说明</h4>
+<h4 id="_59">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1129,7 +1493,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_44">协议说明</h4>
+<h4 id="_60">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 352,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1151,7 +1515,7 @@
 
 </code></pre>
 <h3 id="401">401 ) 关注消息</h3>
-<h4 id="_45">接口说明</h4>
+<h4 id="_61">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1170,7 +1534,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_46">协议说明</h4>
+<h4 id="_62">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 401,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1188,7 +1552,7 @@
 
 </code></pre>
 <h3 id="402">402 ) 点赞消息</h3>
-<h4 id="_47">接口说明</h4>
+<h4 id="_63">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1207,7 +1571,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_48">协议说明</h4>
+<h4 id="_64">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 402,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1225,7 +1589,7 @@
 
 </code></pre>
 <h3 id="403">403 ) 评论消息</h3>
-<h4 id="_49">接口说明</h4>
+<h4 id="_65">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1244,7 +1608,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_50">协议说明</h4>
+<h4 id="_66">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 403,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1262,7 +1626,7 @@
 
 </code></pre>
 <h3 id="500">500 ) 小助手消息</h3>
-<h4 id="_51">接口说明</h4>
+<h4 id="_67">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1281,7 +1645,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_52">协议说明</h4>
+<h4 id="_68">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 500,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1303,7 +1667,7 @@
 
 </code></pre>
 <h3 id="600">600 ) 互动消息</h3>
-<h4 id="_53">接口说明</h4>
+<h4 id="_69">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1322,7 +1686,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_54">协议说明</h4>
+<h4 id="_70">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 600,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1346,7 +1710,7 @@
 
 </code></pre>
 <h3 id="601">601 ) 提问消息</h3>
-<h4 id="_55">接口说明</h4>
+<h4 id="_71">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1365,7 +1729,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_56">协议说明</h4>
+<h4 id="_72">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 601,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1390,7 +1754,7 @@
 
 </code></pre>
 <h3 id="700">700 ) 收益通知</h3>
-<h4 id="_57">接口说明</h4>
+<h4 id="_73">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1409,7 +1773,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_58">协议说明</h4>
+<h4 id="_74">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 700,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1431,7 +1795,7 @@
 
 </code></pre>
 <h3 id="800">800 ) 身份申请消息</h3>
-<h4 id="_59">接口说明</h4>
+<h4 id="_75">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1450,7 +1814,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_60">协议说明</h4>
+<h4 id="_76">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 800,  //协议号 依次递增  具体格式参见下面协议定义
