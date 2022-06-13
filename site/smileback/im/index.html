@@ -9,144 +9,131 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>消息 - 回眸</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">回眸</a>
-                </div>
+                <a class="navbar-brand" href="../..">回眸</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">首页</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">首页</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">用户 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../user/user/">Main</a>
+<li>
+    <a href="../../user/user/" class="dropdown-item">Main</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">交往 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">交往 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../jiaowang/im/">通知</a>
+<li>
+    <a href="../../jiaowang/im/" class="dropdown-item">通知</a>
 </li>
                                 </ul>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">回眸 <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">回眸 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../">首页</a>
+<li>
+    <a href="../" class="dropdown-item">首页</a>
 </li>
                                     
-<li >
-    <a href="../note/">留言</a>
+<li>
+    <a href="../note/" class="dropdown-item">留言</a>
 </li>
                                     
-<li >
-    <a href="../like/">喜欢</a>
+<li>
+    <a href="../like/" class="dropdown-item">喜欢</a>
 </li>
                                     
-<li >
-    <a href="../my/">我的</a>
+<li>
+    <a href="../my/" class="dropdown-item">我的</a>
 </li>
                                     
-<li class="active">
-    <a href="./">消息</a>
+<li>
+    <a href="./" class="dropdown-item active">消息</a>
 </li>
                                     
-<li >
-    <a href="../report/">举报</a>
+<li>
+    <a href="../report/" class="dropdown-item">举报</a>
 </li>
                                     
-<li >
-    <a href="../cover/">封面</a>
+<li>
+    <a href="../cover/" class="dropdown-item">封面</a>
 </li>
                                     
-<li >
-    <a href="../group/">群组</a>
+<li>
+    <a href="../group/" class="dropdown-item">群组</a>
 </li>
                                     
-<li >
-    <a href="../boss/">Boss</a>
+<li>
+    <a href="../boss/" class="dropdown-item">Boss</a>
 </li>
                                     
-<li >
-    <a href="../store/">小商店</a>
+<li>
+    <a href="../store/" class="dropdown-item">小商店</a>
 </li>
                                     
-<li >
-    <a href="../address/">地址</a>
+<li>
+    <a href="../address/" class="dropdown-item">地址</a>
 </li>
                                     
-<li >
-    <a href="../live/">对讲</a>
+<li>
+    <a href="../live/" class="dropdown-item">对讲</a>
 </li>
                                     
-<li >
-    <a href="../video/">白噪音</a>
+<li>
+    <a href="../video/" class="dropdown-item">白噪音</a>
 </li>
                                     
-<li >
-    <a href="../talk/">直播</a>
+<li>
+    <a href="../talk/" class="dropdown-item">直播</a>
 </li>
                                     
-<li >
-    <a href="../screen/">共享屏幕</a>
+<li>
+    <a href="../screen/" class="dropdown-item">共享屏幕</a>
 </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../my/">
+                            <li class="nav-item">
+                                <a rel="prev" href="../my/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../report/">
+                            <li class="nav-item">
+                                <a rel="next" href="../report/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -156,17 +143,46 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">自定义消息格式文档</a></li>
-            <li><a href="#_2">修订记录</a></li>
-            <li><a href="#_3">背景</a></li>
-            <li><a href="#_4">产品说明</a></li>
-            <li><a href="#_5">关键账户说明</a></li>
-            <li><a href="#_6">接口说明</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">自定义消息格式文档</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">修订记录</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">背景</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_4" class="nav-link">产品说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_5" class="nav-link">关键账户说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_6" class="nav-link">接口说明</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="_1">自定义消息格式文档</h1>
 <div class="toc">
@@ -337,7 +353,7 @@
 </table>
 <h2 id="_6">接口说明</h2>
 <p>自定义协议格式说明</p>
-<pre><code class="json">
+<pre><code class="language-json">
         {
     &quot;SyncOtherMachine&quot;: 1, //消息同步至发送方
     &quot;From_Account&quot;: &quot;10001&quot;,
@@ -366,7 +382,6 @@
 }
 
 </code></pre>
-
 <h3 id="1">1) 文本消息</h3>
 <h4 id="_7">接口说明</h4>
 <table>
@@ -384,7 +399,7 @@
 </tbody>
 </table>
 <h4 id="_8">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 1,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -397,7 +412,6 @@
 
 
 </code></pre>
-
 <h3 id="2">2) 匹配结果通知</h3>
 <h4 id="_9">接口说明</h4>
 <table>
@@ -419,7 +433,7 @@
 </tbody>
 </table>
 <h4 id="_10">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 2,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -434,7 +448,6 @@
 
 
 </code></pre>
-
 <h3 id="3">3)  好友匹配成功消息</h3>
 <h4 id="_11">接口说明</h4>
 <table>
@@ -456,7 +469,7 @@
 </tbody>
 </table>
 <h4 id="_12">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 3,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -476,7 +489,6 @@
 
 
 </code></pre>
-
 <h3 id="4">4)  评论消息</h3>
 <h4 id="_13">接口说明</h4>
 <table>
@@ -498,7 +510,7 @@
 </tbody>
 </table>
 <h4 id="_14">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 4,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -519,7 +531,6 @@
 
 
 </code></pre>
-
 <h3 id="5">5)  头像审核消息</h3>
 <h4 id="_15">接口说明</h4>
 <table>
@@ -541,7 +552,7 @@
 </tbody>
 </table>
 <h4 id="_16">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 5,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -556,7 +567,6 @@
 
 
 </code></pre>
-
 <h3 id="6">6)  弹幕消息</h3>
 <h4 id="_17">接口说明</h4>
 <table>
@@ -578,7 +588,7 @@
 </tbody>
 </table>
 <h4 id="_18">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 6,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -592,7 +602,6 @@
 
 
 </code></pre>
-
 <h3 id="7">7)  留言通知</h3>
 <h4 id="_19">接口说明</h4>
 <table>
@@ -614,7 +623,7 @@
 </tbody>
 </table>
 <h4 id="_20">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 7,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -644,7 +653,6 @@
 
 
 </code></pre>
-
 <h3 id="8">8)  房间用户变更通知</h3>
 <h4 id="_21">接口说明</h4>
 <table>
@@ -666,7 +674,7 @@
 </tbody>
 </table>
 <h4 id="_22">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 8,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -684,7 +692,6 @@
 
 
 </code></pre>
-
 <h3 id="9">9) 图片消息</h3>
 <h4 id="_23">接口说明</h4>
 <table>
@@ -706,7 +713,7 @@
 </tbody>
 </table>
 <h4 id="_24">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 9,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -721,7 +728,6 @@
 
 
 </code></pre>
-
 <h3 id="1001">1001 ) 视频消息</h3>
 <h4 id="_25">接口说明</h4>
 <table>
@@ -743,7 +749,7 @@
 </tbody>
 </table>
 <h4 id="_26">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 1001,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -760,7 +766,6 @@
 
 
 </code></pre>
-
 <h3 id="11">11) 产品消息</h3>
 <h4 id="_27">接口说明</h4>
 <table>
@@ -782,7 +787,7 @@
 </tbody>
 </table>
 <h4 id="_28">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 11,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -808,7 +813,6 @@
 
 
 </code></pre>
-
 <h3 id="12">12) 服务通知</h3>
 <h4 id="_29">接口说明</h4>
 <table>
@@ -830,7 +834,7 @@
 </tbody>
 </table>
 <h4 id="_30">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 12,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -852,7 +856,6 @@
 
 
 </code></pre>
-
 <h3 id="13">13) 直播状态通知</h3>
 <h4 id="_31">接口说明</h4>
 <table>
@@ -874,7 +877,7 @@
 </tbody>
 </table>
 <h4 id="_32">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 13,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -890,7 +893,6 @@
 
 
 </code></pre>
-
 <h3 id="15">15) 陪伴灯协议</h3>
 <h4 id="_33">接口说明</h4>
 <table>
@@ -912,7 +914,7 @@
 </tbody>
 </table>
 <h4 id="_34">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 13,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -927,7 +929,6 @@
 
 
 </code></pre>
-
 <h3 id="16">16) 视频变更通知</h3>
 <h4 id="_35">接口说明</h4>
 <table>
@@ -949,7 +950,7 @@
 </tbody>
 </table>
 <h4 id="_36">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 16,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -964,7 +965,6 @@
 
 
 </code></pre>
-
 <h3 id="17">17) 直播状态变更通知</h3>
 <h4 id="_37">接口说明</h4>
 <table>
@@ -986,7 +986,7 @@
 </tbody>
 </table>
 <h4 id="_38">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 17,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1003,7 +1003,6 @@
 
 
 </code></pre>
-
 <h3 id="18">18) 举手状态变更通知</h3>
 <h4 id="_39">接口说明</h4>
 <table>
@@ -1025,7 +1024,7 @@
 </tbody>
 </table>
 <h4 id="_40">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 18,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1040,7 +1039,6 @@
 
 
 </code></pre>
-
 <h3 id="19">19) 提问通知</h3>
 <h4 id="_41">接口说明</h4>
 <table>
@@ -1062,7 +1060,7 @@
 </tbody>
 </table>
 <h4 id="_42">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 19,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1079,7 +1077,6 @@
 
 
 </code></pre>
-
 <h3 id="20">20) 移除用户通知</h3>
 <h4 id="_43">接口说明</h4>
 <table>
@@ -1101,7 +1098,7 @@
 </tbody>
 </table>
 <h4 id="_44">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 20,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1114,7 +1111,6 @@
 
 
 </code></pre>
-
 <h3 id="21">21) 对讲状态变更通知</h3>
 <h4 id="_45">接口说明</h4>
 <table>
@@ -1136,7 +1132,7 @@
 </tbody>
 </table>
 <h4 id="_46">协议说明</h4>
-<pre><code class="json">
+<pre><code class="language-json">
       {    
                  &quot;type&quot;: 21,  //协议号 依次递增  具体格式参见下面协议定义
                  &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
@@ -1163,6 +1159,7 @@
 
 
 </code></pre></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -1171,40 +1168,37 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
