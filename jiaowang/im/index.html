@@ -333,59 +333,64 @@
 <li><a href="#_62">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#401">401 ) 关注消息</a><ul>
+<li><a href="#354">354 ) 邀请好友参加活动</a><ul>
 <li><a href="#_63">接口说明</a></li>
 <li><a href="#_64">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#402">402 ) 点赞消息</a><ul>
+<li><a href="#401">401 ) 关注消息</a><ul>
 <li><a href="#_65">接口说明</a></li>
 <li><a href="#_66">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#403">403 ) 评论消息</a><ul>
+<li><a href="#402">402 ) 点赞消息</a><ul>
 <li><a href="#_67">接口说明</a></li>
 <li><a href="#_68">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#500">500 ) 小助手消息</a><ul>
+<li><a href="#403">403 ) 评论消息</a><ul>
 <li><a href="#_69">接口说明</a></li>
 <li><a href="#_70">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#600">600 ) 互动消息</a><ul>
+<li><a href="#500">500 ) 小助手消息</a><ul>
 <li><a href="#_71">接口说明</a></li>
 <li><a href="#_72">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#601">601 ) 提问消息</a><ul>
+<li><a href="#600">600 ) 互动消息</a><ul>
 <li><a href="#_73">接口说明</a></li>
 <li><a href="#_74">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#700">700 ) 收益通知</a><ul>
+<li><a href="#601">601 ) 提问消息</a><ul>
 <li><a href="#_75">接口说明</a></li>
 <li><a href="#_76">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#800">800 ) 身份申请消息</a><ul>
+<li><a href="#700">700 ) 收益通知</a><ul>
 <li><a href="#_77">接口说明</a></li>
 <li><a href="#_78">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#900">900 ) 活动状态变更通知</a><ul>
+<li><a href="#800">800 ) 身份申请消息</a><ul>
 <li><a href="#_79">接口说明</a></li>
 <li><a href="#_80">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#2000">2000 ) 话题变更消息</a><ul>
+<li><a href="#900">900 ) 活动状态变更通知</a><ul>
 <li><a href="#_81">接口说明</a></li>
 <li><a href="#_82">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#2001">2001 ) 日程变更消息</a><ul>
+<li><a href="#2000">2000 ) 话题变更消息</a><ul>
 <li><a href="#_83">接口说明</a></li>
 <li><a href="#_84">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#2001">2001 ) 日程变更消息</a><ul>
+<li><a href="#_85">接口说明</a></li>
+<li><a href="#_86">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -1573,8 +1578,53 @@
 
 
 </code></pre>
-<h3 id="401">401 ) 关注消息</h3>
+<h3 id="354">354 ) 邀请好友参加活动</h3>
 <h4 id="_63">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">354</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">用户</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_64">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 354,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;id&quot;:123456, //活动ID
+                     &quot;roomId&quot;:&quot;空间ID&quot;, //空间ID
+                     &quot;scheduleType&quot;:&quot;/xxx&quot;, // 活动类型
+                     &quot;title&quot;:&quot;/xxx&quot;, // 活动标题
+                     &quot;imgUrl&quot;:&quot;图片地址&quot;, // 标题
+                     &quot;location&quot;: &quot;233,456&quot;, //坐标
+                     &quot;startTime&quot;: 123456, //开始时间
+                     &quot;endTime&quot;: 123456, //结束时间
+                     &quot;info&quot;:&quot;xxxxx&quot;, //活动信息
+                     &quot;locationText&quot;:&quot;xxxxx&quot;, //地址信息
+                     &quot;uid&quot;:1455,//创建人
+                     &quot;userName&quot;: &quot;hhha&quot;
+                  }
+        }
+
+
+</code></pre>
+<h3 id="401">401 ) 关注消息</h3>
+<h4 id="_65">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1593,7 +1643,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_64">协议说明</h4>
+<h4 id="_66">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 401,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1611,7 +1661,7 @@
 
 </code></pre>
 <h3 id="402">402 ) 点赞消息</h3>
-<h4 id="_65">接口说明</h4>
+<h4 id="_67">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1630,7 +1680,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_66">协议说明</h4>
+<h4 id="_68">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 402,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1648,7 +1698,7 @@
 
 </code></pre>
 <h3 id="403">403 ) 评论消息</h3>
-<h4 id="_67">接口说明</h4>
+<h4 id="_69">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1667,7 +1717,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_68">协议说明</h4>
+<h4 id="_70">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 403,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1685,7 +1735,7 @@
 
 </code></pre>
 <h3 id="500">500 ) 小助手消息</h3>
-<h4 id="_69">接口说明</h4>
+<h4 id="_71">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1704,7 +1754,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_70">协议说明</h4>
+<h4 id="_72">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 500,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1726,7 +1776,7 @@
 
 </code></pre>
 <h3 id="600">600 ) 互动消息</h3>
-<h4 id="_71">接口说明</h4>
+<h4 id="_73">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1745,7 +1795,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_72">协议说明</h4>
+<h4 id="_74">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 600,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1769,7 +1819,7 @@
 
 </code></pre>
 <h3 id="601">601 ) 提问消息</h3>
-<h4 id="_73">接口说明</h4>
+<h4 id="_75">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1788,7 +1838,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_74">协议说明</h4>
+<h4 id="_76">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 601,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1813,7 +1863,7 @@
 
 </code></pre>
 <h3 id="700">700 ) 收益通知</h3>
-<h4 id="_75">接口说明</h4>
+<h4 id="_77">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1832,7 +1882,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_76">协议说明</h4>
+<h4 id="_78">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 700,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1854,7 +1904,7 @@
 
 </code></pre>
 <h3 id="800">800 ) 身份申请消息</h3>
-<h4 id="_77">接口说明</h4>
+<h4 id="_79">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1873,7 +1923,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_78">协议说明</h4>
+<h4 id="_80">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 800,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1900,7 +1950,7 @@
 
 </code></pre>
 <h3 id="900">900 ) 活动状态变更通知</h3>
-<h4 id="_79">接口说明</h4>
+<h4 id="_81">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1919,7 +1969,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_80">协议说明</h4>
+<h4 id="_82">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 900,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1937,7 +1987,7 @@
 
 </code></pre>
 <h3 id="2000">2000 ) 话题变更消息</h3>
-<h4 id="_81">接口说明</h4>
+<h4 id="_83">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1956,7 +2006,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_82">协议说明</h4>
+<h4 id="_84">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 1000,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1988,7 +2038,7 @@
 
 </code></pre>
 <h3 id="2001">2001 ) 日程变更消息</h3>
-<h4 id="_83">接口说明</h4>
+<h4 id="_85">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -2007,7 +2057,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_84">协议说明</h4>
+<h4 id="_86">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 1001,  //协议号 依次递增  具体格式参见下面协议定义
