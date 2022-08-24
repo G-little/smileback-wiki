@@ -373,14 +373,19 @@
 <li><a href="#_78">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#1000">1000 ) 话题变更消息</a><ul>
+<li><a href="#900">900 ) 活动状态变更通知</a><ul>
 <li><a href="#_79">接口说明</a></li>
 <li><a href="#_80">协议说明</a></li>
 </ul>
 </li>
-<li><a href="#1001">1001 ) 日程变更消息</a><ul>
+<li><a href="#1000">1000 ) 话题变更消息</a><ul>
 <li><a href="#_81">接口说明</a></li>
 <li><a href="#_82">协议说明</a></li>
+</ul>
+</li>
+<li><a href="#1001">1001 ) 日程变更消息</a><ul>
+<li><a href="#_83">接口说明</a></li>
+<li><a href="#_84">协议说明</a></li>
 </ul>
 </li>
 </ul>
@@ -1894,8 +1899,45 @@
 
 
 </code></pre>
-<h3 id="1000">1000 ) 话题变更消息</h3>
+<h3 id="900">900 ) 活动状态变更通知</h3>
 <h4 id="_79">接口说明</h4>
+<table>
+<thead>
+<tr>
+<th align="left">Type</th>
+<th align="center">900</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">版本号</td>
+<td align="center">1.0</td>
+</tr>
+<tr>
+<td align="left">来源账号</td>
+<td align="center">群消息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_80">协议说明</h4>
+<pre><code class="language-json">
+      {    
+                 &quot;type&quot;: 900,  //协议号 依次递增  具体格式参见下面协议定义
+                 &quot;version&quot;:&quot;1.0&quot;, //协议版本号，本地配置目前能处理的版本号，高于该版本则提示需要升级识别    
+                 &quot;tips&quot;:&quot;消息会话列表显示提示&quot;,
+                 &quot;createTime&quot;: 1233434343l, //创建时间戳
+                 &quot;msg&quot;:{                    //点赞通知
+                     &quot;roomId&quot;:&quot;xxxx&quot;,  //房间ID   
+                     &quot;scheduleId&quot;:&quot;xxxx&quot;,  //日程ID   
+                     &quot;status&quot;:1,  //状态 1 开始  -1 取消
+                     &quot;comment&quot;: &quot;描述&quot; //活动描述
+                 }
+       }
+
+
+</code></pre>
+<h3 id="1000">1000 ) 话题变更消息</h3>
+<h4 id="_81">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1914,7 +1956,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_80">协议说明</h4>
+<h4 id="_82">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 1000,  //协议号 依次递增  具体格式参见下面协议定义
@@ -1946,7 +1988,7 @@
 
 </code></pre>
 <h3 id="1001">1001 ) 日程变更消息</h3>
-<h4 id="_81">接口说明</h4>
+<h4 id="_83">接口说明</h4>
 <table>
 <thead>
 <tr>
@@ -1965,7 +2007,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_82">协议说明</h4>
+<h4 id="_84">协议说明</h4>
 <pre><code class="language-json">
       {    
                  &quot;type&quot;: 1001,  //协议号 依次递增  具体格式参见下面协议定义
